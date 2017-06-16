@@ -588,7 +588,7 @@ h1 {
     font-size: 18px;
     margin-top: 20px;
     display: block;
-    margin-bottom: 10px;
+    color: #000;
 }
 
 .precio-producto {
@@ -803,7 +803,7 @@ h1 {
     font-family: 'Aquawax-Light';
     text-transform: uppercase;
     min-height: 20px;
-    padding: 10px 25px 10px 25px !important;
+    padding: 15px 25px 15px 25px !important;
     background: #FF7A00 !important;
     color: #fff !important;
     display: block;
@@ -1144,7 +1144,7 @@ h1 {
 		margin: 75px auto;
 		position: absolute;
 		text-align: left;
-		top: 60px;
+		top: 20px;
 		padding-left: 15px;
 		max-height: 200px;
         }
@@ -1189,7 +1189,7 @@ h1 {
 }
 
 .modal-fullscreen {
-	background: transparent;
+    background: #fff;
 }
 
 .modal-fullscreen .modal-content {
@@ -1208,7 +1208,26 @@ h1 {
 	filter: alpha(opacity=97);
 }
 
+#fullGallery .modal-header .close {
+    color: #000;
+    opacity: 0.5;
+    font-size: 40px;
+}
+#fullGallery  .modal-fullscreen .carousel-inner > .item > img {
+    max-height: 810px;
+}
+.carousel-control {color: #000;}
 
+.carousel-control:focus, .carousel-control:hover {
+    color: #000;
+}
+
+.carousel-control.left {left: -15%;
+}
+.carousel-control.right {
+    right: -15%;
+    }
+    
 /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
 .modal-fullscreen .modal-dialog {
