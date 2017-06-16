@@ -65,15 +65,18 @@
          /*     Sidebar nav styles        */
          /*-------------------------------*/
          .sidebar-nav {
-         list-style: none;
-         margin: 0;
-         position: absolute;
-         top: 0;
-         width: 320px;
-         padding-top: 150px;
-         padding-left: 25px;
-         padding-right: 25px;
-         }
+	    list-style: none;
+	    margin: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 320px;
+	    padding-top: 30px;
+	    padding-left: 25px;
+	    padding-right: 25px;
+	    height: 100%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	}
          #sidebar-wrapper.navbar-fixed-top {
 	    right: 320px;
 	    left: unset !important;
