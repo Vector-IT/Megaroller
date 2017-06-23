@@ -98,7 +98,7 @@
                                                       <label>Email</label>
                                                       <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                                       <p class="help-block text-danger"></p>
-                                                      <label>TelÈfono</label>
+                                                      <label>Tel√©fono</label>
                                                       <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu telÈfono.">
                                                       <p class="help-block text-danger"></p>
                                                       <label>Consulta</label>
@@ -128,18 +128,18 @@
                                        </div>
                                        <div class="row">
                                           <div class="col-lg-12 alignCenter">
-                                             <p><span>F¡BRICA Y SHOWROOM</span><br/>
-                                                Urquiza 1204, Barrio Cofico, CÛrdoba<br/>
+                                             <p><span>F√ÅBRICA Y SHOWROOM</span><br/>
+                                                Urquiza 1204, Barrio Cofico, C√≥rdoba<br/>
                                                 0351 4 713048 / 0351 155 228 460<br/>
                                                 <a href="mailto:ventas@megarollercortinas.com" target="_top">Email: ventas@megarollercortinas.com</a><br/>
-                                                Lunes a viernes de 9hs a 15 hs,  s·bados de 9hs a 13 hs<br/>
+                                                Lunes a viernes de 9hs a 15 hs,  s√°bados de 9hs a 13 hs<br/>
                                                 +54 (0351) 446-1931
                                              </p>
                                              <p><span>OFICINA COMERCIAL</span><br/>
-                                                Paseo del Jockey, Elias Yofre 1050 Barrio JardÌn, CÛrdoba<br/>
+                                                Paseo del Jockey, Elias Yofre 1050 Barrio Jard√≠n, C√≥rdoba<br/>
                                                 0351 4 64 66 60 /  0351 157 319 051<br/>
                                                 <a href="mailto:ventas@megarollercortinas.com" target="_top">Email: ventas@megarollercortinas.com</a><br/>
-                                                AtenciÛn de lunes a domingo de 10hs a 22 hs
+                                                Atenci√≥n de lunes a domingo de 10hs a 22 hs
                                              </p>
                                           </div>
                                        </div>
