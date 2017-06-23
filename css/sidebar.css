@@ -231,13 +231,14 @@
 	    right: 30px;
 	    margin-top: 15px;
 	 }
-         .hamburger.is-open .hamb-top {
-         -webkit-transform: rotate(45deg);
-         -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
-         background-color: #000;
-         margin-top: -2px;
-         top: 50%;
-         }
+.hamburger.is-open .hamb-top {
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+    background-color: transparent;
+    margin-top: -2px;
+    top: 50%;
+    border-top: 3px dotted #000;
+}
          .hamburger.is-open .hamb-middle {
          background-color: #000;
          display: none;
@@ -245,9 +246,10 @@
          .hamburger.is-open .hamb-bottom {
          -webkit-transform: rotate(-45deg);
          -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
-         background-color: #000;
+             background-color: transparent;
          margin-top: -2px;
          top: 50%;
+             border-top: 3px dotted #000;
          }
          .hamburger.is-open:before {
          -webkit-transform: translate3d(0, 0, 0);
