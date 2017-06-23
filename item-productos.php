@@ -44,9 +44,6 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner cont-slider">
                                        <div class="item active">
-                                          <img alt="" title="" src="./img/item-producto/blackout.jpg">
-                                       </div>
-                                       <div class="item">
                                           <img alt="" title="" src="./img/item-producto/blackout1.jpg">
                                        </div>
                                        <div class="item">
@@ -57,9 +54,6 @@
                                        </div>
                                        <div class="item">
                                           <img alt="" title="" src="./img/item-producto/blackout4.jpg">
-                                       </div>
-                                       <div class="item">
-                                          <img alt="" title="" src="./img/item-producto/blackout5.jpg">
                                        </div>
                                        <div class="item">
                                           <img alt="" title="" src="./img/item-producto/blackout6.jpg">
@@ -186,16 +180,16 @@
 			</div>
                      <div class="caracteristicas">
                         <h5 class="border">TIPO DE MONTAJE</h5>
-                        <label class="radio-inline"><input type="radio" name="optradio">Interior <img alt="" src="./img/item-producto/icon-lamp.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Exterior <img alt="" src="./img/item-producto/icon-sun.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
+                        <label class="radio-inline"><input type="radio" name="optradio" style="margin-top: 15px;">Interior <img alt="" src="./img/item-producto/montaje-interior.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
+                        <label class="radio-inline"><input type="radio" name="optradio" style="margin-top: 15px;">Exterior <img alt="" src="./img/item-producto/montaje-exterior.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
 
                         <h5>MEDIDAS ESTÁNDAR</h5>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80m Mts. - $1.200</label>                           
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 1,80 Mts. - $1.200</label>
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,50 x 2,10 Mts. - $1.800</label>
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,80 x 1,80 Mts. - $2.200</label>
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,80 x 2,10 Mts. - $2.800</label>
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">2,10 x 2,10 Mts. - $3.200</label>
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">2,10 x 2,80 Mts. - $3.800</label>                           
                         <h5 class="top20">CONTROL DE POSICIÓN</h5>
                         <label class="radio-inline"><input name="optradio" type="radio">Derecha <img alt="" src="./img/item-producto/control-de-posicion-icon_derecha.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
                         <label class="radio-inline"><input type="radio" name="optradio">Izquierda <img alt="" src="./img/item-producto/control-de-posicion-icon_izquierda.png" style="margin-left: 5px; margin-right: 30px;" width="30px"> </label>

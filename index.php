@@ -141,8 +141,8 @@
 	                               <div class="row">
                     <div class="col-sm-3">
                       <div class="producto">
-                        <a href="item-productos.php" class="imagen-producto" style="background-image:url(./img/productos/roller-dual.jpg);"></a>
-                        <a href="item-productos.php" class="titulo-producto">Cortina Roller Dual</a>
+                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/roller-dual.jpg);"></a>
+                        <a href="otros-productos.php" class="titulo-producto">Cortina Roller Dual</a>
                         <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
                         <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#roller-dual" class="btn btn-primary">Ver</a>
@@ -150,8 +150,8 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="producto">
-                        <a href="item-productos.php" class="imagen-producto" style="background-image:url(./img/productos/doble-sistema.jpg);"></a>
-                        <a href="item-productos.php" class="titulo-producto">Cortina Doble Sistema</a>
+                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/doble-sistema.jpg);"></a>
+                        <a href="otros-productos.php" class="titulo-producto">Cortina Doble Sistema</a>
                         <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
                         <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#roller-sistema-doble" class="btn btn-primary">Ver</a>
@@ -159,8 +159,8 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="producto">
-                        <a href="item-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-brazo-invisible.jpg);"></a>
-                        <a href="item-productos.php" class="titulo-producto">Toldo Brazo Invisible</a>
+                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-brazo-invisible.jpg);"></a>
+                        <a href="otros-productos.php" class="titulo-producto">Toldo Brazo Invisible</a>
                         <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
                         <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#toldo-brazo-invisible" class="btn btn-primary">Ver</a>
@@ -168,8 +168,8 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="producto">
-                        <a href="item-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-vertical.jpg);"></a>
-                        <a href="item-productos.php" class="titulo-producto">Toldo Vertical</a>
+                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-vertical.jpg);"></a>
+                        <a href="otros-productos.php" class="titulo-producto">Toldo Vertical</a>
                         <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
                         <p class="precio-producto">$1140</p>
                          <a href="otros-productos.php#toldo-vertical" class="btn btn-primary">Ver</a>
