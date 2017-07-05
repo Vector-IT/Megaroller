@@ -11,9 +11,11 @@
                </div>
             </div>
             <div class="col-lg-6">
+                           <a href="#" type="button" class="hamburger animated fadeInLeft pull-right" data-toggle="offcanvas" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png" alt="" style="width: 25px;margin-top: 5px;"><span class="cantidad-productos">1</span></a> 
+                           <a class="pull-right" href="#" > <img class="img-center" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 10px;"></a>
                            <p class="telefonos pull-right">0351 464 66 60 | 0351 155 228 460</p>
                <a class="mail pull-right" href="mailto:ventas@megarollercortinas.com" target="_top">ventas@megarollercortinas.com</a>
-               <a href="#" type="button" class="hamburger animated fadeInLeft pull-right" data-toggle="offcanvas" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png" alt=""><span class="cantidad-productos">1</span></a> 
+
 
             </div>
          </div>
@@ -83,10 +85,9 @@
                                                       <p class="help-block text-danger"></p>
                         				<label class="top20">Tipo de Cortina</label>
 							 <select class="form-control" id="sel1">
-							    <option>1</option>
-							    <option>2</option>
-							    <option>3</option>
-							    <option>4</option>
+							    <option>Blackout</option>
+							    <option>Sunscreen</option>
+							    <option>Roller Dual</option>
 							  </select>
                                                         <label class="top20">Ancho</label>
 				                        <input type="number" required name="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" > 
