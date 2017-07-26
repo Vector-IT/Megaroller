@@ -140,7 +140,7 @@
                      </div>
                   </div>
                   <div class="col-sm-6 top40 info-producto">
-                     <h1 class="nombre-producto">Roller Blackout</h1>
+                     <h1 class="nombre-producto">Roller Sunscreen</h1>
                      <h5 class="border">SELECCIONA EL COLOR</h5>
                      <div class="espacio-indicadores"></div>
                      <div class="cc-selector-2" style="display:none !important;">
@@ -278,8 +278,9 @@
                   <div class="col-sm-6">
                      <div class="info-producto">
                         <h2>Descripción</h2>
-                        <p>Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.<br/>
-                           Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
+                        <p>Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.<br/>
+Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
+
                         </p>
                         <h4>OTRAS OPCIONES</h4>
                         <ul class="relacionados">
@@ -324,7 +325,7 @@
                <h1>Carrito de Compras</h1>
                <article>
                   <div class="row">
-                     <p class="titulo">Roller Blackout</p>
+                     <p class="titulo">Roller Sunscreen</p>
                      <div class="col-lg-5">
                         <img class="img-center" alt="" src="./img/item-producto/thumb.jpg">
                      </div>

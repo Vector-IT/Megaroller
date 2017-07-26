@@ -27,17 +27,17 @@
          <div class="container-full">
             <div class="row noMargin">
                <div class="col-lg-12 noPadding">
-                  <div class="fotorama" data-fit="cover" data-width="100%"  data-height="450" data-nav="false" data-arrow="always" data-transition="crossfade">
+                  <div class="fotorama" data-fit="cover" data-width="100%"  data-height="450" data-nav="false" data-arrows="always" data-transition="crossfade" data-autoplay="true" data-loop="true">
+                     <div data-img="./img/home/portada3.jpg">
+                        <p class="tituloSlider">Para cada espacio, una solución</p>
+                        <p class="subtituloSlider">Blackout · Sunscreen · Toldos · Medidas Especiales</p>
+                     </div>
                      <div data-img="./img/home/portada.jpg">
                         <p class="tituloSlider">Cortina Sunscreen</p>
                         <p class="subtituloSlider">Filtra el ingreso de luz</p>
                      </div>
                      <div data-img="./img/home/portada2.jpg">
                         <p class="tituloSlider">Roller Dual</p>
-                        <p class="subtituloSlider">Filtra el ingreso de luz</p>
-                     </div>
-                     <div data-img="./img/home/portada3.jpg">
-                        <p class="tituloSlider">Toldo Vertical</p>
                         <p class="subtituloSlider">Filtra el ingreso de luz</p>
                      </div>
                   </div>
@@ -48,11 +48,11 @@
       <!-- /.SLIDER -->
 
       <!-- CONTENIDO -->
- 	      <div class="container-full top40">
-			<h1>COMPRA TU CORTINA ONLINE</h1>  
+ 	      <div class="container-full top40 fondoTextura">
+			<h1 style="background: #fff;padding-bottom: 50px;line-height: 50px;">Comprá tu cortina roller <br><span style="color: #ff7a00;">blackout o sunscreen</span> <strong>online</strong></h1>  
 	         <div class="row noMargin">
 	            <div class="col-md-1"></div>
-	            <div id="grid-productos" class="col-lg-10">    
+	            <div id="grid-productos" class="col-lg-10 fondoBlanco bottom40">    
                    <div class="row">
                     <div class="col-sm-6">
                           <!-- SLIDER BLACKOUT -->
@@ -87,7 +87,7 @@
                         <a href="item-productos.php" class="titulo-producto-grande">Blackout</a>
                         <p class="descripcion-producto">ELEGI TU MEDIDA MAS CONVENIENTE </p>
                         <p class="precio-producto">Desde $1200</p>
-                        <a href="item-productos.php" class="btn btn-primary">Comprar</a>
+                        <a href="blackout.php" class="btn btn-primary">Comprar</a>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -123,7 +123,7 @@
                         <a href="item-productos.php" class="titulo-producto-grande">Sunscreen</a>
                         <p class="descripcion-producto">ELEGI TU MEDIDA MAS CONVENIENTE </p>
                         <p class="precio-producto">Desde $1200</p>
-                        <a href="item-productos.php" class="btn btn-primary">Comprar</a>
+                        <a href="sunscreen.php" class="btn btn-primary">Comprar</a>
                       </div>
                     </div>
                   </div>
@@ -134,51 +134,50 @@
 	     </div>
 
  	      <div class="container-full top40">
-			<h1>OTROS PRODUCTOS</h1>  
+			<h1 style="border-bottom: 1px solid #ccc;max-width: 80%;margin: 20px auto;padding-bottom: 20px;"><span style="color: #ff7a00;">OTROS</span> <strong> PRODUCTOS</strong></h1> 
 	         <div class="row noMargin">
-	            <div class="col-md-1"></div>
-	            <div id="grid-productos" class="col-lg-10"> 
+	            <div id="grid-productos" class="col-lg-12"> 
 	                               <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
                       <div class="producto">
-                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/roller-dual.jpg);"></a>
+                        <div class="imgBox"><a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/roller-dual.jpg);"></a></div>
                         <a href="otros-productos.php" class="titulo-producto">Cortina Roller Dual</a>
-                        <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
-                        <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#roller-dual" class="btn btn-primary">Ver</a>
                       </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-2">
                       <div class="producto">
-                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/doble-sistema.jpg);"></a>
+                        <div class="imgBox"><a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/doble-sistema.jpg);"></a></div>
                         <a href="otros-productos.php" class="titulo-producto">Cortina Doble Sistema</a>
-                        <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
-                        <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#roller-sistema-doble" class="btn btn-primary">Ver</a>
                       </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-2">
                       <div class="producto">
-                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-brazo-invisible.jpg);"></a>
+                        <div class="imgBox"><a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-brazo-invisible.jpg);"></a></div>
                         <a href="otros-productos.php" class="titulo-producto">Toldo Brazo Invisible</a>
-                        <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
-                        <p class="precio-producto">$1140</p>
                         <a href="otros-productos.php#toldo-brazo-invisible" class="btn btn-primary">Ver</a>
                       </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-2">
                       <div class="producto">
-                        <a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-vertical.jpg);"></a>
+                        <div class="imgBox"><a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-vertical.jpg);"></a></div>
                         <a href="otros-productos.php" class="titulo-producto">Toldo Vertical</a>
-                        <p class="descripcion-producto">1.4 mts x 1.5 mts</p>
-                        <p class="precio-producto">$1140</p>
                          <a href="otros-productos.php#toldo-vertical" class="btn btn-primary">Ver</a>
                       </div>
                     </div>
+                    <div class="col-lg-2">
+                      <div class="producto">
+                        <div class="imgBox"><a href="otros-productos.php" class="imagen-producto" style="background-image:url(./img/productos/toldo-brazo-punto-fijo.jpg);"></a></div>
+                        <a href="otros-productos.php" class="titulo-producto">Toldo Brazo Punto Fijo</a>
+                         <a href="otros-productos.php#toldo-vertical" class="btn btn-primary">Ver</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-1"></div>
                   </div>
                   <!-- /.row -->
 	           </div>
-	       <div class="col-md-1"></div>
 	        </div>
 	     </div>  
       <!-- /.CONTENIDO -->

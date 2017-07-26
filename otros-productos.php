@@ -9,6 +9,10 @@
       <title>Otros Productos | MEGAROLLER | Fábrica de Cortinas Roller</title>
       
      <?php include 'php/links-header.php'; ?>
+
+      <!-- Fotorama -->
+      <link href="fotorama.css" rel="stylesheet">
+      <script src="fotorama.js"></script>
      
    </head>
    <body>
@@ -20,23 +24,37 @@
          
               <?php include 'php/header.php'; ?>
 
+      <!-- SLIDER -->
+      <header class="home">
+         <div class="container-full">
+            <div class="row noMargin">
+               <div class="col-lg-12 noPadding">
+                  <div class="fotorama" data-fit="cover" data-width="100%"  data-height="450" data-nav="false" data-arrows="false" data-transition="crossfade" data-autoplay="true" data-loop="true">
+                     <div data-img="./img/otros-productos/portada.jpg">
+                     </div>
+                     <div data-img="./img/home/portada.jpg">
+                     </div>
+                     <div data-img="./img/home/portada2.jpg">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- /.SLIDER -->
+
       <!-- CONTENIDO -->
       <div class="container-full bottom40">
          <div class="row noMargin">
             <div class="col-lg-1 noPadding"></div>
-            <div class="col-sm-12 col-lg-10 noPadding"><img class="img-center" src="./img/otros-productos/portada.jpg" alt="" width="100%" height="auto"></div>
-            <div class="col-lg-1 noPadding"></div>
-         </div>
-         <div class="row noMargin">
-            <div class="col-lg-1 noPadding"></div>
             <div class="col-sm-10 noPadding">
-               <h1 class="gris alignCenter top40 bottom40">Otros Productos</h1>
-               <p class="bigtxt alignCenter top40 bottom40">Keep it simple. These shades have a sleek, modern design and an uncanny ability to regulate natural light and privacy in your home. Perfect for cutting down on glare and catching up on sleep.</p>
+               <h1 class="gris alignCenter top40 bottom40" style="line-height: 80px;">PRODUCTOS <br><span style="color: #ff7a00;">Para cada espacio</span> <strong>una solución</strong></h1>
               <ul class="menuHorizontal">
                   <li class="active"><a href="#roller-dual">Roller Dual</a></li>
                   <li><a href="#roller-sistema-doble">Roller Sistema Doble</a></li>
-                  <li><a href="#toldo-brazo-invisible">Toldo Brazo Invisible</a></li>
-                  <li><a href="#toldo-vertical">Toldo Vertical</a></li>
+                  <li><a href="#toldo-brazo-invisible">Toldos Brazos Invisibles o Extensibles</a></li>
+                  <li><a href="#toldo-brazo-punto-fijo">Toldos Brazos Punto Fijo</a></li>
+                  <li><a href="#toldo-vertical">Toldos Verticales</a></li>
                </ul>
             </div>
             <div class="col-lg-1 noPadding"></div>
@@ -45,7 +63,7 @@
             <div class="col-lg-1 noPadding"></div>
             <div class="col-sm-12 col-lg-10 noPadding">
  
-               <section id="roller-dual" class="pad25">
+               <section id="roller-dual" class="pad25 fondoGris">
                   <div class="row noMargin">
  <div class="col-lg-1 noPadding"></div>
                      <div class="col-sm-6 noPadding">
@@ -53,14 +71,15 @@
                      </div>
                      <div class="col-sm-4 pad25">
                         <h2 class="gris">Roller Dual</h2>
-                        <p class="bottom40">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad. Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.</p>
+                        <p class="bottom40">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
+Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.</p>
                         <img class="img-center" src="./img/otros-productos/100.png" alt="">
                         <a type="button" class="btn-comprar" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Solicitar Cotización</a>
                      </div>
  <div class="col-lg-1 noPadding"></div>
                   </div>
                </section>
-               <section id="roller-sistema-doble" class="pad25 fondoGris">
+               <section id="roller-sistema-doble" class="pad25">
                   <div class="row noMargin">
  <div class="col-lg-1 noPadding"></div>
                      <div class="col-sm-6 noPadding">
@@ -68,9 +87,7 @@
                      </div>
                      <div class="col-sm-4 pad25">
                         <h2 class="gris">Sistema Doble</h2>
-                        <p class="bottom40">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen.<br/>
-                           Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
-                        </p>
+                        <p class="bottom40">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.</p>
                         <img class="img-center" src="./img/otros-productos/100.png" alt="">
                         <a type="button" class="btn-comprar" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Solicitar Cotización</a>
                      </div>
@@ -78,21 +95,41 @@
                   </div>
                </section>
 
-                              <section id="toldo-brazo-invisible" class="pad25">
+               <section id="toldo-brazo-invisible" class="pad25 fondoGris">
                   <div class="row noMargin">
  <div class="col-lg-1 noPadding"></div>
                      <div class="col-sm-6 noPadding">
                                                 <div class="img-producto" style="background-image:url(./img/otros-productos/toldo-brazo-invisible.jpg);"></div>
                      </div>
                      <div class="col-sm-4 pad25">
-                        <h2 class="gris">Toldo Brazo Invisible</h2>
-                        <p class="bottom40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nibh ex. Mauris non rutrum ligula. Quisque non ornare eros. Duis diam magna, consectetur quis eros vitae, ultrices semper erat. Maecenas ac eros odio. Donec non interdum nisi, dapibus suscipit ante. Sed id lacus eget ex suscipit egestas id suscipit sem. Nam id lectus nisi. Maecenas eleifend euismod urna vel ultrices. </p>
+                        <h2 class="gris">Toldos Brazos Invisibles o Extensibles</h2>
+                        <p class="bottom40">El toldo de brazos invisibles, es sumamente versátil, ajustándose absolutamente a todas las necesidades y lugares de instalación, su uso es muy variado, y si bien, es el toldo ideal para generar espacios habitables de sombra al aire libre, también se lo puede utilizar para controlar el impacto del sol sobre ventanas.<br><br>
+- Con brazos de poco desarrollo, 1.60mts o 2.10mts, se puede utilizar para evitar el impacto del el sol sobre ventanas o ventanales, controlando la temperatura del ambiente, evitando el calor excesivo sobre la abertura, e impidiendo que el sol ingrese al interior de la casa.<br><br>
+- Con brazos de gran desarrollo, como los de 2.60mts / 3.10mts / 3.60mts / 4.10mts, se pueden lograr perfectos espacios de sombra en el exteriores, creando un agradable ambiente de sombra al aire libre.
+</p>
+
+                        <a type="button" class="btn-comprar" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Solicitar Cotización</a>
+                     </div>
+ <div class="col-lg-1 noPadding"></div>
+                  </div>
+               </section>
+
+                 <section id="toldo-brazo-punto-fijo" class="pad25">
+                  <div class="row noMargin">
+ <div class="col-lg-1 noPadding"></div>
+                     <div class="col-sm-6 noPadding">
+                      <div class="img-producto" style="background-image:url(./img/otros-productos/toldo-brazo-punto-fijo.jpg);"></div>
+                     </div>
+                     <div class="col-sm-4 pad25">
+                        <h2 class="gris">Toldos Brazos Punto Fijo</h2>
+                        <p class="bottom40">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
                         <img class="img-center" src="./img/otros-productos/100.png" alt="">
                         <a type="button" class="btn-comprar" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Solicitar Cotización</a>
                      </div>
  <div class="col-lg-1 noPadding"></div>
                   </div>
                </section>
+
                <section id="toldo-vertical" class="pad25 fondoGris">
                   <div class="row noMargin">
  <div class="col-lg-1 noPadding"></div>
@@ -100,8 +137,9 @@
                      <div class="img-producto" style="background-image:url(./img/otros-productos/toldo-vertical.jpg);"></div>
                      </div>
                      <div class="col-sm-4 pad25">
-                        <h2 class="gris">Toldo Vertical</h2>
-                        <p class="bottom40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nibh ex. Mauris non rutrum ligula. Quisque non ornare eros. Duis diam magna, consectetur quis eros vitae, ultrices semper erat. Maecenas ac eros odio. Donec non interdum nisi, dapibus suscipit ante. Sed id lacus eget ex suscipit egestas id suscipit sem. Nam id lectus nisi. Maecenas eleifend euismod urna vel ultrices. </p>
+                        <h2 class="gris">Toldos Verticales</h2>
+                        <p class="bottom40">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
+Este tipo de Toldos es ideal para cerrar una galería o quincho abierto y protegerse así del frio y viento, creando un nuevo ambiente funcional para su casa.</p>
                         <img class="img-center" src="./img/otros-productos/100.png" alt="">
                         <a type="button" class="btn-comprar" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Solicitar Cotización</a>
                      </div>

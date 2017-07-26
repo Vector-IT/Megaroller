@@ -10,10 +10,6 @@
       
       <?php include 'php/links-header.php'; ?>
 
-      <!-- Google Map -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7N26a5O4bjW16yv4xW-w7hvWKzERCPME&callback=initMap" async defer></script>
-
-
    </head>
    <body>
       <div id="wrapper">
@@ -57,25 +53,60 @@
          <div class="row noMargin  top40 bottom40">
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
-               <h1 class="bigTitle">Megaroller</h1>
-               <p class="bigSubtitle">Tenemos lo que buscás</p>
-               <p class="bigtxt">Somos una Fabrica Cordobesa con 5 años en el mercado local y nacional, dedicada exclusivamente a la Producción Integral de Cortinas Roller a medida con telas Blackout y Sunscreen, contamos con el mejor asesoramiento a domicilio y trabajamos con materiales importados.</p>
+               <h1 class="bigTitle">megaroller</h1>
+               <p class="bigSubtitle">Tu Próxima Cortina</p>
+               <p class="bigtxt top20">Somos una Fabrica Cordobesa con 8 años en el mercado local y nacional, dedicado exclusivamente a la Fabricación Integral de Cortinas Roller a medida.
+Con Marca propia, la firma se dedica a comercializar sus productos en todo el país, garantizando como valor agregado, rapidez en la entrega del producto terminado y una excelente calidad con materiales importados, destacándo una excelente relación Precio – calidad.
+</p>
+<img class="img-center img-responsive" src="./img/empresa/100.jpg" alt="">
             </div>
             <div class="col-lg-5">  
-               <img class="img-center" src="./img/empresa/empresa-1.jpg" alt="">
+            <br/>
+               <img class="img-center img-responsive" src="./img/empresa/empresa-1.jpg" alt="">
             </div>
             <div class="col-lg-1"></div>
          </div>
          <div class="row noMargin  top40 bottom40">
             <div class="col-lg-1"></div>
-            <div class="col-lg-5">  
-               <img class="img-center" src="./img/empresa/100.jpg" alt="">
+            <div class="col-lg-5 top20">  
+       
+  <p class="bigtxt top40">Las cortinas con sistema roller se destacan por su mecanismo de ascenso y descenso rotativo. Consisten en un panel de tela con un rodillo giratorio en la parte superior que permite enrollar o desenrollar la cortina manualmente a través de una cadena, o de manera mecanizada con motor eléctrico. 
+</p>
+
+<p class="bigtxt">Nuestros productos son indicados para casas, departamentos, locales comerciales, oficinas y todo ambiente que requiera moderar o anular el ingreso de luminosidad al ambiente, favoreciendo a una mejor estética y decoración.  Las Cortinas Roller forman parte del estilo moderno en viviendas y oficinas y  son recomendadas para ventanas fijas o corredizas.</p>
+               
+               <br/>
             </div>
             <div class="col-lg-5">
-               <p class="bigtxt">Nuestros productos son indicados para casas, departamentos, locales comerciales, oficinas y todo ambiente que requiera moderar o anular el ingreso de luminosidad al ambiente, favoreciendo a una mejor estética y decoración.</p>
+                               <p class="bigSubtitle top40">Qué ventajas tienen las Cortinas Roller?</p>
+               <p class="bigtxt2">• Contribuyen a evitar la decoloración del mobiliario  <br/>
+• Regulan la intensidad de luz deseada  <br/>
+• Regulan y filtran la temperatura ambiente  <br/>
+• Otorgan mayor privacidad al ambiente  <br/>
+• Acompañan la decoración y estética de los ambientes  <br/>
+• Larga durabilidad y resistencia 
+</p>
             </div>
             <div class="col-lg-1"></div>
          </div>
+           <div class="row noMargin  top40 bottom40">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+
+            </div>
+            <div class="col-lg-1"></div>
+           </div>
+
+          <div class="row noMargin  top40 bottom40">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8">
+                                      <div class="col-lg-4"><img class="img-center img-responsive" src="./img/empresa/mermet.jpg" alt=""></div>
+                 <div class="col-lg-4"><img class="img-center img-responsive" src="./img/empresa/copaco.jpg" alt=""></div>
+
+                   <div class="col-lg-4"><img class="img-center img-responsive" src="./img/empresa/unitec.jpg" alt=""></div>
+                 </div>
+                   <div class="col-lg-2"></div>
+          </div>
          <div class="row noMargin">
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
@@ -83,17 +114,19 @@
                   <div class="col-lg-4 noPadding"">  
                      <img class="img-center" width="100%" height="auto" src="./img/empresa/empresa-2.jpg" alt="">
                   </div>
-                  <div class="col-lg-4 noPadding"">  
+                  <div class="col-lg-4 noPadding">  
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-3.jpg" alt="">
                   </div>
                   <div class="col-lg-4 noPadding"">  
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-4.jpg" alt="">
                   </div>
                </div>
-            </div>
+
             <div class="col-lg-1"></div>
          </div>
+         </div>
       </div>
+      
 
      <div id="contacto">
          <div class="container-full">
@@ -128,9 +161,7 @@
                            <p><span style="font-size: 13px;">Seguinos</span></p>
                            <div class="redes-sociales">
                               <a href=""><img class="img-center" src="./img/contacto/social_fb.png" alt=""></a>
-                              <a href=""><img class="img-center" src="./img/contacto/social_tw.png" alt=""></a>
                               <a href=""><img class="img-center" src="./img/contacto/social_inst.png" alt=""></a>
-                              <a href=""><img class="img-center" src="./img/contacto/social_g+.png" alt=""></a>
                            </div>
                         </div>
                      </div>
@@ -248,5 +279,7 @@
  }
 
 	</script>
+        <!-- Google Map -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7N26a5O4bjW16yv4xW-w7hvWKzERCPME&callback=initMap" async defer></script>
    </body>
 </html>

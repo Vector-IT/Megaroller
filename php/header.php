@@ -5,9 +5,7 @@
             <div class="col-lg-6">
                <div class="redes-sociales">
                   <a href=""><img class="img-center" src="./img/social_fb.png" alt=""></a>
-                  <a href=""><img class="img-center" src="./img/social_tw.png" alt=""></a>
                   <a href=""><img class="img-center" src="./img/social_inst.png" alt=""></a>
-                  <a href=""><img class="img-center" src="./img/social_g+.png" alt=""></a>
                </div>
             </div>
             <div class="col-lg-6">
@@ -29,8 +27,8 @@
 
 
                              <li>
-                  <a class="presupuesto" type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar"><span style="color: #fff !important;">Presupuestar 
-                  <br/>cortinas a medidas</span> </a>
+                  <a class="presupuesto" type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar"><span style="">Presupuestar 
+                  <br/>cortinas a medida</span> </a>
                </li>
                <li>
                    <div class="btn-group">
@@ -40,18 +38,18 @@
 		        <span class="caret"></span>
 		      </a>
 		      <ul class="dropdown-menu">
-                                 <li><a href="item-productos.php">Blackout</a></li>
-                                 <li><a href="item-productos.php">Sunscreen</a></li>
+                                 <li><a href="blackout.php">Blackout</a></li>
+                                 <li><a href="sunscreen.php">Sunscreen</a></li>
 		      </ul>
 		   </div>
                </li>
-                              <li class="border-negro-derecha sola-linea">
-                  <a href="materiales.php">Productos</a>
+               <li class="btn-round sola-linea">
+                  <a href="productos.php">Productos</a>
                </li>
-               <li  class="border-negro-derecha sola-linea">
+               <li  class="btn-round sola-linea">
                   <a href="empresa.php">Empresa</a>
                </li>
-               <li  class="border-negro-derecha sola-linea">
+               <li  class="btn-round sola-linea">
                   <a href="index.php">Home</a>
                </li>
             </ul>
@@ -100,7 +98,7 @@
                                                       <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                                       <p class="help-block text-danger"></p>
                                                       <label>Tel√©fono</label>
-                                                      <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu telÈfono.">
+                                                      <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu telÔøΩfono.">
                                                       <p class="help-block text-danger"></p>
                                                       <label>Consulta</label>
                                                       <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>

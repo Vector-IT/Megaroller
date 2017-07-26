@@ -278,8 +278,9 @@
                   <div class="col-sm-6">
                      <div class="info-producto">
                         <h2>Descripción</h2>
-                        <p>Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.<br/>
-                           Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
+                        <p>Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.<br/>
+Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
+
                         </p>
                         <h4>OTRAS OPCIONES</h4>
                         <ul class="relacionados">

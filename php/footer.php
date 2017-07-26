@@ -8,11 +8,11 @@
                <div class="col-sm-10">
                   <div class="row">
                      <div class="col-sm-3">
-                        <div class="titulo-footer">Megaroller</div>
+                        <div class="titulo-footer">megaroller</div>
                         <ul>
                            <li><a href="index.php">Home</a></li>
                            <li><a href="empresa.php">Empresa</a></li>
-                           <li><a href="materiales.php">Productos</a></li>
+                           <li><a href="productos.php">Productos</a></li>
                            <li><a href="#">Tienda Online Medidas Estandar</a>
                            <li><a type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Presupuestar cortinas a medida</a></li>
                         </ul>
@@ -43,9 +43,7 @@
                         <div class="titulo-footer">Seguinos</div>
                         <div class="redes-sociales">
                            <a href=""><img src="./img/footer-social_fb.png" alt=""> Facebook</a>
-                           <a href=""><img src="./img/footer-social_tw.png" alt=""> Twitter</a>
                            <a href=""><img src="./img/footer-social_inst.png" alt=""> Instagram</a>
-                           <a href=""><img src="./img/footer-social_g.png" alt=""> Google +</a>
                         </div>
                      </div>
                   </div>
