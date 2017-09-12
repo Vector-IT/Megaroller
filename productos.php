@@ -24,7 +24,7 @@
                      <div id="tabs-materiales" class="top40">
                          <div class="tabbable">
                         <ul  class="nav nav-pills">
-                           <li class="active"><a  href="#roller-blackuot" data-toggle="tab">Roller Blackout</a>
+                           <li class="active"><a  href="#roller-blackout" data-toggle="tab">Roller Blackout</a>
                            </li>
                            <li><a href="#roller-sunscreen" data-toggle="tab">Roller Sunscreen</a>
                            </li>
@@ -34,14 +34,42 @@
                            </li>
                         </ul>
                         <div class="tab-content clearfix">
-                           <div class="tab-pane active" id="roller-blackuot">
+                           <div class="tab-pane active" id="roller-blackout">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
                                     <h1 class="nombre-producto">Roller Blackout</h1>
                                     <p class="overlay-desc">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
                                        Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
                                     </p>
-                                    <img src="./img/productos/blackout2.jpg" style="width: 100%;">
+                                                <div class="carousel slide article-slide carousel-fade" id="roller-blackout-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/blackout2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/blackout2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/blackout2.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-1">
+                                                    <li class="active" data-slide-to="0" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->
@@ -56,34 +84,230 @@
                                     <div class="tabbable">
                                        <ul class="nav nav-tabs">
                                           <li class="active"><a data-toggle="tab" href="#sunscreen1">Sunscreen 1%</a></li>
-                                          <li><a data-toggle="tab" href="#sunscreen2">Sunscreen 2%</a></li>
-                                          <li><a data-toggle="tab" href="#sunscreen3">Sunscreen 3%</a></li>
+                                          <li><a data-toggle="tab" href="#sunscreen4">Sunscreen 4%</a></li>
                                           <li><a data-toggle="tab" href="#sunscreen5">Sunscreen 5%</a></li>
+                                          <li><a data-toggle="tab" href="#sunscreen5bicolor">Sunscreen Bicolor 5%</a></li>
                                        </ul>
                                        <div class="tab-content noPadding">
                                           <div id="sunscreen1" class="tab-pane active">
-                                             <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
+                                             <p class="overlay-desc" style="z-index: 999; width: 75%;">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
                                                 Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
                                              </p>
-                                             <img src="./img/productos/cortina-sunscreen2.jpg" style="width: 100%;">
+                                          <div class="carousel slide article-slide carousel-fade" id="sunscreen1-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#sunscreen1-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                           </div>
-                                          <div id="sunscreen2" class="tab-pane fade">
+                                          <div id="sunscreen4" class="tab-pane fade">
                                                                                          <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
                                                 Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
                                              </p>
-                                             <img src="./img/productos/cortina-sunscreen2.jpg" style="width: 100%;">
-                                          </div>
-                                          <div id="sunscreen3" class="tab-pane fade">
-                                                                                         <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
-                                                Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
-                                             </p>
-                                             <img src="./img/productos/cortina-sunscreen2.jpg" style="width: 100%;">
+                                                                                       <div class="carousel slide article-slide carousel-fade" id="sunscreen4-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#sunscreen4-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                           </div>
                                           <div id="sunscreen5" class="tab-pane fade">
                                                                                          <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
                                                 Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
                                              </p>
-                                             <img src="./img/productos/cortina-sunscreen2.jpg" style="width: 100%;">
+                                                                                       <div class="carousel slide article-slide carousel-fade" id="sunscreen5-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#sunscreen5-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
+                                          </div>
+                                          <div id="sunscreen5bicolor" class="tab-pane fade">
+                                                                                         <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
+                                                Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
+                                             </p>
+                                                                                       <div class="carousel slide article-slide carousel-fade" id="sunscreen5bicolor-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#sunscreen5bicolor-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                           </div>
                                        </div>
                                     </div>
@@ -96,7 +320,56 @@
                                  <div class="col-sm-12 noPadding">
                                     <h1 class="nombre-producto">Roller Sistema Doble</h1>
                                     <p class="overlay-desc">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.</p>
-                                    <img src="./img/productos/doble-sistema.jpg" style="width: 100%;">
+                                       <div class="carousel slide article-slide carousel-fade" id="roller-sistema-doble-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/doble-sistema.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#roller-sistema-doble-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->
@@ -108,7 +381,56 @@
                                     <p class="overlay-desc">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
                                        Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
                                     </p>
-                                    <img src="./img/productos/roller-dual.jpg" style="width: 100%;">
+                                                                           <div class="carousel slide article-slide carousel-fade" id="roller-sistema-doble-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-2">
+                                                    <li class="active" data-slide-to="0" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#roller-dual-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->
@@ -145,7 +467,35 @@
                                        Con brazos de poco desarrollo, 1.60mts o 2.10mts, se puede utilizar para evitar el impacto del el sol sobre ventanas o ventanales, controlando la temperatura del ambiente, evitando el calor excesivo sobre la abertura, e impidiendo que el sol ingrese al interior de la casa.
                                        Con brazos de gran desarrollo, como los de 2.60mts / 3.10mts / 3.60mts / 4.10mts, se pueden lograr perfectos espacios de sombra en el exteriores, creando un agradable ambiente de sombra al aire libre.
                                     </p>
-                                    <img src="./img/productos/toldo-brazo-invisible.jpg" style="width: 100%;">
+                                        <div class="carousel slide article-slide carousel-fade" id="toldo-brazo-invisible-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-1">
+                                                    <li class="active" data-slide-to="0" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->
@@ -155,7 +505,35 @@
                                  <div class="col-sm-12 noPadding">
                                     <h1 class="nombre-producto">Toldos Brazos Punto Fijo</h1>
                                     <p class="overlay-desc">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
-                                    <img src="./img/productos/toldo-brazo-punto-fijo.jpg" style="width: 100%;">
+                                                                            <div class="carousel slide article-slide carousel-fade" id="toldo-brazo-punto-fijo-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-punto-fijo.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-punto-fijo.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-brazo-punto-fijo.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-1">
+                                                    <li class="active" data-slide-to="0" data-target="#toldo-brazo-punto-fijo-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-punto-fijo-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-punto-fijo-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->
@@ -167,7 +545,35 @@
                                     <p class="overlay-desc">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
                                        Este tipo de Toldos es ideal para cerrar una galería o quincho abierto y protegerse así del frio y viento, creando un nuevo ambiente funcional para su casa.
                                     </p>
-                                    <img src="./img/productos/toldo-vertical.jpg" style="width: 100%;">
+                                                                            <div class="carousel slide article-slide carousel-fade" id="toldo-vertical-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/toldo-vertical.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-vertical.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldo-vertical.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-1">
+                                                    <li class="active" data-slide-to="0" data-target="#toldo-vertical-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-vertical-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-vertical-carousel">
+                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    </ol>
+                                                </div>
                                  </div>
                               </div>
                               <!-- /.row -->

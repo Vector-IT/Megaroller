@@ -49,7 +49,7 @@
 
       <!-- CONTENIDO -->
  	      <div class="container-full top40 fondoTextura">
-			<h1 style="background: #fff;padding-bottom: 50px;line-height: 50px;">Comprá tu cortina roller <br><span style="color: #ff7a00;">blackout o sunscreen</span> <strong>online</strong></h1>  
+			<h1 style="background: #fff;padding-bottom: 50px;line-height: 50px;">Comprá tu  Cortina Roller <br><span style="color: #ff7a00;">Blackout o Sunscreen</span> <strong>Online</strong></h1>  
 	         <div class="row noMargin">
 	            <div class="col-md-1"></div>
 	            <div id="grid-productos" class="col-lg-10 fondoBlanco bottom40">    

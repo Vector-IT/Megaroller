@@ -43,6 +43,9 @@
 		      </ul>
 		   </div>
                </li>
+               <li  class="btn-round sola-linea">
+                  <a href="empresa.php#contacto">Contacto</a>
+               </li>
                <li class="btn-round sola-linea">
                   <a href="productos.php">Productos</a>
                </li>
