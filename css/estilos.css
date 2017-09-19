@@ -1309,7 +1309,7 @@ ol.carousel-indicators.col-1 li {
 }
 
 .codigo-color {
-    display: contents;
+    display: inline;
     margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
