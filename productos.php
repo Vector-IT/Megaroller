@@ -48,24 +48,45 @@
                                                         <img alt="" title="" src="./img/productos/blackout2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/blackout2.jpg">
+                                                        <img alt="" title="" src="./img/productos/blackout/BLACKOUT_0004_1.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/blackout2.jpg">
+                                                        <img alt="" title="" src="./img/productos/blackout/BLACKOUT_0003_2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/blackout/BLACKOUT_0002_3.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/blackout/BLACKOUT_0001_4.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/blackout/BLACKOUT_0000_5.jpg">
                                                     </div>
                                                     </div>
                                                     <!-- Indicators -->
-                                                    <ol class="carousel-indicators col-1">
+                                                    <ol class="carousel-indicators col-2">
                                                     <li class="active" data-slide-to="0" data-target="#roller-blackout-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/blackout.jpg');"></div>
+                                                        <p class="codigo-color">Blackout</p>
                                                     </li>
                                                     <li class="" data-slide-to="1" data-target="#roller-blackout-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/BLACKOUT_0004_1-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="2" data-target="#roller-blackout-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/BLACKOUT_0003_2-color.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/BLACKOUT_0002_3-color.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="4" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/BLACKOUT_0001_4-color.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="5" data-target="#roller-blackout-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/blackout/BLACKOUT_0000_5-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     </ol>
@@ -84,6 +105,7 @@
                                     <div class="tabbable">
                                        <ul class="nav nav-tabs">
                                           <li class="active"><a data-toggle="tab" href="#sunscreen1">Sunscreen 1%</a></li>
+                                          <li><a data-toggle="tab" href="#sunscreen3">Sunscreen 3%</a></li>
                                           <li><a data-toggle="tab" href="#sunscreen4">Sunscreen 4%</a></li>
                                           <li><a data-toggle="tab" href="#sunscreen5">Sunscreen 5%</a></li>
                                           <li><a data-toggle="tab" href="#sunscreen5bicolor">Sunscreen Bicolor 5%</a></li>
@@ -100,45 +122,72 @@
                                                         <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/sunscreen1/sunscreen1-1.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/sunscreen1/sunscreen1-2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
-                                                    </div>
-                                                    <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
-                                                    </div>
-                                                    <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/sunscreen1/sunscreen1-3.jpg">
                                                     </div>
                                                     </div>
                                                     <!-- Indicators -->
-                                                    <ol class="carousel-indicators col-2">
+                                                    <ol class="carousel-indicators col-1">
                                                     <li class="active" data-slide-to="0" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen1/sunscreen.jpg');"></div>
+                                                        <p class="codigo-color">Sunscreen 1%</p>
                                                     </li>
                                                     <li class="" data-slide-to="1" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen1/sunscreen1.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="2" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen1/sunscreen2.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="3" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen1/sunscreen3.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
-                                                    <li class="" data-slide-to="4" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                    </ol>
+                                                </div>
+                                          </div>
+                                              <div id="sunscreen3" class="tab-pane fade">
+                                                                                         <p class="overlay-desc">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
+                                                Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
+                                             </p>
+                                                                                       <div class="carousel slide article-slide carousel-fade" id="sunscreen3-carousel" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner cont-slider">
+                                                    <div class="item active">
+                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/sunscreen3/sunscreen3-1.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/sunscreen3/sunscreen3-2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                       <img alt="" title="" src="./img/productos/sunscreen3/sunscreen3-3.jpg">
+                                                    </div>
+                                                    </div>
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators col-1">
+                                                    <li class="active" data-slide-to="0" data-target="#sunscreen3-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen3/sunscreen3.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
-                                                    <li class="" data-slide-to="5" data-target="#sunscreen1-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                    <li class="" data-slide-to="1" data-target="#sunscreen3-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen3/sunscreen3-1-color.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#sunscreen3-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen3/sunscreen3-2-color.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="3" data-target="#sunscreen3-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/sunscreen3/sunscreen3-3-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     </ol>
@@ -265,45 +314,38 @@
                                                         <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/bicolor5/BICOLOR5-1.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/bicolor5/BICOLOR5-2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/bicolor5/BICOLOR5-3.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
-                                                    </div>
-                                                    <div class="item">
-                                                        <img alt="" title="" src="./img/productos/cortina-sunscreen2.jpg">
+                                                        <img alt="" title="" src="./img/productos/bicolor5/BICOLOR5-4.jpg">
                                                     </div>
                                                     </div>
                                                     <!-- Indicators -->
                                                     <ol class="carousel-indicators col-2">
                                                     <li class="active" data-slide-to="0" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
+                                                        <div class="color" style="background-image: url('./img/productos/bicolor5/bicolor5.jpg');"></div>
+                                                        <p class="codigo-color">Bicolor 5%</p>
                                                     </li>
                                                     <li class="" data-slide-to="1" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/bicolor5/BICOLOR5-1-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="2" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/bicolor5/BICOLOR5-2-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="3" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/bicolor5/BICOLOR5-3-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="4" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
-                                                    </li>
-                                                    <li class="" data-slide-to="5" data-target="#sunscreen5bicolor-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                       <div class="color" style="background-image: url('./img/productos/bicolor5/BICOLOR5-4-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     </ol>
@@ -381,52 +423,45 @@
                                     <p class="overlay-desc">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
                                        Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
                                     </p>
-                                                                           <div class="carousel slide article-slide carousel-fade" id="roller-sistema-doble-carousel" data-ride="carousel">
+                                               <div class="carousel slide article-slide carousel-fade" id="roller-dual-carousel" data-ride="carousel">
                                                     <!-- Wrapper for slides -->
                                                     <div class="carousel-inner cont-slider">
                                                     <div class="item active">
                                                         <img alt="" title="" src="./img/productos/roller-dual.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                        <img alt="" title="" src="./img/productos/dual/DUAL_1.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                        <img alt="" title="" src="./img/productos/dual/DUAL_2.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                        <img alt="" title="" src="./img/productos/dual/DUAL_3.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
-                                                    </div>
-                                                    <div class="item">
-                                                        <img alt="" title="" src="./img/productos/roller-dual.jpg">
+                                                        <img alt="" title="" src="./img/productos/dual/DUAL_4.jpg">
                                                     </div>
                                                     </div>
                                                     <!-- Indicators -->
                                                     <ol class="carousel-indicators col-2">
                                                     <li class="active" data-slide-to="0" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
+                                                        <div class="color" style="background-image: url('./img/productos/dual/dual.jpg');"></div>
+                                                        <p class="codigo-color">Roller Dual</p>
                                                     </li>
                                                     <li class="" data-slide-to="1" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                       <div class="color" style="background-image: url('./img/productos/dual/dual1.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="2" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/dual/dual2.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="3" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/dual/dual3.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="4" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
-                                                        <p class="codigo-color">Beige #123456</p>
-                                                    </li>
-                                                    <li class="" data-slide-to="5" data-target="#roller-dual-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/dual/dual4.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     </ol>
@@ -474,26 +509,96 @@
                                                         <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
+                                                        <img alt="" title="" src="./img/productos/toldos/lonas1.jpg">
                                                     </div>
                                                     <div class="item">
-                                                        <img alt="" title="" src="./img/productos/toldo-brazo-invisible.jpg">
+                                                        <img alt="" title="" src="./img/productos/toldos/lonas2.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/lonas3.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" title="" src="./img/productos/toldos/.jpg">
                                                     </div>
                                                     </div>
                                                     <!-- Indicators -->
-                                                    <ol class="carousel-indicators col-1">
+                                                    <ol class="carousel-indicators col-3">
                                                     <li class="active" data-slide-to="0" data-target="#toldo-brazo-invisible-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/lonas1-color.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
                                                     <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
-                                                        <div class="color" style="background-color: #f0ebd8;"></div>
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
                                                         <p class="codigo-color">Beige #123456</p>
                                                     </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li> 
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="1" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>
+                                                    <li class="" data-slide-to="2" data-target="#toldo-brazo-invisible-carousel">
+                                                        <div class="color" style="background-image: url('./img/productos/toldos/.jpg');"></div>
+                                                        <p class="codigo-color">Beige #123456</p>
+                                                    </li>                                                                                                   
                                                     </ol>
                                                 </div>
                                  </div>

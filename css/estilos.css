@@ -1308,6 +1308,19 @@ ol.carousel-indicators.col-1 li {
 	padding-left: 8%;
 }
 
+ol.carousel-indicators.col-3 li {
+    width: 30% !important;
+    height: 130px !important;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	margin-bottom: 15px;
+	border: none !important;
+	margin-right: 0.5%;
+}
+
 .codigo-color {
     display: inline;
     margin: 0 auto;
