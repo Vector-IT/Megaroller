@@ -160,8 +160,12 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                         <div class="seguinos">
                            <p><span style="font-size: 13px;">Seguinos</span></p>
                            <div class="redes-sociales">
-                              <a href=""><img class="img-center" src="./img/contacto/social_fb.png" alt=""></a>
-                              <a href=""><img class="img-center" src="./img/contacto/social_inst.png" alt=""></a>
+                           <?php 
+                           if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="img-center" src="./img/social_fb.png" alt=""></a>';
+                           if ($twit != '') echo $crlf.'<a href="'. $twit .'" target="_blank"><img class="img-center" src="./img/social_tw.png" alt=""></a>';
+                           if ($inst != '') echo $crlf.'<a href="'. $inst .'" target="_blank"><img class="img-center" src="./img/social_inst.png" alt=""></a>';
+                           if ($goog != '') echo $crlf.'<a href="'. $goog .'" target="_blank"><img class="img-center" src="./img/social_g+.png" alt=""></a>';
+                          ?>
                            </div>
                         </div>
                      </div>

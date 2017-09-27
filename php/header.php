@@ -1,11 +1,21 @@
+<?php
+	$face = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'FACEBOOK'");
+	$twit = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TWITTER'");
+	$inst = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'INSTAGRAM'");
+	$goog = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'GOOGLE+'");
+?>
 <!-- HEADER -->
 <!-- Links Header -->
 <div class="links-header">
 <div class="row noMargin">
   <div class="col-lg-6">
     <div class="redes-sociales">
-      <a href=""><img class="img-center" src="./img/social_fb.png" alt=""></a>
-      <a href=""><img class="img-center" src="./img/social_inst.png" alt=""></a>
+    <?php 
+      if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="img-center" src="./img/social_fb.png" alt=""></a>';
+      if ($twit != '') echo $crlf.'<a href="'. $twit .'" target="_blank"><img class="img-center" src="./img/social_tw.png" alt=""></a>';
+      if ($inst != '') echo $crlf.'<a href="'. $inst .'" target="_blank"><img class="img-center" src="./img/social_inst.png" alt=""></a>';
+      if ($goog != '') echo $crlf.'<a href="'. $goog .'" target="_blank"><img class="img-center" src="./img/social_g+.png" alt=""></a>';
+		?>
     </div>
   </div>
   <div class="col-lg-6">
