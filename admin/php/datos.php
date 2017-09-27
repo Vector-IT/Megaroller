@@ -219,7 +219,7 @@
 	$tabla = new Producto("productos", "productos", "Productos", "el producto", true, "productos.php", "fa-paper-plane");
 	$tabla->isSubMenu = true;
 	$tabla->labelField = "NombProd";
-	$tabla->order = "NombProd";
+	$tabla->order = "Cate, ImpoVent";
 	$tabla->exportToXLS = true;
 	
 	$tabla->jsFiles = ["admin/js/custom/productos.js"];
@@ -546,6 +546,11 @@
 	$tabla->addField("NumeCarr", "number", 0, "Carrito");
 	$tabla->fields["NumeCarr"]["isHiddenInList"] = true;
 	$tabla->fields["NumeCarr"]["isHiddenInForm"] = true;
+
+	$tabla->addFieldSelect("Cate", 80, "Tipo", true, "", "(SELECT NumeProd, NombCate FROM productoscategorias pc INNER JOIN categorias c ON pc.NumeCate = c.NumeCate)", "pc", "NumeProd", "NombCate", "", "", "");
+	$tabla->fields["Cate"]["name"] = 'NumeProd';
+	$tabla->fields["Cate"]["nameAlias"] = 'Cate';
+	$tabla->fields["Cate"]["showOnForm"] = false;
 
 	$tabla->addFieldSelect("NumeProd", 0, "Producto", true, "", "productos", "", "NumeProd", "NombProd", "", "", "NombProd");
 	

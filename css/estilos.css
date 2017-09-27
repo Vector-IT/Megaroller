@@ -161,13 +161,14 @@ p {
 }
 
 .modal-header {
-	padding: 20px 15px 0px;
+	/* padding: 20px 15px 0px; */
+	padding: 5px;
 	border-bottom: none;
 	background: #FF7A00;
 }
 
 .modal-header .close {
-	margin-top: -10px;
+	/* margin-top: -10px; */
 	color: #fff;
 	opacity: 0.7;
 }
@@ -177,7 +178,7 @@ p {
 	margin-bottom: 15px;
 }
 .modal-title {
-	margin: 0;
+	margin-top: -9px;
 	line-height: normal;
 	font-family: 'BentonSans-Medium' !important;
 	color: #fff;
@@ -730,11 +731,24 @@ p.txtBuscador {
 }
 h1 {
 	font-family: 'Aquawax';
-	padding-left: 24px;
+	/* padding-left: 24px; */
 	color: #000;
-	text-align: center;
+	/* text-align: center; */
 	margin-top: 60px;
 	margin-bottom: 40px;
+}
+
+.eliminar-item {
+    color: #000;
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    text-align: right;
+}
+
+.clickable {
+	cursor: pointer;
 }
 
 .producto {
@@ -1850,6 +1864,7 @@ p.cantidad {
 	font-family: 'Roboto-Light';
 	text-transform: uppercase;
 	font-size: 12px;
+	border: none;
 }
 
 .btn-consultar {
@@ -1975,12 +1990,17 @@ ul.redes-sociales li {
 }
 
 .codigo-bonificacion {
-	padding: 3.8px 10px 6px;
-	width: 250px;
+	padding: 4px 10px 6px;
+	width: 75%;
 	font-family: 'BentonSans-Light';
 	font-weight: 600;
 	font-size: 16px;
 	display: inline-block;
+}
+
+.btnCupon {
+    margin-left: 1%;
+    width: 24%;
 }
 
 .eliminar-item a {
@@ -2033,6 +2053,7 @@ ul.redes-sociales li {
 	background: #000;
 	padding: 8px 30px 8px;
 	display: inline-block;
+	border: none;
 }
 
 .btn-carrito-naranja {

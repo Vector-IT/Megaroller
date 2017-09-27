@@ -11,7 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     switch ($operacion) {
         case "1": //Agregar
             $numeProd = $_POST["NumeProd"];
+            $color = $_POST["Color"];
+            $montaje = $_POST["Montaje"];
+            $control = $_POST["Control"];
             $cantProd = $_POST["CantProd"];
+
             if (isset($_SESSION["NumeUser"])) {
                 $numeUser = $_SESSION["NumeUser"];
                 $numeInvi = 'null';
@@ -96,22 +100,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             }
             else {
-                $cantProdOld = buscarDato("SELECT COALESCE(CantProd, 0) FROM carritosdetalles WHERE NumeCarr = ". $numeCarr ." AND NumeProd = ". $numeProd);
+                $strSQL = "SELECT COALESCE(CantProd, 0)";
+                $strSQL.= $crlf."FROM carritosdetalles";
+                $strSQL.= $crlf."WHERE NumeCarr = ". $numeCarr;
+                $strSQL.= $crlf."AND NumeProd = ". $numeProd;
+                $strSQL.= $crlf."AND Color = '{$color}'";
+                $strSQL.= $crlf."AND Montaje = '{$montaje}'";
+                $strSQL.= $crlf."AND Control = '{$control}'";
+                $cantProdOld = buscarDato($strSQL);
             }
             $_SESSION["NumeCarr"] = $numeCarr;
 
             if (intval($cantProdOld) == 0) {
                 $impoTota = $cantProd * $impoUnit;
 
-                $strSQL = $crlf."INSERT INTO carritosdetalles(NumeCarr, NumeProd, CantProd, ImpoUnit, ImpoTota)";
-                $strSQL.= $crlf."VALUES({$numeCarr}, {$numeProd}, {$cantProd}, {$impoUnit}, {$impoTota});";
+                $strSQL = "INSERT INTO carritosdetalles(NumeCarr, NumeProd, Color, Montaje, Control, CantProd, ImpoUnit, ImpoTota)";
+                $strSQL.= $crlf."VALUES({$numeCarr}, {$numeProd}, '{$color}', '{$montaje}', '{$control}', {$cantProd}, {$impoUnit}, {$impoTota});";
             }
             else {
                 $cantProd+= $cantProdOld;
                 $impoTota = $cantProd * $impoUnit;
                 
-                $strSQL = $crlf."UPDATE carritosdetalles SET CantProd = {$cantProd}, ImpoUnit = {$impoUnit}, ImpoTota = {$impoTota}";
-                $strSQL.= $crlf."WHERE NumeCarr = {$numeCarr} AND NumeProd = {$numeProd};";
+                $strSQL = "UPDATE carritosdetalles SET";
+                $strSQL = $crlf."CantProd = {$cantProd}";
+                $strSQL = $crlf.", ImpoUnit = {$impoUnit}";
+                $strSQL = $crlf.", ImpoTota = {$impoTota}";
+                $strSQL.= $crlf."WHERE NumeCarr = {$numeCarr}";
+                $strSQL = $crlf."AND NumeProd = {$numeProd};";
+                $strSQL.= $crlf."AND Color = '{$color}'";
+                $strSQL.= $crlf."AND Montaje = '{$montaje}'";
+                $strSQL.= $crlf."AND Control = '{$control}'";
             }
             $result = ejecutarCMD($strSQL);
 
@@ -124,10 +142,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
 
         case "2": //Quitar
-            $numeProd = $_POST["NumeProd"];
+            $codiIden = $_POST["CodiIden"];
             $numeCarr = $_SESSION["NumeCarr"];
 
-            $strSQL = "DELETE FROM carritosdetalles WHERE NumeCarr = {$numeCarr} AND NumeProd = {$numeProd}";
+            $strSQL = "DELETE FROM carritosdetalles WHERE CodiIden = {$codiIden}";
             $result = ejecutarCMD($strSQL);
 
             if ($result["estado"]) {
@@ -175,6 +193,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $strSQL = "UPDATE carritos SET NumeProm = NULL WHERE NumeCarr = {$numeCarr}";
             $salida = ejecutarCMD($strSQL);
             break;
+
+        case "6": //Carrito
+            $salida = carrito();
+            break;
     }
 
     header('Content-Type: application/json');
@@ -184,9 +206,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 function carrito() {
     global $crlf;
 
-    $strSQL = "SELECT cd.NumeProd, cd.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag";
+    $strSQL = "SELECT cd.CodiIden, cd.NumeProd, cd.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag";
     $strSQL.= $crlf."FROM carritos c";
-    $strSQL.= $crlf."INNER JOIN (SELECT cd.NumeCarr, cd.NumeProd, p.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag";
+    $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, p.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag";
     $strSQL.= $crlf."			FROM carritosdetalles cd";
     $strSQL.= $crlf."			INNER JOIN productos p ON cd.NumeProd = p.NumeProd";
     $strSQL.= $crlf."			LEFT JOIN productosimagenes pi ON cd.NumeProd = pi.NumeProd AND pi.NumeOrde = 1";
@@ -205,7 +227,7 @@ function carrito() {
             $strHTML.= $crlf.'	<div class="row">';
             $strHTML.= $crlf.'		<div class="col-lg-5">';
             $strHTML.= $crlf.'			<img class="img-center" alt="" src="admin/'. $fila["RutaImag"] .'">';
-            $strHTML.= $crlf.'			<a href="javascript:void(0);" class="quitar" onclick="quitarProd('. $fila["NumeProd"] .')">Quitar</a>';
+            $strHTML.= $crlf.'			<a href="javascript:void(0);" class="quitar" onclick="quitarProd('. $fila["CodiIden"] .')">Quitar</a>';
             $strHTML.= $crlf.'		</div>';
             $strHTML.= $crlf.'		<div class="col-lg-6">';
             $strHTML.= $crlf.'			<p class="titulo">'. $fila["NombProd"] .'</p>';

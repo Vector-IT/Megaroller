@@ -1,148 +1,488 @@
+     
+<?php
+    session_start();
+    require_once 'php/conexion.php';
+
+    if (isset($_SESSION["NumeCarr"])) {
+        $strSQL = $crlf."SELECT c.NumeCarr, cd.NumeProd, cd.NombProd, cd.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag, cd.SlugProd, c.FlagShip";
+        $strSQL.= $crlf."FROM carritos c";
+        $strSQL.= $crlf."INNER JOIN (SELECT cd.NumeCarr, cd.NumeProd, p.NombProd, p.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag, p.SlugProd";
+        $strSQL.= $crlf."			FROM carritosdetalles cd";
+        $strSQL.= $crlf."			INNER JOIN productos p ON cd.NumeProd = p.NumeProd";
+        $strSQL.= $crlf."			LEFT JOIN productosimagenes pi ON cd.NumeProd = pi.NumeProd AND pi.NumeOrde = 1";
+        $strSQL.= $crlf."		   ) cd ON c.NumeCarr = cd.NumeCarr";
+        $strSQL.= $crlf."WHERE c.NumeCarr = ". $_SESSION["NumeCarr"];
+
+        $carrito = cargarTabla($strSQL);    
+
+        if ($carrito->num_rows == 0) {
+            $carrito = false;
+        }
+    }
+    else {
+        $carrito = false;
+    }
+    $peso = 0;
+    $subtotal = 0;
+    $envio = 0;
+    $bonificacion = 0;
+    $total = 0;
+    $ship = "1";
+
+	//Datos usuario
+	$numeUser = isset($_SESSION["NumeUser"])? $_SESSION["NumeUser"]: '';
+	$numeInvi = isset($_SESSION["NumeInvi"])? $_SESSION["NumeInvi"]: '';
+
+	if ($numeUser != '') {
+        $strSQL = "SELECT u.NombPers, u.MailUser, u.TeleUser, u.DireUser, u.CodiPost, u.NumeProv, p.NombProv";
+        $strSQL.= $crlf."FROM usuarios u";
+        $strSQL.= $crlf."LEFT JOIN provincias p ON u.NumeProv = p.NumeProv";
+        $strSQL.= $crlf."WHERE NumeUser = ". $numeUser;
+
+        $datosUsuario = buscarDato($strSQL);
+    
+        if (isset($_SESSION["NumeCarr"])) {
+            $nombPersCarr = buscarDato("SELECT NombPers FROM carritos WHERE NumeCarr = ". $_SESSION["NumeCarr"]);
+
+            if ($nombPersCarr != '') {
+                $strSQL = "SELECT u.NombPers, u.MailUser, u.TeleUser, u.DireUser, u.CodiPost, u.NumeProv, p.NombProv";
+                $strSQL.= $crlf."FROM carritos u";
+                $strSQL.= $crlf."LEFT JOIN provincias p ON u.NumeProv = p.NumeProv";
+                $strSQL.= $crlf."WHERE NumeCarr = ". $_SESSION["NumeCarr"];
+                $datosUsuario = buscarDato($strSQL);
+            }
+        }
+	}
+	elseif ($numeInvi != '') {
+		$strSQL = "SELECT u.NombPers, u.MailUser, u.TeleUser, u.DireUser, u.CodiPost, u.NumeProv, p.NombProv";
+		$strSQL.= $crlf."FROM invitados u";
+		$strSQL.= $crlf."LEFT JOIN provincias p ON u.NumeProv = p.NumeProv";
+		$strSQL.= $crlf."WHERE NumeInvi = ". $numeInvi;
+		$datosUsuario = buscarDato($strSQL);
+	}
+	
+
+    if ($carrito) {
+        while ($fila = $carrito->fetch_assoc()) {
+            $ship = $fila["FlagShip"];
+
+            $peso+= floatval($fila["Peso"]);
+            $subtotal+= floatval($fila["ImpoTota"]);
+        }
+
+        //ENVIO
+        if ($ship == "1") {
+            if ($datosUsuario["NumeProv"] != '' && $peso > 0) {
+                if (buscarDato("SELECT COUNT(*) FROM shipping WHERE NumeProv = {$datosUsuario["NumeProv"]}") != '0') {
+                    $maxPeso = buscarDato("SELECT MAX(PesoShip) PesoShip FROM shipping WHERE NumeProv = {$datosUsuario["NumeProv"]}");
+                    if ($peso <= $maxPeso) {
+                        $envio = floatval(buscarDato("SELECT ImpoShip FROM shipping WHERE PesoShip >= {$peso} AND NumeProv = {$datosUsuario["NumeProv"]} ORDER BY PesoShip LIMIT 1"));
+                    }
+                    else {
+                        $envio = floatval(buscarDato("SELECT MAX(ImpoShip) FROM shipping WHERE NumeProv = {$datosUsuario["NumeProv"]} ORDER BY PesoShip LIMIT 1"));
+                    }
+                }
+                else {
+                    $maxPeso = buscarDato("SELECT MAX(PesoShip) PesoShip FROM shipping WHERE NumeProv IS NULL");
+                    if ($peso <= $maxPeso) {
+                        $envio = floatval(buscarDato("SELECT ImpoShip FROM shipping WHERE PesoShip >= {$peso} AND NumeProv IS NULL ORDER BY PesoShip LIMIT 1"));
+                    }
+                    else {
+                        $envio = floatval(buscarDato("SELECT MAX(ImpoShip) FROM shipping WHERE NumeProv IS NULL ORDER BY PesoShip LIMIT 1"));
+                    }
+                }
+            }
+        }
+
+        //PROMOCION DEL CARRITO
+        $numeProm = buscarDato("SELECT NumeProm FROM carritos WHERE NumeCarr = ". $_SESSION["NumeCarr"]);
+        if ($numeProm != '') {
+            $strSQL = "SELECT NumeTipoProm, ValoProm";
+            $strSQL.= $crlf."FROM promociones pr";
+            $strSQL.= $crlf."WHERE (pr.CantPerm IS NULL OR pr.CantUtil < pr.CantPerm)";
+            $strSQL.= $crlf."AND (pr.FechDesd IS NULL OR pr.FechDesd <= SYSDATE())";
+            $strSQL.= $crlf."AND (pr.FechHast IS NULL OR pr.FechHast > SYSDATE())";
+            $strSQL.= $crlf."AND NumeProm = ". $numeProm;
+            
+            $promocion = buscarDato($strSQL);
+
+            if ($promocion != '') {
+                switch ($promocion["NumeTipoProm"]) {
+                    case '1': //Porcentaje de descuento
+                        $bonificacion = $subtotal * $promocion["ValoProm"] / 100;
+                        break;
+                    
+                    case '2': //Monto fijo
+                        $bonificacion = $promocion["ValoProm"];
+                        break;
+
+                    case '3': //Envio gratis
+                        $bonificacion = $envio;
+                        break;
+                }
+            }
+            else {
+                $strSQL = "UPDATE carritos SET NumeProm = NULL WHERE NumeCarr = ". $_SESSION["NumeCarr"];
+                ejecutarCMD($strSQL);
+            }
+        }
+
+        $total = $subtotal - $bonificacion;
+
+        //MERCADO PAGO
+        /*
+        require_once "admin/mercadopago/mercadopago.php";
+        
+        $mpClientID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_ID'");
+        $mpClientSecret = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_SECRET'");
+        
+        $mp = new MP($mpClientID, $mpClientSecret);
+
+        if ($subtotal > 0) {
+            $preference_data = array(
+                "items" => array(
+                    array(
+                        "title" => "Advocatus",
+                        "currency_id" => "ARS",
+                        "category_id" => "Libro",
+                        "picture_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."img/logo_transparente.png",
+                        "quantity" => 1,
+                        "unit_price" => $subtotal + $envio - $bonificacion
+                        )
+                    ),
+                    "external_reference" => $_SESSION["NumeCarr"],
+                    "notification_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."admin/mercadopago/notifications.php",
+                    "back_urls" => array(
+                        "success" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
+                        "pending" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
+                        "failure" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz
+                    )
+            );
+            
+            $preference = $mp->create_preference($preference_data);
+        }
+        */
+
+        $carrito->data_seek(0);
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Mi Carrito - MEGAROLLER | Fábrica de Cortinas Roller</title>
-      
-      <?php include 'php/links-header.php'; ?>
-      
-   </head>
-   <body>
-      <div id="wrapper">
-         <div class="overlay"></div>
-         
-         <!-- Page Content -->
-         <div id="page-content-wrapper">
-         
-              <?php include 'php/header.php'; ?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mi Carrito - MEGAROLLER | Fábrica de Cortinas Roller</title>
 
-      <!-- ORDEN DE COMPRA -->
-      <div id="mi-carrito" class="container">
-         <div class="row">
+    <?php include 'php/links-header.php'; ?>
+
+    <script>
+        function quitarProd1(strID) {
+            $.post("php/carritosProcesar.php", { 
+                "operacion": "2",
+                "NumeProd": strID,
+                },
+                function (data) {
+                    if (data.estado === true) {
+                        location.reload();
+                    }
+                }
+            );
+        }
+
+        function envio() {
+            $.post("php/carritosProcesar.php", { 
+                "operacion": "3"
+                },
+                function (data) {
+                    if (data.estado === true) {
+                        location.reload();
+                    }
+                }
+            );
+        }
+    </script>
+</head>
+<body>
+
+<?php include 'php/header.php'; ?>
+
+        <!-- ORDEN DE COMPRA -->
+        <div id="mi-carrito" class="container">
+        <div class="row">
             <div class="col-lg-6">
-               <h1>Mis Compras</h1>
+                <h1>Mi carrito de compras</h1>
             </div>
-            <div class="col-lg-6"><a href="#" class="btn-carrito-negro pushRight">Realizar compra</a></div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 noPadding">
-               <h2>Producto</h2>
-               <article>
-                  <img class="img-producto-carrito" src="./img/item-producto/destacada.jpg" alt="">
-               </article>
+            
+			<?php if (isset($preference)) {?>
+				<?php if ($ship == 1 && $envio == 0) {?>
+					<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos de envío y Comprar</a>
+                <?php } elseif(!isset($datosUsuario) || $datosUsuario["NombPers"] == '') { ?>
+                    <a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos personales y Comprar</a>
+                <?php } elseif ($subtotal > 0) {?>
+					<div class="col-lg-6"><a href="<?php echo $preference['response']['init_point']; ?>" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a></div>
+	            <?php }?>
+            <?php }?>
+        </div>
+
+        <div class="row hidden-xs">
+            <div class="col-sm-3 noPadding">
+                <h2>Producto</h2>
             </div>
-            <div class="col-lg-2 noPadding">
-               <h2>Descripción</h2>
-               <article id="1">
-                  <p class="titulo-producto">Cortina Blackout</p>
-               </article>
+            <div class="col-sm-3 noPadding">		
+                <h2>Descripción</h2>
             </div>
-            <div class="col-lg-2 noPadding">
-               <h2>Color</h2>
-               <article id="1">
-                  <div class="color"><img alt="" src="./img/item-producto/colores_r2_c4.jpg"></div>
-               </article>
+            <div class="col-sm-2 noPadding text-right">		
+                <h2>Cantidad</h2>
             </div>
-            <div class="col-lg-2 noPadding">
-               <h2>Cantidad</h2>
-               <article id="1">
-                  <p class="info-producto">1</p>
-               </article>
+            <div class="col-sm-2 noPadding text-right">
+                <h2>Precio</h2>
             </div>
-            <div class="col-lg-2 noPadding">
-               <h2>Precio</h2>
-               <article id="1">
-                  <p class="info-producto">$1104</p>
-               </article>
+            <div class="col-sm-2 noPadding text-right">
+                <h2>Total</h2>
             </div>
-            <div class="col-lg-2 noPadding">
-               <h2>Total</h2>
-               <article id="1">
-                  <p class="info-producto">$1104</p>
-               </article>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-12 eliminar-item"> <a href="">ELIMINAR ITEM x</a></div>
-         </div>
-         <div class="row">
+        </div>
+        
+        <?php 
+        if (!$carrito) {
+            echo '<h4>Su carrito está vacío</h4>';
+        } else {
+            $strHTML = "";
+
+            while($fila = $carrito->fetch_assoc()) {
+                $strHTML.= $crlf.'<div class="row">';
+                $strHTML.= $crlf.'    <div class="col-sm-3 noPadding">';
+                $strHTML.= $crlf.'        <h2 class="visible-xs">Producto</h2>';
+                $strHTML.= $crlf.'        <article>';
+                $strHTML.= $crlf.'            <a href="producto/'. $fila["SlugProd"] .'.php"><img class="img-producto-carrito" src="admin/'. $fila["RutaImag"] .'" alt=""></a>';
+                $strHTML.= $crlf.'        </article>';
+                $strHTML.= $crlf.'    </div>';
+                $strHTML.= $crlf.'    <div class="col-sm-3 noPadding">';
+                $strHTML.= $crlf.'        <h2 class="visible-xs">Descripción</h2>';
+                $strHTML.= $crlf.'        <article>';
+                $strHTML.= $crlf.'            <p class="info-producto">'. $fila["NombProd"] .'</p>';
+                $strHTML.= $crlf.'        </article>';
+                $strHTML.= $crlf.'    </div>';
+                $strHTML.= $crlf.'    <div class="col-sm-2 noPadding">';
+                $strHTML.= $crlf.'        <h2 class="visible-xs">Cantidad</h2>';
+                $strHTML.= $crlf.'        <article id="1">';
+                $strHTML.= $crlf.'            <p class="info-producto text-right">'. $fila["CantProd"] .'</p>';
+                $strHTML.= $crlf.'        </article>';
+                $strHTML.= $crlf.'    </div>';
+                $strHTML.= $crlf.'    <div class="col-sm-2 noPadding">';
+                $strHTML.= $crlf.'        <h2 class="visible-xs">Precio</h2>';
+                $strHTML.= $crlf.'        <article id="1">';
+                $strHTML.= $crlf.'            <p class="info-producto text-right">$ '. $fila["ImpoUnit"] .'</p>';
+                $strHTML.= $crlf.'        </article>';
+                $strHTML.= $crlf.'    </div>';
+                $strHTML.= $crlf.'    <div class="col-sm-2 noPadding">';
+                $strHTML.= $crlf.'        <h2 class="visible-xs">Total</h2>';
+                $strHTML.= $crlf.'        <article id="1">';
+                $strHTML.= $crlf.'            <p class="info-producto text-right">$ '. $fila["ImpoTota"] .'</p>';
+                $strHTML.= $crlf.'        </article>';
+                $strHTML.= $crlf.'    </div>';
+                $strHTML.= $crlf.'</div>';
+                $strHTML.= $crlf.'<div class="row">';
+                $strHTML.= $crlf.'    <div class="eliminar-item"><span class="clickable" data-js="quitarProd1('. $fila["NumeProd"] .');">ELIMINAR ITEM X</span></div>';
+                $strHTML.= $crlf.'</div>';
+            }
+            echo $strHTML;
+            $total = $subtotal + $envio - $bonificacion;
+
+            $strSQL = "UPDATE carritos SET ImpoSubt = {$subtotal}, ImpoDesc = {$bonificacion}, ImpoShip = {$envio}, ImpoTota = {$total} WHERE NumeCarr = ". $_SESSION["NumeCarr"];
+            ejecutarCMD($strSQL);
+        }
+        ?>
+        <div class="row">
             <div class="col-lg-6">
-               <h4>Agregar código de bonificación</h4>
-               <input class="codigo-bonificacion" value="" placeholder="Ingrese su código aquí"> <a href="#" class="btn-carrito-descuento">Aplicar</a>  
-               <div class="row">
-                  <div class="col-lg-12">
-                     <p class="envios">Envíos a todo el país</p>
-                  </div>
-               </div>
+				<h4>Datos de envío y contacto</h4>
+				<?php 
+					if (isset($datosUsuario)) {
+						$strSalida = '';
+						if ($subtotal > 0 && $envio == 0 && $ship == "1") {
+							$strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro" data-toggle="modal">Cargar datos de envío y Comprar</a>';
+							$strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Retiro en tienda</a>';
+						}
+						else {
+                            if ($ship == "1") {
+                                $strSalida.= $crlf.'<div><strong>ENVIO A DOMICILIO</strong></div>';
+                            }
+                            else {
+                                $strSalida.= $crlf.'<div><strong>RETIRO EN TIENDA</strong></div>';
+                            }
+							$strSalida.= $crlf.'<div><strong>Nombre completo: </strong> '.$datosUsuario["NombPers"].'</div>';
+							$strSalida.= $crlf.'<div><strong>Teléfono: </strong> '.$datosUsuario["TeleUser"].'</div>';
+							$strSalida.= $crlf.'<div><strong>Mail: </strong> '.$datosUsuario["MailUser"].'</div>';
+							$strSalida.= $crlf.'<div><strong>Dirección: </strong> '.$datosUsuario["DireUser"].'</div>';
+							$strSalida.= $crlf.'<div><strong>Código postal: </strong> '.$datosUsuario["CodiPost"].'</div>';
+							$strSalida.= $crlf.'<div><strong>Provincia: </strong> '.$datosUsuario["NombProv"].'</div>';
+                            $strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro" data-toggle="modal">Modificar datos</a>';
+                            if ($ship == "1") {
+                                $strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Retiro en tienda</a>';
+                            }
+                            else {
+                                $strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Envío a domicilio</a>';
+                            }
+						}
+						echo $strSalida;
+					}
+                ?>
             </div>
             <div class="col-sm-6">
-               <div class="col-xs-6">
-                  <h3>SUBTOTAL</h3>
-                  <h3>ENVIO</h3>
-                  <h3>TOTAL:</h3>
-               </div>
-               <div class="col-xs-6">
-                  <h3 class="alignRight">$1200</h3>
-                  <h3 class="alignRight">$100</h3>
-                  <h3 class="alignRight">$1300</h3>
-               </div>
-            </div>
-         </div>
-         <br/><br/>
-         <div class="row">
-            <div class="col-lg-6"> </div>
-            <div class="col-lg-6"><a href="#" class="btn-carrito-naranja pushRight">Realizar compra</a></div>
-         </div>
-         <br/><br/>
-         <div class="col-lg-11">
-            <div class="row">
-               <div class="col-lg-12"><img class="img-center" src="./img/mi-carrito/formas-de-pago.png" alt=""></div>
-            </div>
-         </div>
-         <div class="col-lg-1"></div>
-      </div>
-      <!-- /.ORDEN DE COMPRA -->
-      
-           <?php include 'php/footer.php'; ?>
-           
+            <?php if ($carrito) {?>
+                <?php if ($numeProm == '') {?>
+                    <div style="border-bottom: 1px solid;">
+                        <h4>Agregar código de bonificación</h4>
+                        <form id="frmCuponDescuento">
+                            <input id="txtCupon" class="codigo-bonificacion" required placeholder="Ingrese su código aquí"><button class="btn-carrito-negro btnCupon">Aplicar</button>
+                        </form>
+                        <br>
                     </div>
-         <!-- /#page-content-wrapper --> 
-         <!-- Sidebar -->
-         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-               <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-bottom"></span> </button>
-               <h1>Carrito de Compras</h1>
-               <article>
-                  <div class="row">
-                     <p class="titulo">Roller Blackout</p>
-                     <div class="col-lg-5">
-                        <img class="img-center" alt="" src="./img/item-producto/thumb.jpg">
-                     </div>
-                     <div class="col-lg-6">
-                        <p class="cantidad">Cantidad: <span>1</span></p>
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-12">
-                           <p class="precio">$ <span>1200</span></p>
-                           <a href="#" class="quitar">Quitar</a>
-                        </div>
-                     </div>
-                  </div>
-               </article>
-               <p class="subtotal">Subtotal: $ <span>1200</span></p>
-               <p class="bonificacion">Envío: $<span>100</span></p>
-               <p class="total">Total: $ <span>1300</span></p>
-               <a href="mi-carrito.php" class="btn-carrito-negro">Comprar</a>  
-            </ul>
-         </nav>
-         <!-- /#sidebar-wrapper --> 
-      </div>
-      <!-- /#wrapper --> 
+                <?php } else {?>
+                    <div style="border-bottom: 1px solid;">
+                        <form id="frmQuitarCuponDescuento">
+                            <strong style="display: inline-block; width: 75%;">Anular código de bonificación</strong><button class="btn-carrito-negro btnCupon">Aplicar</button>
+                        </form>
+                        <br>
+                    </div>
+                <?php }?>
+            <?php }?>
 
-            <?php include 'php/scripts-footer.php'; ?>
-   </body>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>SUBTOTAL</h3>
+                        <h3>ENVIO</h3>
+                    <?php if ($bonificacion > 0) {?>
+                        <h3>BONIFICACION</h3>
+                    <?php }?>
+                        <h3>TOTAL:</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3 class="alignRight">$ <?php echo number_format($subtotal, 2)?></h3>
+                        <h3 class="alignRight">$ <?php echo number_format($envio, 2)?></h3>
+                    <?php if ($bonificacion > 0) {?>
+                        <h3 class="alignRight">$ <?php echo number_format($bonificacion, 2)?></h3>
+                    <?php }?>
+                        <h3 class="alignRight">$ <?php echo number_format($total, 2)?></h3>
+
+                    <?php 
+                        $strSalida = '';
+                        if (isset($preference)) {
+                            if ($ship == 1 && $envio == 0) {
+                                $strSalida.= '<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos de envío y Comprar</a>';
+                            } elseif(!isset($datosUsuario) || $datosUsuario["NombPers"] == '') {
+                                $strSalida.= '<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos personales y Comprar</a>';
+                            } elseif ($subtotal > 0) {
+                                $strSalida.= '<a href="'. $preference['response']['init_point'] .'" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
+                            }
+                            
+                            echo $strSalida;
+                        }
+                    ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <!-- <div class="row">
+            <div class="col-lg-6"> </div>
+			<?php if (isset($preference)) {?>
+				<?php if ($ship == 1 && $envio == 0) {?>
+					<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos de envío y Comprar</a>
+                <?php } elseif(!isset($datosUsuario) || $datosUsuario["NombPers"] == '') { ?>
+                    <a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos personales y Comprar</a>
+                <?php } elseif ($subtotal > 0) {?>
+					<div class="col-lg-6">
+                        <a href="<?php echo $preference['response']['init_point']; ?>" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>
+                    </div>
+	            <?php }?>
+            <?php }?>
+        </div>
+        <br/><br/> -->
+        <div class="col-lg-11">
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="envios">Envíos a todo el país</p>
+                </div>
+                <div class="col-lg-9"><img class="img-center" src="./img/mi-carrito/formas-de-pago.png" alt="" style="max-width: 500px;"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        </div>
+        <!-- /.ORDEN DE COMPRA -->
+
+    </div>
+
+    <?php include 'php/footer.php'; ?>
+
+	<?php if (isset($datosUsuario)) {?>
+	<div class="modal fade" id="mdlEnvio" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<form id="frmEnvio" method="post">
+				<div class="modal-content">
+					<div class="modal-header" align="center" style="padding: 5px;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						</button>
+					</div>
+
+					<h4 class="modal-title">Datos de Envío</h4>
+					<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="NombPers">Nombre completo *</label>
+								<input type="text" class="form-control form-custom" id="NombPers" placeholder="Nombre Completo *" value="<?php echo $datosUsuario["NombPers"]?>" required>
+							</div>
+							<div class="form-group">
+								<label for="TeleUser">Teléfono *</label>
+								<input type="text" class="form-control form-custom" id="TeleUser" placeholder="Teléfono *" value="<?php echo $datosUsuario["TeleUser"]?>" required>
+							</div>
+							<div class="form-group">
+								<label for="MailUser">Mail *</label>   
+								<input type="email" class="form-control form-custom" id="MailUser" placeholder="Correo Electrónico *" value="<?php echo $datosUsuario["MailUser"]?>" required>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<label for="DireUser">Dirección *</label>
+										<input type="text" class="form-control form-custom" id="DireUser" placeholder="Dirección *" value="<?php echo $datosUsuario["DireUser"]?>" required>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="CodiPost">Código Postal *</label>
+										<input type="text" class="form-control form-custom" id="CodiPost" placeholder="Código Postal" value="<?php echo $datosUsuario["CodiPost"]?>" required>
+									</div>
+								</div>
+                            </div>
+                            <div class="form-group">
+                                <label from="NombLoca">Localidad *</label>
+                                <input type="text" class="form-control form-custom" id="NombLoca" placeholder="Localidad *" required>
+                            </div>
+							<div class="form-group">
+								<label for="NumeProv">Provincia *</label>
+								<select class="form-control form-custom" id="NumeProv" required>
+								<?php echo cargarCombo("SELECT NumeProv, NombProv FROM provincias ORDER BY NombProv", "NumeProv", "NombProv", $datosUsuario["NumeProv"]);?>
+								</select>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-small">Confirmar</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</form>
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->    
+	<?php }?>
+
+    <script type="text/javascript" src="//resources.mlstatic.com/mptools/render.js"></script>
+    <!-- <script type="text/javascript" src="http://mp-tools.mlstatic.com/buttons/render.js"></script> -->
+    <?php include 'php/scripts-footer.php'; ?>
+</body>
 </html>

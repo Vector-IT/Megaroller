@@ -58,7 +58,7 @@ class Producto extends Tabla {
     public function insertar($datos) {
 		global $config, $crlf;
 
-        $datosProducto = array_slice($datos, 0, 10);
+        $datosProducto = array_slice($datos, 0, 11);
         
         $result = parent::insertar($datosProducto);
 		$resultAux = json_decode($result, true);
@@ -126,7 +126,7 @@ class Producto extends Tabla {
     public function editar($datos) {
 		global $config, $crlf;
 
-        $datosProducto = array_slice($datos, 0, 10);
+        $datosProducto = array_slice($datos, 0, 11);
         
         $result = parent::editar($datosProducto);
 		$resultAux = json_decode($result, true);
