@@ -13,8 +13,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	require_once 'phpmailer/SMTP.php';
 	require_once 'phpmailer/PHPMailer.php';
 
-	$para = isset($_POST["Para"])? $_POST["Para"]: 'info@eadvocatus.com';
-	$titulo = isset($_POST["Titulo"])? $_POST["Titulo"]: 'Editorial Advocatus';
+	$para = isset($_POST["Para"])? $_POST["Para"]: 'info@megarollercortinas.com';
+	$titulo = isset($_POST["Titulo"])? $_POST["Titulo"]: 'Megaroller Cortinas';
 	$mensaje = $_POST['Mensaje'];
 	$mensajeAlt = isset($_POST["MensajeAlt"])? $_POST["MensajeAlt"]: $_POST["Mensaje"];
 
@@ -23,14 +23,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$mail->isHTML(true);
 	$mail->setLanguage('es', $raiz.'admin/php/phpmailer/language/');
 	$mail->isSMTP();
-	$mail->Host = 'mail.eadvocatus.com.ar';
+	$mail->Host = 'mail.megarollercortinas.com';
 	$mail->SMTPAuth = true;
-    $mail->Username = 'tienda@eadvocatus.com.ar';
-    $mail->Password = 'Vector159';
+    $mail->Username = 'web@megarollercortinas.com';
+    $mail->Password = 'VectorNouveh5';
     //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;  
 	
-	$mail->setFrom('tienda@eadvocatus.com.ar', 'Editorial Advocatus');
+	$mail->setFrom('web@megarollercortinas.com', 'Megaroller Cortinas');
 	$mail->addAddress($para);
 	$mail->Subject = $titulo;
 	$mail->Body = $mensaje;
