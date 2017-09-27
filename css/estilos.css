@@ -1307,11 +1307,19 @@ h1 {
   position: fixed; 
 }
 
+#materiales-cortinas .modal-header {
+    padding: 30px 15px 10px !important;
+}
+
+#materiales-cortinas .modal-header .close {
+    margin-top: -15px !important;
+}
+
 .color {
     display: table;
     margin: 0 auto 5px;
     width: 100%;
-    height: 70px;
+    height: 50px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -1367,7 +1375,7 @@ h1 {
 
 .nav-color li {
     width: 100%;
-    height: 95px ;
+    height: 65px ;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -1377,6 +1385,10 @@ h1 {
     border: none !important;
     margin-right: 2.5%;
 	list-style: none;
+}
+
+#sistema-doble.nav-color li  {
+    height: inherit !important ;
 }
 
 .titulo-color {
