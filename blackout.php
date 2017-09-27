@@ -1,3 +1,14 @@
+<?php
+	session_start();
+	require_once 'php/conexion.php';
+    
+    //Productos
+	$strSQL = "SELECT NombProd, ImpoVent, CantProd";
+	$strSQL.= $crlf."FROM productos";
+	$strSQL.= $crlf."WHERE NumeProd IN (SELECT NumeProd FROM productoscategorias WHERE NumeCate = 1";
+	$productos = cargarTabla($strSQL);
+
+?>
 <!doctype html>
 <html>
    <head>
