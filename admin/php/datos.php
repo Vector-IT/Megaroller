@@ -23,9 +23,9 @@
 	 */
 	$config->menuItems = [
 			new MenuItem("Configuraciones", '', '', 'fa-cogs', 1, true, false),
-			new MenuItem("Productos", 'productos.php', '', 'fa-paper-plane', 2, false, true),
+			new MenuItem("Productos", 'productos.php', '', 'fa-paper-plane', 2, false, false),
 			new MenuItem("Promociones", 'objeto/promociones.php', '', 'fa-handshake-o', 4, true),
-			new MenuItem("Reportes", 'reportes.php', '', 'fa-slideshare', '', false, false),
+			//new MenuItem("Reportes", 'reportes.php', '', 'fa-slideshare', '', false, false),
 			new MenuItem("Ir al sitio", $raiz, '', 'fa-bookmark', '', false, false),
 			new MenuItem("Salir del Sistema", 'logout.php', '', 'fa-sign-out', '', false, false)
 	];
@@ -216,7 +216,7 @@
 	/**
 	* PRODUCTOS
 	*/
-	$tabla = new Producto("productos", "productos", "Productos", "el producto", true, "productos.php", "fa-paper-plane");
+	$tabla = new Producto("productos", "productos", "Productos", "el producto", false, "productos.php", "fa-paper-plane");
 	$tabla->isSubMenu = true;
 	$tabla->labelField = "NombProd";
 	$tabla->order = "Cate, ImpoVent";
@@ -292,7 +292,7 @@
 	/**
 	* ATRIBUTOS
 	*/
-	$tabla = new Tabla("atributos", "atributos", "Atributos", "el atributo", true, "objeto/atributos.php", "fa-info-circle");
+	$tabla = new Tabla("atributos", "atributos", "Atributos", "el atributo", false, "objeto/atributos.php", "fa-info-circle");
 	$tabla->isSubItem = true;
 	$tabla->labelField = "NombAtri";
 	$tabla->order = 'NumeOrde';
@@ -350,7 +350,7 @@
 	/**
 	* CATEGORIAS
 	*/
-	$tabla = new Categoria("categorias", "categorias", "Categorías", "la categoría", true, "objeto/categorias.php", "fa-code");
+	$tabla = new Categoria("categorias", "categorias", "Categorías", "la categoría", false, "objeto/categorias.php", "fa-code");
 	$tabla->isSubItem = true;
 	$tabla->labelField = "NombCate";
 	$tabla->order = "categorias.NumePadr, categorias.NombCate";
@@ -389,7 +389,7 @@
 	/**
 	* PRODUCTOS NOVEDADES
 	*/
-	$tabla = new Tabla("productosnovedades", "productosnovedades", "Novedades", "el producto", true, "objeto/productosnovedades.php", "fa-newspaper-o");
+	$tabla = new Tabla("productosnovedades", "productosnovedades", "Novedades", "el producto", false, "objeto/productosnovedades.php", "fa-newspaper-o");
 	$tabla->isSubItem = true;
 
 	$tabla->order = 'NumeOrde';

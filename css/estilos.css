@@ -349,6 +349,7 @@ span#text-lost-msg {
 */
 
 .navbar-default .navbar-nav > li > a {
+	font-size: small;
     border-radius: 20px !important;
     background-color: #fe7606;
     font-weight: unset;
