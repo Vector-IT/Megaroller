@@ -26,18 +26,6 @@ class Producto extends Tabla {
 
                 break;
 
-            case "ISBN": 
-                $numeProd = $post["dato"];
-            
-                return $config->buscarDato("SELECT Valor from productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri IN (SELECT NumeAtri FROM atributos WHERE UPPER(NombAtri) = 'ISBN')");
-                break;
-
-            case "Autor":
-                $numeProd = $post["dato"];
-
-                return $config->buscarDato("SELECT Valor from productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri IN (SELECT NumeAtri FROM atributos WHERE UPPER(NombAtri) = 'AUTOR')");
-                break;
-
             case "CantProd":
                 $numeProd = $post["data"]["NumeProd"];
                 $cantProd = $post["data"]["CantProd"];
@@ -130,20 +118,6 @@ class Producto extends Tabla {
                 $strSQL = "INSERT INTO productosatributos(NumeProd, NumeAtri, Valor) VALUES({$numeProd}, {$numeAtri}, {$valor})";
                 $config->ejecutarCMD($strSQL);
             }
-            
-            //Calcular Peso
-            $cantPagi = $config->buscarDato("SELECT Valor FROM productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri = 135");
-            $tipoEncu = $config->buscarDato("SELECT Valor FROM productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri = 143");
-
-            if ($tipoEncu == '43') {
-                $peso = (($cantPagi * 1.5) + 25) / 1000;
-            }
-            else {
-                $peso = (($cantPagi * 1.5) + 50) / 1000;
-            }
-
-            $strSQL = "UPDATE productos SET Peso = {$peso} WHERE NumeProd = ". $numeProd;
-            $config->ejecutarCMD($strSQL);
 
             return $result;
         }
@@ -226,20 +200,6 @@ class Producto extends Tabla {
                 $config->ejecutarCMD($strSQL);
             }
 
-            //Calcular Peso
-            $cantPagi = $config->buscarDato("SELECT Valor FROM productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri = 135");
-            $tipoEncu = $config->buscarDato("SELECT Valor FROM productosatributos WHERE NumeProd = {$numeProd} AND NumeAtri = 143");
-
-            if ($tipoEncu == '43') {
-                $peso = (($cantPagi * 1.5) + 25) / 1000;
-            }
-            else {
-                $peso = (($cantPagi * 1.5) + 50) / 1000;
-            }
-
-            $strSQL = "UPDATE productos SET Peso = {$peso} WHERE NumeProd = ". $numeProd;
-            $config->ejecutarCMD($strSQL);
-
             return $result;
         }
     }
@@ -286,39 +246,6 @@ class Producto extends Tabla {
         $config->ejecutarCMD($strSQL);
 
         return parent::borrar($datos, $filtro);
-    }
-
-    public function listar($strFiltro = "", $conBotones = true, $btnList = [], $order = '', $pagina = 1) {
-        if ($strFiltro != "") {
-            if (isset($strFiltro["ISBN"])) {
-                $strFiltro["NumeProd"] = array(
-                    "type"=>"number",
-                    "operator"=>"in",
-                    "join"=>"and",
-                    "value"=>"(SELECT NumeProd FROM productosatributos WHERE Valor LIKE '%". $strFiltro["ISBN"]["value"] ."%')"
-                );
-
-                unset($strFiltro["ISBN"]);
-            }
-
-            if (isset($strFiltro["Autor"])) {
-                if (isset($strFiltro["NumeProd"])) {
-                    $strFiltro["NumeProd"]["value"].= " AND productos.NumeProd IN (SELECT NumeProd FROM productosatributos WHERE Valor LIKE '%". $strFiltro["Autor"]["value"] ."%')";
-                }
-                else {
-                    $strFiltro["NumeProd"] = array(
-                        "type"=>"number",
-                        "operator"=>"in",
-                        "join"=>"and",
-                        "value"=>"(SELECT NumeProd FROM productosatributos WHERE Valor LIKE '%". $strFiltro["Autor"]["value"] ."%')"
-                    );
-                }
-
-                unset($strFiltro["Autor"]);
-            }
-        }
-
-        parent::listar($strFiltro, $conBotones, $btnList, $order, $pagina);
     }
 }
 ?>

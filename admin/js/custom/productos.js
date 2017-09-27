@@ -28,14 +28,9 @@ function listarproductos() {
 
 	var filtros = {};
 
-	if ($("#search-ISBN").val() != "") {
-        filtros["ISBN"] = {
-        	"value":$("#search-ISBN").val()
-        }
-	}
-	if ($("#search-Autor").val() != "") {
-        filtros["Autor"] = {
-        	"value":$("#search-Autor").val()
+	if ($("#search-NumeProd").val() != "") {
+        filtros["NumeProd"] = {
+        	"value":$("#search-NumeProd").val()
         }
 	}
 	if ($("#search-NombProd").val() != "") {
@@ -118,7 +113,7 @@ function editarproductos(strID){
 			$("#SlugProd").val($("#SlugProd" + strID).val());
 			$("#DescProd").val($("#DescProd" + strID).val());
 			$("#DescProd").autogrow({vertical: true, horizontal: false, minHeight: 36});
-			// $("#Peso").val($("#Peso" + strID).text());
+			$("#Peso").val($("#Peso" + strID).text());
 			$("#CantProd").val($("#CantProd" + strID).text());
 			$("#ImpoComp").val($("#ImpoComp" + strID).text().replace("$ ", ""));
 			$("#ImpoVent").val($("#ImpoVent" + strID).text().replace("$ ", ""));
@@ -196,7 +191,7 @@ function editarproductos(strID){
 		$("#SlugProd").val("");
 		$("#DescProd").val("");
 		$("#DescProd").autogrow({vertical: true, horizontal: false, minHeight: 36});
-		// $("#Peso").val("");
+		$("#Peso").val("");
 		$("#CantProd").val("");
 		$("#ImpoComp").val("");
 		$("#ImpoVent").val("");
@@ -235,7 +230,7 @@ function aceptarproductos(){
 	frmData.append("NombProd", $("#NombProd").val());
 	frmData.append("SlugProd", $("#SlugProd").val());
 	frmData.append("DescProd", $("#DescProd").val());
-	// frmData.append("Peso", $("#Peso").val());
+	frmData.append("Peso", $("#Peso").val());
 	frmData.append("CantProd", $("#CantProd").val());
 	frmData.append("ImpoComp", $("#ImpoComp").val());
 	frmData.append("ImpoVent", $("#ImpoVent").val());
@@ -330,7 +325,13 @@ function archivoNuevo(strID) {
 }
 
 function armarEditables() {
-	$("#divDatos").prepend("<h5>Cantidad de registros: " + ($("tr").size()-1) + "</h5>");
+	if ($("tr").size() > 0) {
+		$("#divDatos").prepend("<h5>Cantidad de registros: " + ($("tr").size()-1) + "</h5>");
+	}
+	else {
+		$("#divDatos").prepend("<h5>Cantidad de registros: 0</h5>");
+		$("#btnExport").hide();
+	}
 
 	$(".editable").click( function() {
 		var campo = this.id.substr(0, 8);

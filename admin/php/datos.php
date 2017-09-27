@@ -234,29 +234,22 @@
 		)
 	];
 
-	$tabla->jsOnLoad = "armarEditables();";
+	//$tabla->jsOnLoad = "armarEditables();";
 	$tabla->jsOnList = "armarEditables();";
 
 	$tabla->searchFields = [
-		// array("name"=>"NumeProd", "operator"=>"=", "join"=>"and"), 
-		array("name"=>"ISBN", "operator"=>"LIKE", "join"=>"and"),
+		array("name"=>"NumeProd", "operator"=>"=", "join"=>"and"), 
 		array("name"=>"NombProd", "operator"=>"LIKE", "join"=>"and"),
-		array("name"=>"Autor", "operator"=>"LIKE", "join"=>"and"),
 	];
 
 	$tabla->addFieldId("NumeProd", "Número", true, true);
 	
-	$tabla->addFieldSelect("ISBN", 80, "ISBN", true, "", "productosatributos", "pai", "NumeProd", "Valor", "", "pai.NumeAtri IN (SELECT NumeAtri FROM atributos WHERE UPPER(NombAtri) = 'ISBN')", "");
-	$tabla->fields["ISBN"]["name"] = 'NumeProd';
-	$tabla->fields["ISBN"]["nameAlias"] = 'ISBN';
-	$tabla->fields["ISBN"]["showOnForm"] = false;
-	
-	$tabla->addField("NombProd", "text", 200, "Título");
+	$tabla->addFieldSelect("Cate", 80, "Tipo", true, "", "(SELECT NumeProd, NombCate FROM productoscategorias pc INNER JOIN categorias c ON pc.NumeCate = c.NumeCate)", "pc", "NumeProd", "NombCate", "", "", "");
+	$tabla->fields["Cate"]["name"] = 'NumeProd';
+	$tabla->fields["Cate"]["nameAlias"] = 'Cate';
+	$tabla->fields["Cate"]["showOnForm"] = false;
 
-	$tabla->addFieldSelect("Autor", 80, "Autor", true, "", "productosatributos", "paa", "NumeProd", "Valor", "", "paa.NumeAtri IN (SELECT NumeAtri FROM atributos WHERE UPPER(NombAtri) = 'AUTOR')", "");
-	$tabla->fields["Autor"]["name"] = "NumeProd";
-	$tabla->fields["Autor"]["nameAlias"] = "AUTOR";
-	$tabla->fields["Autor"]["showOnForm"] = false;
+	$tabla->addField("NombProd", "text", 200, "Título");
 
 	$tabla->addField("SlugProd", "text", 200, "Slug");
 	$tabla->fields["SlugProd"]["isHiddenInList"] = true;
@@ -267,7 +260,6 @@
 	$tabla->addField("Peso", "number", 0, "Peso");
 	$tabla->fields["Peso"]["step"] = "0.0001";
 	$tabla->fields["Peso"]["txtAlign"] = "right";
-	$tabla->fields["Peso"]["showOnForm"] = false;
 	
 	$tabla->addField("CantProd", "number", 0, "Cantidad");
 	$tabla->fields["CantProd"]["step"] = "0.1";

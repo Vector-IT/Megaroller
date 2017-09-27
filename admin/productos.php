@@ -120,12 +120,12 @@
 				</div>
             </div>
 
-            <!-- <div class="form-group form-group-sm ">
+            <div class="form-group form-group-sm ">
 				<label for="Peso" class="control-label col-md-2 col-lg-2">Peso:</label>
 				<div class="col-md-2 col-lg-2">
 					<input type="number" step="0.0001" class="form-control input-sm " id="Peso"  required    />
 				</div>
-            </div> -->
+            </div>
 
             <div class="form-group form-group-sm ">
 				<label for="CantProd" class="control-label col-md-2 col-lg-2">Cantidad:</label>
@@ -278,21 +278,15 @@
             
             <form id="frmSearchproductos" class="form-horizontal marginTop20" method="post" onsubmit="return false;" novalidate="">
                 <div class="form-group form-group-sm ">
-                    <label for="search-ISBN" class="control-label col-md-2 col-lg-2">ISBN:</label>
+                    <label for="search-NumeProd" class="control-label col-md-2 col-lg-2">Número:</label>
                     <div class="col-md-2 col-lg-2">
-                        <input type="text" class="form-control input-sm " id="search-ISBN" required value="">
+                        <input type="number" class="form-control input-sm " id="search-NumeProd" required value="">
                     </div>
                 </div>
                 <div class="form-group form-group-sm ">
                     <label for="search-NombProd" class="control-label col-md-2 col-lg-2">Nombre:</label>
                     <div class="col-md-6 col-lg-6">
                         <input type="text" class="form-control input-sm " id="search-NombProd" required size="200">
-                    </div>
-                </div>
-                <div class="form-group form-group-sm ">
-                    <label for="search-Autor" class="control-label col-md-2 col-lg-2">Autor:</label>
-                    <div class="col-md-3 col-lg-3">
-                        <input type="text" class="form-control input-sm " id="search-Autor" required size="40" value="">
                     </div>
                 </div>
                 <div class="form-group">
