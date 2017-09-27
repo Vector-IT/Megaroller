@@ -144,6 +144,7 @@ p {
 	background: #F1F1F1;
 }
 
+.inline-block{ display: inline-block; }
 
 /* MODAL */
 
@@ -919,7 +920,7 @@ h1 {
 	height: 18px !important;
 	border: 1px solid rgba(0, 0, 0, 0.5) !important;
 	border-radius: 18px !important;
-	magin: 0px !important;
+	margin: 0px !important;
 }
 
 #empresa .carousel-indicators .active {
@@ -1238,32 +1239,75 @@ h1 {
 
 */
 
-#materiales-cortinas .carousel-indicators, #materiales-toldos .carousel-indicators {
+#materiales-cortinas .carousel {
+    margin-bottom: 25px !important;
+}
+
+#materiales-cortinas .carousel-inner > .item > img {
+    width: 100%;
+}
+
+#materiales-cortinas  .carousel-inner {
+    max-height: 600px;
+}
+
+.modal .carousel-indicators, .modal .carousel-indicators {
     left: 75% !important;
     width: 25% !important;
     margin: 0px !important;
 	top: 10px;
 }
 
-#materiales-cortinas .carousel-inner, #materiales-toldos .carousel-inner {
+.modal .carousel-inner, .modal .carousel-inner {
     width: 75% !important;
 	
 }
 
-#materiales-cortinas .carousel-inner > .item > img, #materiales-toldos .carousel-inner > .item > img {
+.modal .carousel-inner > .item > img, .modal .carousel-inner > .item > img {
     min-width: 100% !important;
 }
 
-#materiales-cortinas .carousel-inner > .item, #materiales-toldos .carousel-inner > .item {
+.modal .carousel-inner > .item, .modal .carousel-inner > .item {
     max-height: 600px;
 }
 
-#materiales-cortinas .carousel-indicators li.active .codigo-color, #materiales-toldos .carousel-indicators li.active .codigo-color  {
+.modal .carousel-indicators li.active .codigo-color, .modal .carousel-indicators li.active .codigo-color  {
     color: #000 !important;
 }
 
-#materiales-cortinas .carousel-indicators li.active , #materiales-toldos .carousel-indicators li.active   {
+.modal .carousel-indicators li.active , .modal .carousel-indicators li.active   {
 	
+}
+
+@media all and (min-width: 768px) {
+.modal-lg {
+    width: 80% !important;
+}
+.modal-dialog {
+    margin: 5% auto !important;
+}
+}
+
+.modal.and.carousel {
+  position: fixed; // Needed because the carousel overrides the position property
+}
+
+.color {
+    display: table;
+    margin: 0 auto 5px;
+    width: 100%;
+    height: 70px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.color:hover {
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.35);
 }
 
 .carousel-indicators li .color {
@@ -1279,7 +1323,28 @@ h1 {
 }
 
 .carousel-indicators li.active .color {
-	border: 1px solid #000 !important;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.35);
+}
+
+.nav-color {
+    padding-left: 0px;
+	margin-top: 15px;
+}
+
+.nav-color li {
+    width: 100% !important;
+    height: 95px !important;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-bottom: 15px;
+    border: none !important;
+    margin-right: 2.5%;
+	list-style: none;
 }
 
 ol.carousel-indicators.col-2 li {
@@ -2162,7 +2227,8 @@ img.img-producto-carrito {
     position: absolute;
     padding: 25px;
 	z-index: 999; 
-	width: 75%;
+	width: 100%;
+	text-align: justify;
 }
 
 /* CONTACTO */
