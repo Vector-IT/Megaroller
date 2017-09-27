@@ -42,8 +42,12 @@
                      <div class="col-sm-3">
                         <div class="titulo-footer">Seguinos</div>
                         <div class="redes-sociales">
-                           <a href=""><img src="./img/footer-social_fb.png" alt=""> Facebook</a>
-                           <a href=""><img src="./img/footer-social_inst.png" alt=""> Instagram</a>
+                        <?php 
+                              if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="" src="./img/footer-social_fb.png" alt=""> Facebook</a>';
+                              if ($twit != '') echo $crlf.'<a href="'. $twit .'" target="_blank"><img class="" src="./img/footer-social_tw.png" alt=""> Twitter</a>';
+                              if ($inst != '') echo $crlf.'<a href="'. $inst .'" target="_blank"><img class="" src="./img/footer-social_inst.png" alt=""> Instagram</a>';
+                              if ($goog != '') echo $crlf.'<a href="'. $goog .'" target="_blank"><img class="" src="./img/footer-social_g+.png" alt=""> Google+</a>';
+                        ?>
                         </div>
                      </div>
                   </div>

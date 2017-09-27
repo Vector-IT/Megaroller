@@ -7,7 +7,7 @@
 		<div id="divCarrito"></div>
 
 		<p class="subtotal">Subtotal: $ <span id="subtotal">0</span></p>
-		<p class="subtotal">Bonificación: $ <span id="bonificacion">0</span></p>
+		<!-- <p class="subtotal">Bonificación: $ <span id="bonificacion">0</span></p> -->
 		<p class="total">Total: $ <span id="total">0</span></p>
 		<a href="mi-carrito.php" class="btn-carrito-negro">Comprar</a>  
 	</ul>

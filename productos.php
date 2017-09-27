@@ -1,3 +1,7 @@
+<?php
+	session_start();
+  require_once 'php/conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
    <head>
@@ -1906,35 +1910,7 @@
          <?php include 'php/footer.php'; ?>
       </div>
       <!-- /#page-content-wrapper --> 
-      <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-         <ul class="nav sidebar-nav">
-            <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-bottom"></span> </button>
-            <h1>Carrito de Compras</h1>
-            <article>
-               <div class="row">
-                  <p class="titulo">Roller Blackout</p>
-                  <div class="col-lg-5">
-                     <img class="img-center" alt="" src="./img/item-producto/thumb.jpg">
-                  </div>
-                  <div class="col-lg-6">
-                     <p class="cantidad">Cantidad: <span>1</span></p>
-                  </div>
-                  <div class="row">
-                     <div class="col-sm-12">
-                        <p class="precio">$ <span>1200</span></p>
-                        <a href="#" class="quitar">Quitar</a>
-                     </div>
-                  </div>
-               </div>
-            </article>
-            <p class="subtotal">Subtotal: $ <span>1200</span></p>
-            <p class="bonificacion">Envío: $<span>100</span></p>
-            <p class="total">Total: $ <span>1300</span></p>
-            <a href="mi-carrito.php" class="btn-carrito-negro">Comprar</a>  
-         </ul>
-      </nav>
-      <!-- /#sidebar-wrapper --> 
+      <?php include 'php/sidebar.php'; ?>
       </div>
       <!-- /#wrapper --> 
       <?php include 'php/scripts-footer.php'; ?>

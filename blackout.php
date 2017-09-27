@@ -233,10 +233,12 @@
                             <button id="btnAgregar" type="button" onclick="agregarProd()" class="animated fadeInLeft btn-agregar-carrito" >Agregar a carro de compras</button>
                         </div>
                         <ul class="redes-sociales">
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-fb.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-tw.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-g.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-pin.png"></a></li>
+                        <?php 
+                              if ($face != '') echo $crlf.'<li><a href="'. $face .'" target="_blank"><img class="" src="./img/item-producto/redes-fb.png" alt=""></a></li>';
+                              if ($twit != '') echo $crlf.'<li><a href="'. $twit .'" target="_blank"><img class="" src="./img/item-producto/redes-tw.png" alt=""></a></li>';
+                              if ($inst != '') echo $crlf.'<li><a href="'. $inst .'" target="_blank"><img class="" src="./img/item-producto/redes-inst.png" alt=""></a></li>';
+                              if ($goog != '') echo $crlf.'<li><a href="'. $goog .'" target="_blank"><img class="" src="./img/item-producto/redes-g.png" alt=""></a></li>';
+                        ?>
                         </ul>
                     </div>
                 </div>
