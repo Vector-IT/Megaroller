@@ -48,7 +48,7 @@
 	$tabla->jsOnEdit = '$("#NombConf").attr("readonly", true);';
 
 	$tabla->addFieldId("NumeConf", "Número");
-	$tabla->fields["NumeConf"]["readOnly"] = false;
+	// $tabla->fields["NumeConf"]["readOnly"] = false;
 	$tabla->addField("NombConf", "text", 60, "Nombre", true, true);
 	$tabla->addField("ValoConf", "text", 200, "Valor", false);
 	
