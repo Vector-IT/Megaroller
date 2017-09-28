@@ -1,4 +1,6 @@
 <?php
+    use TodoPago\Sdk;
+
     session_start();
     require_once 'php/conexion.php';
 
@@ -165,8 +167,6 @@
                 break;
             
             case '2': //Todo Pago
-                use TodoPago\Sdk;
-                
                 //importo archivo con SDK
                 include_once 'admin/todopago/autoload.php';
                 
