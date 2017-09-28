@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Producto X - MEGAROLLER | Fábrica de Cortinas Roller</title>
+    <title>Cortina Roller Blackout - MEGAROLLER | Fábrica de Cortinas Roller</title>
 
     <?php include 'php/links-header.php'; ?>
 
@@ -32,72 +32,7 @@
             <!-- CONTENIDO -->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <a class="modal-btn" data-toggle="modal" data-target="#fullGallery"><img alt="" src="./img/item-producto/icon-plus.jpg"></a>
-                        <!-- Modal -->
-                        <div class="modal fade modal-fullscreen" id="fullGallery" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="carousel slide article-slide" id="article-photo-carousel2">
-                                            <!-- Wrapper for slides -->
-                                            <div class="carousel-inner cont-slider">
-                                                <div class="item active">
-                                                    <img alt="" title="" src="./img/item-producto/blackout1.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout2.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout3.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout4.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout6.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout7.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout9.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout10.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout11.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout12.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout13.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout14.jpg">
-                                                </div>
-                                            </div>
-                                            <!-- Left and right controls -->
-                                            <a class="left carousel-control" href="#article-photo-carousel2" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left"></span>
-                                            <span class="sr-only">Anterior</span>
-                                            </a>
-                                            <a class="right carousel-control" href="#article-photo-carousel2" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                            <span class="sr-only">Siguiente</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-6">                      
                         <div class="carousel slide article-slide carousel-fade" id="article-photo-carousel" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner cont-slider">
@@ -208,13 +143,100 @@
                             <p>Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.<br/>
                                 Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
                             </p>
-                            <h4>OTRAS OPCIONES</h4>
-                            <ul class="relacionados">
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c1.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c3.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c5.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c7.gif"></a></li>
-                            </ul>
+                                       <ul class="relacionados">
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="0">
+                                                <img alt="" src="./img/item-producto/opciones_r2_c1.gif">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="1">
+                                                <img alt="" src="./img/item-producto/opciones_r2_c3.gif">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="2">
+                                                <img alt="" src="./img/item-producto/opciones_r2_c5.gif">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="3">
+                                                    <img alt="" src="./img/item-producto/opciones_r2_c7.gif">
+                                             </a>
+                                          </li>
+                                       </ul>
+                                                                                 <!-- Modal -->
+                                          <div class="modal fade and carousel slide" id="lightbox-fotos-producto">
+                                             <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                   <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h4 class="modal-title">Blackout</h4>
+                                                   </div>
+                                                   <div class="modal-body">
+                                     <div id="carousel-fotos-producto" class="carousel slide" data-ride="carousel">
+                                             <!-- Indicators -->
+                                             <ol class="carousel-indicators">
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="1"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="2"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="4"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="5"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="6"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="7"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="8"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="9"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="10"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="11"></li>                                                                                                
+                                             </ol>
+                                             <!-- Wrapper for slides -->
+                                             <div class="carousel-inner">
+                                                <div class="item active">
+                                                   <img src="./img/item-producto/blackout1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout2.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout3.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout4.jpg" alt="">
+                                                </div>  
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout6.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout7.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout9.jpg" alt="">
+                                                </div>  
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout10.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout11.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout12.jpg" alt="">
+                                                </div>  
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout13.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/blackout14.jpg" alt="">
+                                                </div>                                                                                                                                                
+                                             </div>
+                                          </div>
+
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
                         </div>
                     </div>
                     <div class="col-sm-6">

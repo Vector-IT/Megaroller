@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Producto X - MEGAROLLER | Fábrica de Cortinas Roller</title>
+    <title>Cortina Roller Sunscreen - MEGAROLLER | Fábrica de Cortinas Roller</title>
 
     <?php include 'php/links-header.php'; ?>
 
