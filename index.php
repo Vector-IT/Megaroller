@@ -90,7 +90,7 @@
                       <div class="producto">
                         <a href="item-productos.php" class="titulo-producto-grande">Blackout</a>
                         <p class="descripcion-producto">ELEGI TU MEDIDA MAS CONVENIENTE </p>
-                        <p class="precio-producto">Desde $1200</p>
+                        <p class="precio-producto">Desde $650</p>
                         <a href="blackout.php" class="btn btn-primary">Comprar</a>
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                       <div class="producto">
                         <a href="item-productos.php" class="titulo-producto-grande">Sunscreen</a>
                         <p class="descripcion-producto">ELEGI TU MEDIDA MAS CONVENIENTE </p>
-                        <p class="precio-producto">Desde $1200</p>
+                        <p class="precio-producto">Desde $850</p>
                         <a href="sunscreen.php" class="btn btn-primary">Comprar</a>
                       </div>
                     </div>

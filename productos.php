@@ -574,13 +574,13 @@
                                                       </li>
                                                       <li>
                                                          <a href="#lightbox-sunscreen5" data-toggle="modal" data-slide-to="1">
-                                                            <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
+                                                            <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
                                                             <p class="codigo-color">Blanco/Beige</p>
                                                          </a>
                                                       </li>
                                                       <li>
                                                          <a href="#lightbox-sunscreen5" data-toggle="modal" data-slide-to="2">
-                                                            <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
+                                                            <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
                                                             <p class="codigo-color">Blanco/Gris</p>
                                                          </a>
                                                       </li>
@@ -620,10 +620,10 @@
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
                                                                      </div>
                                                                      <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
+                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
                                                                      </div>
                                                                      <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
+                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
                                                                      </div>
                                                                      <div class="item">
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
@@ -642,11 +642,11 @@
                                                                         <p class="codigo-color">Blanco/Blanco</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="1" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
                                                                         <p class="codigo-color">Blanco/Beige</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="2" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
                                                                         <p class="codigo-color">Blanco/Gris</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="3" data-target="#lightbox-sunscreen5">
