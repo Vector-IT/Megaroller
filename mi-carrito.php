@@ -611,7 +611,7 @@
                             </div>
                             <div class="form-group">
                                 <label from="NombLoca">Localidad *</label>
-                                <input type="text" class="form-control form-custom" id="NombLoca" placeholder="Localidad *" required>
+                                <input type="text" class="form-control form-custom" id="NombLoca" placeholder="Localidad *" value="<?php echo $datosUsuario["NombLoca"]?>" required>
                             </div>
 							<div class="form-group">
 								<label for="NumeProv">Provincia *</label>
