@@ -1501,7 +1501,7 @@ ol.carousel-indicators.col-3 p {
 
 #article-photo-carousel .carousel-indicators li {
 	display: inline-block;
-	width: 50px;
+	width: 80px;
 	height: 50px;
 	margin: 5px 5px 5px 22px
 	text-indent: -999px;
@@ -1588,7 +1588,7 @@ ol.carousel-indicators.col-3 p {
 	#article-photo-carousel .carousel-indicators {
 	        left: 105% !important;
 		width: 100%;
-		margin: 75px auto;
+		margin: 70px auto;
 		position: absolute;
 		text-align: left;
 		top: 20px;
@@ -1781,7 +1781,10 @@ ol.carousel-indicators.col-3 p {
     z-index: 3;
 }
 
-
+.nombreColor {
+	display: inline;
+	font-size: 9px !important;
+}
 
 h1.nombre-producto {
     font-family: 'Aquawax-Light';

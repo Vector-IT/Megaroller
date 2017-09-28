@@ -5,7 +5,7 @@
 	   //Productos
 	$strSQL = "SELECT NumeProd, NombProd, ImpoVent, CantProd";
 	$strSQL.= $crlf."FROM productos";
-	$strSQL.= $crlf."WHERE NumeProd IN (SELECT NumeProd FROM productoscategorias WHERE NumeCate = 2)";
+	$strSQL.= $crlf."WHERE NumeProd IN (SELECT NumeProd FROM productoscategorias WHERE NumeCate = 1)";
 	$strSQL.= $crlf."AND NumeEsta = 1";
 	$productos = cargarTabla($strSQL);
 ?>
@@ -32,107 +32,56 @@
             <!-- CONTENIDO -->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <a class="modal-btn" data-toggle="modal" data-target="#fullGallery"><img alt="" src="./img/item-producto/icon-plus.jpg"></a>
-                        <!-- Modal -->
-                        <div class="modal fade modal-fullscreen" id="fullGallery" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="carousel slide article-slide" id="article-photo-carousel2">
-                                            <!-- Wrapper for slides -->
-                                            <div class="carousel-inner cont-slider">
-                                                <div class="item active">
-                                                    <img alt="" title="" src="./img/item-producto/blackout1.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout2.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout3.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout4.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout6.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout7.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout9.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout10.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout11.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout12.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout13.jpg">
-                                                </div>
-                                                <div class="item">
-                                                    <img alt="" title="" src="./img/item-producto/blackout14.jpg">
-                                                </div>
-                                            </div>
-                                            <!-- Left and right controls -->
-                                            <a class="left carousel-control" href="#article-photo-carousel2" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left"></span>
-                                            <span class="sr-only">Anterior</span>
-                                            </a>
-                                            <a class="right carousel-control" href="#article-photo-carousel2" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                            <span class="sr-only">Siguiente</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-6">                      
                         <div class="carousel slide article-slide carousel-fade" id="article-photo-carousel" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner cont-slider">
                                 <div class="item active">
-                                    <img alt="" title="" src="./img/item-producto/destacada1.jpg">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-blanco-blanco.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada2.jpg">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-beige-beige.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada3.jpg">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-blanco-gris.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada4.jpg">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-beige-beige.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada6.jpg">
-                                </div>
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-beige-negro.jpg">
+                                </div>      
+
+                                <div class="item">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-negro-negro.jpg">
+                                </div>   
+                                                                                                      
                             </div>
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-                                <li class="active inpColor" data-value="Blanco" data-slide-to="0" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c2.jpg">
+                                <li class="active inpColor" data-value="Blanco/Blanco" data-slide-to="0" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-blanco-blanco.jpg">
+                                    <p class="nombreColor">BLANCO/BLANCO</p>
                                 </li>
-                                <li class="inpColor" data-value="Natural" data-slide-to="1" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c4.jpg">
+                                <li class="inpColor" data-value="Beige/Beige" data-slide-to="1" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-beige-beige.jpg">
+                                    <p class="nombreColor">BLANCO/BEIGE</p>
                                 </li>
-                                <li class="inpColor" data-value="Beige" data-slide-to="2" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c6.jpg">
+                                <li class="inpColor" data-value="Blanco/Gris" data-slide-to="2" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-blanco-gris.jpg">
+                                    <p class="nombreColor">BLANCO/GRIS</p>
                                 </li>
-                                <li class="inpColor" data-value="Gris" data-slide-to="3" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c8.jpg">
+                                <li class="inpColor" data-value="Beige/Beige" data-slide-to="3" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-beige-beige.jpg">
+                                    <p class="nombreColor">BEIGE/BEIGE</p>
                                 </li>
-                                <li class="inpColor" data-value="Negro" data-slide-to="4" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r3_c4.jpg">
+                                <li class="inpColor" data-value="Beige/Negro" data-slide-to="4" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-beige-negro.jpg">
+                                    <p class="nombreColor">BEIGE/NEGRO</p>
+                                </li>
+                                <li class="inpColor" data-value="Negro/Negro" data-slide-to="5" data-target="#article-photo-carousel">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-negro-negro.jpg">
+                                    <p class="nombreColor">NEGRO/NEGRO</p>
                                 </li>
                             </ol>
                         </div>
@@ -141,20 +90,6 @@
                         <h1 class="nombre-producto">Roller Sunscreen</h1>
                         <h5 class="border">SELECCIONA EL COLOR</h5>
                         <div class="espacio-indicadores"></div>
-                        <div class="cc-selector-2" style="display:none !important;">
-                            <input id="color1" type="radio" name="creditcard" value="color1" />
-                            <label class="drinkcard-cc" for="color1" style="background-image:url(./img/item-producto/colores_r2_c2.jpg);"></label>
-                            <input  checked="checked" id="color2" type="radio" name="creditcard" value="color2" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c4.jpg);" for="color2"></label>
-                            <input  checked="checked" id="color3" type="radio" name="creditcard" value="color3" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c6.jpg);" for="color3"></label>
-                            <input  checked="checked" id="color4" type="radio" name="creditcard" value="color4" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c8.jpg);" for="color4"></label>
-                            <input  checked="checked" id="color5" type="radio" name="creditcard" value="color5" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r3_c2.jpg);" for="color5"></label>
-                            <input  checked="checked" id="color6" type="radio" name="creditcard" value="color6" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r3_c4.jpg);" for="color6"></label>
-                        </div>
                         <div style="margin-left:18px;margin-top: 15px;margin-bottom: 15px;"><strong>RECOMENDACIÓN vea como calcular la medida justa para su cortina<button type="button" class="btn-click" data-toggle="modal" data-target="#medidas">click aquí</button></strong></div>
                         <!-- Modal Medidas -->
                         <div class="modal fade" id="medidas" tabindex="-1" role="dialog" aria-labelledby="medidasLabel">
@@ -164,7 +99,6 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                                         </button>
-                                        
                                     </div>
                                     <h4 class="modal-title" id="myModalLabel" style="color:#FFF;">Medidas de aberturas</h4>
                                     <div class="modal-body">
@@ -206,16 +140,72 @@
                     <div class="col-sm-6">
                         <div class="info-producto">
                             <h2>Descripción</h2>
-                            <p>Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.<br/>
-                                Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
+                            <p>Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
+Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
+
                             </p>
-                            <h4>OTRAS OPCIONES</h4>
-                            <ul class="relacionados">
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c1.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c3.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c5.gif"></a></li>
-                                <li><a href="#"><img alt="" src="./img/item-producto/opciones_r2_c7.gif"></a></li>
-                            </ul>
+                                       <ul class="relacionados">
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="0">
+                                                <img alt="" src="./img/item-producto/sunscreen/thumb-sunscreen1.jpg">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="1">
+                                                <img alt="" src="./img/item-producto/sunscreen/thumb-sunscreen2.jpg">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="2">
+                                                <img alt="" src="./img/item-producto/sunscreen/thumb-sunscreen3.jpg">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="3">
+                                                    <img alt="" src="./img/item-producto/sunscreen/thumb-sunscreen4.jpg">
+                                             </a>
+                                          </li>
+                                       </ul>
+                                                                                 <!-- Modal -->
+                                          <div class="modal fade and carousel slide" id="lightbox-fotos-producto">
+                                             <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                   <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h4 class="modal-title">Sunscreen</h4>
+                                                   </div>
+                                                   <div class="modal-body">
+                                     <div id="carousel-fotos-producto" class="carousel slide" data-ride="carousel">
+                                             <!-- Indicators -->
+                                             <ol class="carousel-indicators">
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="1"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="2"></li>
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>                                                                                             
+                                             </ol>
+                                             <!-- Wrapper for slides -->
+                                             <div class="carousel-inner">
+                                                <div class="item active">
+                                                   <img src="./img/item-producto/sunscreen/sunscreen1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/sunscreen/sunscreen2.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/sunscreen/sunscreen3.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/item-producto/sunscreen/sunscreen4.jpg" alt="">
+                                                </div>                                                                                                                                                
+                                             </div>
+                                          </div>
+
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -230,14 +220,16 @@
                                     <button class="btn-plus"><span class="glyphicon glyphicon-plus"></span></button>
                                 </div>
                             </div>
-                            <!-- <a href="#" type="button" class="hamburger animated fadeInLeft btn-agregar-carrito" data-toggle="offcanvas">Agregar a carro de compras</a>  -->
+                            <!-- <button id="btnAgregar" type="button" class="hamburger animated fadeInLeft btn-agregar-carrito hide" data-toggle="offcanvas">Agregar a carro de compras</button>  -->
                             <button id="btnAgregar" type="button" onclick="agregarProd()" class="animated fadeInLeft btn-agregar-carrito" >Agregar a carro de compras</button>
                         </div>
                         <ul class="redes-sociales">
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-fb.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-tw.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-g.png"></a></li>
-                            <li><a href="#"><img alt="" src="./img/item-producto/redes-pin.png"></a></li>
+                        <?php 
+                              if ($face != '') echo $crlf.'<li><a href="'. $face .'" target="_blank"><img class="" src="./img/item-producto/redes-fb.png" alt=""></a></li>';
+                              if ($twit != '') echo $crlf.'<li><a href="'. $twit .'" target="_blank"><img class="" src="./img/item-producto/redes-tw.png" alt=""></a></li>';
+                              if ($inst != '') echo $crlf.'<li><a href="'. $inst .'" target="_blank"><img class="" src="./img/item-producto/redes-inst.png" alt=""></a></li>';
+                              if ($goog != '') echo $crlf.'<li><a href="'. $goog .'" target="_blank"><img class="" src="./img/item-producto/redes-g.png" alt=""></a></li>';
+                        ?>
                         </ul>
                     </div>
                 </div>
@@ -255,7 +247,6 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </button>
@@ -329,6 +320,14 @@
         </div>
     </div>
     <?php include 'php/scripts-footer.php'; ?>
+    <script>
+        // Open Modal
+        $(document).ready(function () {
+        
+            $('#medidas').modal('show');
+        
+        });
+    </script>             
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
