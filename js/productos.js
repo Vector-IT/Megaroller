@@ -3,8 +3,12 @@ $(document).ready(function () {
 
     $('#medidas').modal('show');
 
-    $('.carousel').carousel({
+    $('.article-slide').carousel({
         interval: false
+    });
+    
+    $('#lightbox-fotos-producto').carousel({
+        // interval: false
     });
     
     //-- Click on CANTIDAD

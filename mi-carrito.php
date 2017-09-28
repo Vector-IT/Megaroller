@@ -243,7 +243,7 @@
                 );
 
                 //creo instancia de la clase TodoPago
-                $connector = new Sdk($http_header, "test");
+                $connector = new Sdk($http_header, "prod");
 
                 $rta = $connector->sendAuthorizeRequest($optionsSAR_comercio, $optionsSAR_operacion);
                 if($rta['StatusCode'] != -1) {

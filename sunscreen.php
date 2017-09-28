@@ -172,9 +172,11 @@ Su tela de apariencia microperforada también brinda la posibilidad de disfrutar
                                                 <!-- Modal content-->
                                                 <div class="modal-content">
                                                    <div class="modal-header">
-                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Sunscreen</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                        </button>
                                                    </div>
+                                                   <h4 class="modal-title" style="color: white;">Sunscreen</h4>
                                                    <div class="modal-body">
                                      <div id="carousel-fotos-producto" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
