@@ -37,37 +37,42 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner cont-slider">
                                 <div class="item active">
-                                    <img alt="" title="" src="./img/item-producto/destacada1.jpg">
+                                    <img alt="" title="" src="./img/item-producto/blackout/foto-blanco.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada2.jpg">
+                                    <img alt="" title="" src="./img/item-producto/blackout/foto-natural.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada3.jpg">
+                                    <img alt="" title="" src="./img/item-producto/blackout/foto-beige.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada4.jpg">
+                                    <img alt="" title="" src="./img/item-producto/blackout/foto-gris.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/destacada6.jpg">
-                                </div>
+                                    <img alt="" title="" src="./img/item-producto/blackout/foto-negro.jpg">
+                                </div>                                
                             </div>
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                                 <li class="active inpColor" data-value="Blanco" data-slide-to="0" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c2.jpg">
+                                    <img alt="" src="./img/item-producto/blackout/color-blanco.jpg">
+                                    <p class="nombreColor">BLANCO</p>
                                 </li>
                                 <li class="inpColor" data-value="Natural" data-slide-to="1" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c4.jpg">
+                                    <img alt="" src="./img/item-producto/blackout/color-natural.jpg">
+                                    <p class="nombreColor">NATURAL</p>
                                 </li>
                                 <li class="inpColor" data-value="Beige" data-slide-to="2" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c6.jpg">
+                                    <img alt="" src="./img/item-producto/blackout/color-beige.jpg">
+                                    <p class="nombreColor">BEIGE</p>
                                 </li>
                                 <li class="inpColor" data-value="Gris" data-slide-to="3" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r2_c8.jpg">
+                                    <img alt="" src="./img/item-producto/blackout/color-gris.jpg">
+                                    <p class="nombreColor">GRIS</p>
                                 </li>
                                 <li class="inpColor" data-value="Negro" data-slide-to="4" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/colores_r3_c4.jpg">
+                                    <img alt="" src="./img/item-producto/blackout/color-negro.jpg">
+                                    <p class="nombreColor">NEGRO</p>
                                 </li>
                             </ol>
                         </div>
@@ -76,20 +81,6 @@
                         <h1 class="nombre-producto">Roller Blackout</h1>
                         <h5 class="border">SELECCIONA EL COLOR</h5>
                         <div class="espacio-indicadores"></div>
-                        <div class="cc-selector-2" style="display:none !important;">
-                            <input id="color1" type="radio" name="creditcard" value="color1" />
-                            <label class="drinkcard-cc" for="color1" style="background-image:url(./img/item-producto/colores_r2_c2.jpg);"></label>
-                            <input  checked="checked" id="color2" type="radio" name="creditcard" value="color2" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c4.jpg);" for="color2"></label>
-                            <input  checked="checked" id="color3" type="radio" name="creditcard" value="color3" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c6.jpg);" for="color3"></label>
-                            <input  checked="checked" id="color4" type="radio" name="creditcard" value="color4" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r2_c8.jpg);" for="color4"></label>
-                            <input  checked="checked" id="color5" type="radio" name="creditcard" value="color5" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r3_c2.jpg);" for="color5"></label>
-                            <input  checked="checked" id="color6" type="radio" name="creditcard" value="color6" />
-                            <label class="drinkcard-cc" style="background-image:url(./img/item-producto/colores_r3_c4.jpg);" for="color6"></label>
-                        </div>
                         <div style="margin-left:18px;margin-top: 15px;margin-bottom: 15px;"><strong>RECOMENDACIÓN vea como calcular la medida justa para su cortina<button type="button" class="btn-click" data-toggle="modal" data-target="#medidas">click aquí</button></strong></div>
                         <!-- Modal Medidas -->
                         <div class="modal fade" id="medidas" tabindex="-1" role="dialog" aria-labelledby="medidasLabel">
@@ -146,22 +137,22 @@
                                        <ul class="relacionados">
                                           <li>
                                              <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="0">
-                                                <img alt="" src="./img/item-producto/opciones_r2_c1.gif">
+                                                <img alt="" src="./img/item-producto/blackout/thumb-blackout1.gif">
                                              </a>
                                           </li>
                                           <li>
                                              <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="1">
-                                                <img alt="" src="./img/item-producto/opciones_r2_c3.gif">
+                                                <img alt="" src="./img/item-producto/blackout/thumb-blackout2.gif">
                                              </a>
                                           </li>
                                           <li>
                                              <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="2">
-                                                <img alt="" src="./img/item-producto/opciones_r2_c5.gif">
+                                                <img alt="" src="./img/item-producto/blackout/thumb-blackout3.gif">
                                              </a>
                                           </li>
                                           <li>
                                              <a href="#lightbox-fotos-producto" data-toggle="modal" data-slide-to="3">
-                                                    <img alt="" src="./img/item-producto/opciones_r2_c7.gif">
+                                                    <img alt="" src="./img/item-producto/blackout/thumb-blackout4.gif">
                                              </a>
                                           </li>
                                        </ul>
@@ -181,53 +172,21 @@
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="0" class="active"></li>
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="1"></li>
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="2"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="4"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="5"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="6"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="7"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="8"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="9"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="10"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="11"></li>                                                                                                
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>                                                                                             
                                              </ol>
                                              <!-- Wrapper for slides -->
                                              <div class="carousel-inner">
                                                 <div class="item active">
-                                                   <img src="./img/item-producto/blackout1.jpg" alt="">
+                                                   <img src="./img/item-producto/blackout/blackout1.jpg" alt="">
                                                 </div>
                                                 <div class="item">
-                                                   <img src="./img/item-producto/blackout2.jpg" alt="">
+                                                   <img src="./img/item-producto/blackout/blackout2.jpg" alt="">
                                                 </div>
                                                 <div class="item">
-                                                   <img src="./img/item-producto/blackout3.jpg" alt="">
+                                                   <img src="./img/item-producto/blackout/blackout3.jpg" alt="">
                                                 </div>
                                                 <div class="item">
-                                                   <img src="./img/item-producto/blackout4.jpg" alt="">
-                                                </div>  
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout6.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout7.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout9.jpg" alt="">
-                                                </div>  
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout10.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout11.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout12.jpg" alt="">
-                                                </div>  
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout13.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/item-producto/blackout14.jpg" alt="">
+                                                   <img src="./img/item-producto/blackout/blackout4.jpg" alt="">
                                                 </div>                                                                                                                                                
                                              </div>
                                           </div>
