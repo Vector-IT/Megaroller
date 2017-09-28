@@ -2470,9 +2470,9 @@ footer ul li {
 	margin-bottom: 5px;
 }
 
-footer ul li::before {
+/* footer ul li::before {
 	content: url(../img/home/punto.png);
-}
+} */
 
 footer ul li a {
 	color: #AAAAAA !important;
