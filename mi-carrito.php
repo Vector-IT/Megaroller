@@ -129,39 +129,45 @@
         $total = $subtotal - $bonificacion;
 
         //MERCADO PAGO
-        /*
-        require_once "admin/mercadopago/mercadopago.php";
+        $plataforma = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'PLATAFORMA DE PAGO'");
+        switch ($plataforma) {
+            case '1': //Mercado Pago
+                require_once "admin/mercadopago/mercadopago.php";
+                
+                $mpClientID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_ID'");
+                $mpClientSecret = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_SECRET'");
+                
+                $mp = new MP($mpClientID, $mpClientSecret);
         
-        $mpClientID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_ID'");
-        $mpClientSecret = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'MP_CLIENT_SECRET'");
-        
-        $mp = new MP($mpClientID, $mpClientSecret);
-
-        if ($subtotal > 0) {
-            $preference_data = array(
-                "items" => array(
-                    array(
-                        "title" => "Advocatus",
-                        "currency_id" => "ARS",
-                        "category_id" => "Libro",
-                        "picture_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."img/logo_transparente.png",
-                        "quantity" => 1,
-                        "unit_price" => $subtotal + $envio - $bonificacion
-                        )
-                    ),
-                    "external_reference" => $_SESSION["NumeCarr"],
-                    "notification_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."admin/mercadopago/notifications.php",
-                    "back_urls" => array(
-                        "success" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
-                        "pending" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
-                        "failure" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz
-                    )
-            );
+                if ($subtotal > 0) {
+                    $preference_data = array(
+                        "items" => array(
+                            array(
+                                "title" => "Advocatus",
+                                "currency_id" => "ARS",
+                                "category_id" => "Libro",
+                                "picture_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."img/logo_transparente.png",
+                                "quantity" => 1,
+                                "unit_price" => $subtotal + $envio - $bonificacion
+                                )
+                            ),
+                            "external_reference" => $_SESSION["NumeCarr"],
+                            "notification_url" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz ."admin/mercadopago/notifications.php",
+                            "back_urls" => array(
+                                "success" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
+                                "pending" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz,
+                                "failure" => "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz
+                            )
+                    );
+                    
+                    $preference = $mp->create_preference($preference_data);
+                }
+                break;
             
-            $preference = $mp->create_preference($preference_data);
+            case '2': //Todo Pago
+                break;
         }
-        */
-
+        
         $carrito->data_seek(0);
     }
 
