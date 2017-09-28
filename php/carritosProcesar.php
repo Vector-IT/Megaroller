@@ -213,11 +213,12 @@ function carrito() {
     $cantProd = 0;
 
     if (isset($_SESSION["NumeCarr"])) {
-        $strSQL = "SELECT cd.CodiIden, cd.NumeProd, cd.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag";
+        $strSQL = "SELECT cd.CodiIden, cd.NumeProd, cd.NombCate, cd.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag";
         $strSQL.= $crlf."FROM carritos c";
-        $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, p.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag";
+        $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, pc.NombCate, p.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag";
         $strSQL.= $crlf."			FROM carritosdetalles cd";
         $strSQL.= $crlf."			INNER JOIN productos p ON cd.NumeProd = p.NumeProd";
+        $strSQL.= $crlf."			INNER JOIN (SELECT NumeProd, NombCate FROM productoscategorias pc INNER JOIN categorias c ON pc.NumeCate = c.NumeCate)pc ON cd.NumeProd = pc.NumeProd";
         $strSQL.= $crlf."			LEFT JOIN productosimagenes pi ON cd.NumeProd = pi.NumeProd AND pi.NumeOrde = 1";
         $strSQL.= $crlf."		   ) cd ON c.NumeCarr = cd.NumeCarr";
         $strSQL.= $crlf."WHERE c.NumeCarr = ". $_SESSION["NumeCarr"];
@@ -234,7 +235,7 @@ function carrito() {
                 $strHTML.= $crlf.'			<a href="javascript:void(0);" class="quitar" onclick="quitarProd('. $fila["CodiIden"] .')">Quitar</a>';
                 $strHTML.= $crlf.'		</div>';
                 $strHTML.= $crlf.'		<div class="col-lg-6">';
-                $strHTML.= $crlf.'			<p class="titulo">'. $fila["NombProd"] .'</p>';
+                $strHTML.= $crlf.'			<p class="titulo">'. $fila["NombCate"].' - '.$fila["NombProd"] .'</p>';
                 $strHTML.= $crlf.'			<p class="cantidad">Cantidad: <span>'. $fila["CantProd"] .'</span></p>';
                 $strHTML.= $crlf.'			<p class="precio">$ <span>'. $fila["ImpoTota"] .'</span></p>';
                 $strHTML.= $crlf.'		</div>';

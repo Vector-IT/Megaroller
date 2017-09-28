@@ -5,11 +5,12 @@
     require_once 'php/conexion.php';
 
     if (isset($_SESSION["NumeCarr"])) {
-        $strSQL = $crlf."SELECT cd.CodiIden, c.NumeCarr, cd.NumeProd, cd.NombProd, cd.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag, cd.SlugProd, c.FlagShip";
+        $strSQL = $crlf."SELECT cd.CodiIden, c.NumeCarr, cd.NumeProd, cd.NombCate, cd.NombProd, cd.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag, cd.SlugProd, c.FlagShip";
         $strSQL.= $crlf."FROM carritos c";
-        $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, p.NombProd, p.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag, p.SlugProd";
+        $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, pc.NombCate, p.NombProd, p.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag, p.SlugProd";
         $strSQL.= $crlf."			FROM carritosdetalles cd";
         $strSQL.= $crlf."			INNER JOIN productos p ON cd.NumeProd = p.NumeProd";
+        $strSQL.= $crlf."			INNER JOIN (SELECT NumeProd, NombCate FROM productoscategorias pc INNER JOIN categorias c ON pc.NumeCate = c.NumeCate)pc ON cd.NumeProd = pc.NumeProd";
         $strSQL.= $crlf."			LEFT JOIN productosimagenes pi ON cd.NumeProd = pi.NumeProd AND pi.NumeOrde = 1";
         $strSQL.= $crlf."		   ) cd ON c.NumeCarr = cd.NumeCarr";
         $strSQL.= $crlf."WHERE c.NumeCarr = ". $_SESSION["NumeCarr"];
@@ -388,7 +389,7 @@
                 $strHTML.= $crlf.'    <div class="col-sm-3 noPadding">';
                 $strHTML.= $crlf.'        <h2 class="visible-xs">Descripción</h2>';
                 $strHTML.= $crlf.'        <article>';
-                $strHTML.= $crlf.'            <p class="info-producto">'. $fila["NombProd"] .'</p>';
+                $strHTML.= $crlf.'            <p class="info-producto">'. $fila["NombCate"].' - '.$fila["NombProd"] .'</p>';
                 $strHTML.= $crlf.'        </article>';
                 $strHTML.= $crlf.'    </div>';
                 $strHTML.= $crlf.'    <div class="col-sm-2 noPadding">';

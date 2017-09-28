@@ -39,7 +39,7 @@ if ($rta2['StatusCode'] != -1) {
 else {
     $numeEstaCarr = 7;
 
-    $datosUsuario = $config->buscarDato("SELECT NumeUser, NumeInvi, NombPers, MailUser, TeleUser, DireUser, CodiPost, NombLoca, NumeProv, ImpoTota FROM carritos WHERE NumeCarr = ".$numeCarr);
+    $datosUsuario = buscarDato("SELECT NumeUser, NumeInvi, NombPers, MailUser, TeleUser, DireUser, CodiPost, NombLoca, NumeProv, ImpoTota FROM carritos WHERE NumeCarr = ".$numeCarr);
     
     if ($datosUsuario["NombPers"] == '') {
         if ($datosUsuario["NumeUser"] != '') {
@@ -47,17 +47,17 @@ else {
             $strSQL.= $crlf."FROM usuarios u";
             $strSQL.= $crlf."WHERE u.NumeUser = ". $datosUsuario["NumeUser"];
     
-            $datosUsuario = $config->buscarDato($strSQL);
+            $datosUsuario = buscarDato($strSQL);
         }
         else {
             $strSQL = "SELECT u.NombPers, u.MailUser, u.TeleUser, u.DireUser, u.CodiPost, u.NombLoca, u.NumeProv";
             $strSQL.= $crlf."FROM invitados u";
             $strSQL.= $crlf."WHERE u.NumeInvi = ". $datosUsuario["NumeInvi"];
     
-            $datosUsuario = $config->buscarDato($strSQL);
+            $datosUsuario = buscarDato($strSQL);
         }
     }
-    $datosUsuario["ImpoTota"] = $config->buscarDato("SELECT ImpoTota FROM carritos WHERE NumeCarr = ".$numeCarr);
+    $datosUsuario["ImpoTota"] = buscarDato("SELECT ImpoTota FROM carritos WHERE NumeCarr = ".$numeCarr);
 
     //Actualizo datos del carrito
     $strSQL = "UPDATE carritos SET ";
@@ -71,24 +71,24 @@ else {
     $strSQL.= $crlf.", NumeProv = ". $datosUsuario["NumeProv"];
     $strSQL.= $crlf." WHERE NumeCarr = ".$numeCarr;
 
-    $config->ejecutarCMD($strSQL);
+    ejecutarCMD($strSQL);
 
     //Descuento promocion
-    $numeProm = $config->buscarDato("SELECT NumeProm FROM carritos WHERE NumeCarr = ". $numeCarr);
+    $numeProm = buscarDato("SELECT NumeProm FROM carritos WHERE NumeCarr = ". $numeCarr);
     if ($numeProm != '') {
         $strSQL  = "UPDATE promociones SET CantUtil = CantUtil + 1 WHERE NumeProm = ". $numeProm;
-        $config->ejecutarCMD($strSQL);
+        ejecutarCMD($strSQL);
     }
     
     //Descuento stock
     $strSQL = $crlf."SELECT cd.NumeProd, cd.CantProd";
     $strSQL.= $crlf."FROM carritosdetalles cd";
     $strSQL.= $crlf."WHERE cd.NumeCarr = ". $numeCarr;
-    $tblCarrito = $config->cargarTabla($strSQL);
+    $tblCarrito = cargarTabla($strSQL);
 
     while ($fila = $tblCarrito->fetch_assoc()) {
         $strSQL = $crlf."UPDATE productos SET CantProd = CantProd - {$fila["CantProd"]} WHERE NumeProd = ". $fila["NumeProd"];
-        $config->ejecutarCMD($strSQL);
+        ejecutarCMD($strSQL);
     }
 
     //Envio mail
