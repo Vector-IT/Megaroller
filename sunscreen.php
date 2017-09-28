@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cortina Roller Sunscreen - MEGAROLLER | Fábrica de Cortinas Roller</title>
+    <title>Cortina Roller Sunscreen 5% - MEGAROLLER | Fábrica de Cortinas Roller</title>
 
     <?php include 'php/links-header.php'; ?>
 
@@ -40,7 +40,7 @@
                                     <img alt="" title="" src="./img/item-producto/sunscreen/foto-blanco-blanco.jpg">
                                 </div>
                                 <div class="item">
-                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-beige-beige.jpg">
+                                    <img alt="" title="" src="./img/item-producto/sunscreen/foto-blanco-beige.jpg">
                                 </div>
                                 <div class="item">
                                     <img alt="" title="" src="./img/item-producto/sunscreen/foto-blanco-gris.jpg">
@@ -64,7 +64,7 @@
                                     <p class="nombreColor">BLANCO/BLANCO</p>
                                 </li>
                                 <li class="inpColor" data-value="Beige/Beige" data-slide-to="1" data-target="#article-photo-carousel">
-                                    <img alt="" src="./img/item-producto/sunscreen/color-beige-beige.jpg">
+                                    <img alt="" src="./img/item-producto/sunscreen/color-blanco-beige.jpg">
                                     <p class="nombreColor">BLANCO/BEIGE</p>
                                 </li>
                                 <li class="inpColor" data-value="Blanco/Gris" data-slide-to="2" data-target="#article-photo-carousel">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 top40 info-producto">
-                        <h1 class="nombre-producto">Roller Sunscreen</h1>
+                        <h1 class="nombre-producto">Roller Sunscreen <span style="font-family: 'BentonSans-Light' !important;">5</span>%</h1>
                         <h5 class="border">SELECCIONA EL COLOR</h5>
                         <div class="espacio-indicadores"></div>
                         <div style="margin-left:18px;margin-top: 15px;margin-bottom: 15px;"><strong>RECOMENDACIÓN vea como calcular la medida justa para su cortina<button type="button" class="btn-click" data-toggle="modal" data-target="#medidas">click aquí</button></strong></div>
