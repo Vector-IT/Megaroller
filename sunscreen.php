@@ -120,11 +120,52 @@
                             <?php 
                                 $strSalida = "";
                                 while ($fila = $productos->fetch_assoc()) {
+                                    //Categorias
+                                    $filtroCategorias.= ' OR pf.ValoFilt = 1';
+                                    
+                                    //Promociones
+                                    $strSQL = "SELECT NumeTipoProm, ValoProm, NumeTipoFilt, ValoFilt";
+                                    $strSQL.= $crlf."FROM promociones pr";
+                                    $strSQL.= $crlf."LEFT JOIN promocionesfiltros pf ON pr.NumeProm = pf.NumeProm";
+                                    $strSQL.= $crlf."WHERE pr.NumeEsta = 1";
+                                    $strSQL.= $crlf."AND (pr.NombCupo IS NULL OR pr.NombCupo = '')";
+                                    $strSQL.= $crlf."AND (pr.FechDesd IS NULL OR pr.FechDesd <= SYSDATE())";
+                                    $strSQL.= $crlf."AND (pr.FechHast IS NULL OR pr.FechHast > SYSDATE())";
+                                    $strSQL.= $crlf."AND (pr.CantPerm IS NULL OR pr.CantUtil < pr.CantPerm)";
+                                    $strSQL.= $crlf."AND (pf.NumeEsta = 1 OR pf.NumeEsta IS NULL)";
+                                    //Filtro por producto
+                                    $strSQL.= $crlf."AND (((pf.NumeTipoFilt IS NULL OR pf.NumeTipoFilt = 1) AND (pf.ValoFilt IS NULL OR pf.ValoFilt = {$fila["NumeProd"]}))";
+                                    //Filtro por categoría
+                                    $strSQL.= $crlf."OR ((pf.NumeTipoFilt IS NULL OR pf.NumeTipoFilt = 2) AND (pf.ValoFilt IS NULL {$filtroCategorias})))";
+
+                                    $promociones = cargarTabla($strSQL);
+
+                                    $impoUnit = $fila["ImpoVent"];
+
+                                    if ($promociones->num_rows > 0) {
+                                        while ($promo = $promociones->fetch_assoc()) {
+                                            switch ($promo["NumeTipoProm"]) {
+                                                case '1': //Porcentaje de descuento
+                                                    $impoUnit = number_format($impoUnit * (100 - $promo["ValoProm"]) / 100, 2);
+                                                    break;
+
+                                                case '2': //Monto de descuento
+                                                    if ($impoUnit < floatval($promo["ValoProm"])) {
+                                                        $impoUnit = 0;
+                                                    }
+                                                    else {
+                                                        $impoUnit = number_format($impoUnit - $promo["ValoProm"], 2);
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                    }
+
                                     if ($strSalida == "") {
-                                        $strSalida.= $crlf.'<label class="radio-inline radio-margenes"><input type="radio" name="NumeProd" value="'.$fila["NumeProd"].'" data-precio="'.$fila["ImpoVent"].'" checked onclick="verPrecio()">'.$fila["NombProd"].' - $'.$fila["ImpoVent"].'</label>';
+                                        $strSalida.= $crlf.'<label class="radio-inline radio-margenes"><input type="radio" name="NumeProd" value="'.$fila["NumeProd"].'" data-precio="'.$impoUnit.'" checked onclick="verPrecio()">'.$fila["NombProd"].' - $'.$impoUnit.'</label>';
                                     }
                                     else {
-                                        $strSalida.= $crlf.'<label class="radio-inline radio-margenes"><input type="radio" name="NumeProd" value="'.$fila["NumeProd"].'" data-precio="'.$fila["ImpoVent"].'" onclick="verPrecio()">'.$fila["NombProd"].' - $'.$fila["ImpoVent"].'</label>';
+                                        $strSalida.= $crlf.'<label class="radio-inline radio-margenes"><input type="radio" name="NumeProd" value="'.$fila["NumeProd"].'" data-precio="'.$impoUnit.'" onclick="verPrecio()">'.$fila["NombProd"].' - $'.$impoUnit.'</label>';
                                     }
                                 }
                                 echo $strSalida;
