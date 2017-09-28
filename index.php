@@ -186,15 +186,14 @@
 	     </div>  
       <!-- /.CONTENIDO -->
       
-           <?php include 'php/footer.php'; ?>
-           
-                    </div>
+      <?php include 'php/footer.php'; ?>
+      </div>
          <!-- /#page-content-wrapper --> 
          <?php include 'php/sidebar.php'; ?>
       </div>
       <!-- /#wrapper --> 
       
-            <?php include 'php/scripts-footer.php'; ?>
+      <?php include 'php/scripts-footer.php'; ?>
             
    </body>
 </html>

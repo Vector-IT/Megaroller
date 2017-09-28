@@ -187,8 +187,8 @@
                     'Security'=> SECURITY,
                     'EncodingMethod'=>ENCODINGMETHOD,
                     'Merchant'=>MERCHANT,
-                    'URL_OK'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "admin/todopago/exito.php?operationid=". $_SESSION["NumeCarr"],
-                    'URL_ERROR'=>"http://".$_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT'].str_replace ($_SERVER['DOCUMENT_ROOT'], '', dirname($_SERVER['SCRIPT_FILENAME']))."/error.php?operationid=". $_SESSION["NumeCarr"]
+                    'URL_OK'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraOk.php?operationid=". $_SESSION["NumeCarr"],
+                    'URL_ERROR'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraError.php?operationid=". $_SESSION["NumeCarr"],
                 );
                 
                 $optionsSAR_operacion = array(
