@@ -14,10 +14,6 @@
       
       <?php include 'php/links-header.php'; ?>
                
-      <!-- Fotorama -->
-      <link href="fotorama.css" rel="stylesheet">
-      <script src="fotorama.js"></script>
-
    </head>
    <body id="home">
       <div id="wrapper">

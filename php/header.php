@@ -4,9 +4,6 @@
 	$inst = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'INSTAGRAM'");
 	$goog = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'GOOGLE+'");
 
-  if (!isset($orden)) $orden = "1";
-	if (!isset($subcat)) $subcat = "";
-	
 	$numeUser = isset($_COOKIE["v-commerce_numeUser"])? $_COOKIE["v-commerce_numeUser"]: '';
 	if ($numeUser != '') {
 		cargarUsuario($numeUser);
@@ -30,7 +27,7 @@
 <!-- Links Header -->
 <div class="links-header">
 <div class="row noMargin">
-  <div class="col-lg-6">
+  <div class="col-lg-4">
     <div class="redes-sociales">
     <?php 
       if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="img-center" src="./img/social_fb.png" alt=""></a>';
@@ -40,11 +37,11 @@
 		?>
     </div>
   </div>
-  <div class="col-lg-6">
-        <a class="mis-compras pull-right" href="mi-carrito.php" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png"  alt="Mi Carrito" title="Mi Carrito" style="width: 25px;margin-top: 5px;"><span class="cantidad-productos cantProds"><?php echo $cantCarrito?></span></a>
-				<div id="divLogin" class="logueo pull-right" <?php echo (isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="#login-modal" data-toggle="modal" class="navbar-link" role="button"><img class="img-center" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;" alt="Ingresar" title="Ingresar"></a></div>
-				<div id="divLogout" class="logueo pull-right" <?php echo (!isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="php/logout.php" class="navbar-link clickable" title="Cerrar sesión"> <?php echo (isset($_SESSION['NumeUser'])? $_SESSION["NombPers"]: '')?> </div>
-            <p class="telefonos pull-right">0351 464 66 60 | 0351 155 228 460</p>
+  <div class="col-lg-8">
+        <a href="javascript:void(0);" onclick="abrirCarrito();" class="mis-compras pull-right" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png"  alt="Mi Carrito" title="Mi Carrito" style="width: 25px;margin-top: 5px;"><span class="cantidad-productos cantProds"><?php echo $cantCarrito?></span></a>
+		<div id="divLogin" class="logueo pull-right" <?php echo (isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="#login-modal" data-toggle="modal" class="navbar-link" role="button"><img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;" alt="Ingresar" title="Ingresar"> <div class="pull-right" style="margin: 8px 15px 0 0;">Ingresar</div></a></div>
+		<div id="divLogout" class="logueo pull-right" <?php echo (!isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="php/logout.php" class="navbar-link clickable" title="Cerrar sesión"><img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;"> <div class="pull-right" style="margin: 8px 15px 0 0;"><?php echo (isset($_SESSION['NumeUser'])? $_SESSION["NombPers"]: '')?></div></a></div>
+		<p class="telefonos pull-right">0351 464 66 60 | 0351 155 228 460</p>
     <a class="mail pull-right" href="mailto:ventas@megarollercortinas.com" target="_top">ventas@megarollercortinas.com</a>
 </div>
 </div>
@@ -95,7 +92,7 @@
 	<div class="modal-content">
 		<div class="modal-header" align="center">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 			</button>
 		</div>
 		<!-- Begin # DIV Form -->
