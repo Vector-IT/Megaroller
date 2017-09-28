@@ -165,6 +165,23 @@
                 break;
             
             case '2': //Todo Pago
+                use TodoPago\Sdk;
+                
+                //importo archivo con SDK
+                include_once 'admin/todopago/autoload.php';
+                
+                $tpMerchantID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_MERCHANT_ID'");
+                $tpAPIKey = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_API_KEY'");
+
+                //común a todas los métodos
+                $http_header = array('Authorization'=>'TODOPAGO '.$tpAPIKey,
+                    'user_agent' => 'PHPSoapClient');
+                
+                //datos constantes
+                define('CURRENCYCODE', 032);
+                define('MERCHANT', $tpMerchantID);
+                define('ENCODINGMETHOD', 'XML');
+                define('SECURITY', $tpAPIKey);
                 break;
         }
         
