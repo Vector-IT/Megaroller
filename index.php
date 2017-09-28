@@ -12,6 +12,11 @@
       <meta name="author" content="">
       <title>MEGAROLLER | Fábrica de Cortinas Roller</title>
       
+        <!-- Fotorama -->
+      <link href="fotorama/fotorama.css" rel="stylesheet">
+      <script src="fotorama/fotorama.js"></script>
+
+
       <?php include 'php/links-header.php'; ?>
                
    </head>

@@ -734,7 +734,7 @@ h1 {
 	font-family: 'Aquawax';
 	/* padding-left: 24px; */
 	color: #000;
-	/* text-align: center; */
+	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 40px;
 }
@@ -1675,7 +1675,24 @@ ol.carousel-indicators.col-3 p {
 .carousel-control.right {
     right: -15%;
     }
-    
+
+
+#lightbox-fotos-producto.modal .carousel-indicators, .modal .carousel-indicators {
+    left: unset !important;
+    width: 100% !important;
+    margin: unset !important;
+	top: unset !important;
+}
+
+#lightbox-fotos-producto.modal .carousel-inner, .modal .carousel-inner {
+    width: 100% !important;
+	
+}
+
+#lightbox-fotos-producto .carousel {
+    margin-bottom: 0px !important;
+}
+
 /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
 .modal-fullscreen .modal-dialog {

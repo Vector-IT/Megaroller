@@ -4,8 +4,10 @@
       <link href="css/estilos.css" rel="stylesheet">
       <link href="css/sidebar.css" rel="stylesheet">
       <link href="fuentes/fuentes.css" rel="stylesheet">
+      
       <!-- jQuery -->
-      <script src="js/jquery.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      
       <!-- Bootstrap Core JavaScript -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/back-to-top.js"></script> 
