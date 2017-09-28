@@ -5,7 +5,7 @@
 	   //Productos
 	$strSQL = "SELECT NumeProd, NombProd, ImpoVent, CantProd";
 	$strSQL.= $crlf."FROM productos";
-	$strSQL.= $crlf."WHERE NumeProd IN (SELECT NumeProd FROM productoscategorias WHERE NumeCate = 1)";
+	$strSQL.= $crlf."WHERE NumeProd IN (SELECT NumeProd FROM productoscategorias WHERE NumeCate = 2)";
 	$strSQL.= $crlf."AND NumeEsta = 1";
 	$productos = cargarTabla($strSQL);
 ?>

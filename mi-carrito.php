@@ -5,9 +5,9 @@
     require_once 'php/conexion.php';
 
     if (isset($_SESSION["NumeCarr"])) {
-        $strSQL = $crlf."SELECT c.NumeCarr, cd.NumeProd, cd.NombProd, cd.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag, cd.SlugProd, c.FlagShip";
+        $strSQL = $crlf."SELECT cd.CodiIden, c.NumeCarr, cd.NumeProd, cd.NombProd, cd.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag, cd.SlugProd, c.FlagShip";
         $strSQL.= $crlf."FROM carritos c";
-        $strSQL.= $crlf."INNER JOIN (SELECT cd.NumeCarr, cd.NumeProd, p.NombProd, p.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag, p.SlugProd";
+        $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, p.NombProd, p.Peso, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag, p.SlugProd";
         $strSQL.= $crlf."			FROM carritosdetalles cd";
         $strSQL.= $crlf."			INNER JOIN productos p ON cd.NumeProd = p.NumeProd";
         $strSQL.= $crlf."			LEFT JOIN productosimagenes pi ON cd.NumeProd = pi.NumeProd AND pi.NumeOrde = 1";
@@ -32,7 +32,9 @@
 
 	//Datos usuario
 	$numeUser = isset($_SESSION["NumeUser"])? $_SESSION["NumeUser"]: '';
-	$numeInvi = isset($_SESSION["NumeInvi"])? $_SESSION["NumeInvi"]: '';
+    $numeInvi = isset($_SESSION["NumeInvi"])? $_SESSION["NumeInvi"]: '';
+    
+    $plataformaPago = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'PLATAFORMA DE PAGO'");
 
 	if ($numeUser != '') {
         $strSQL = "SELECT u.NombPers, u.MailUser, u.TeleUser, u.DireUser, u.CodiPost, u.NumeProv, u.NombLoca, p.NombProv, p.CodiProv";
@@ -131,7 +133,6 @@
         $total = $subtotal - $bonificacion;
 
         //MERCADO PAGO
-        $plataformaPago = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'PLATAFORMA DE PAGO'");
         switch ($plataformaPago) {
             case '1': //Mercado Pago
                 require_once "admin/mercadopago/mercadopago.php";
@@ -168,91 +169,93 @@
             
             case '2': //Todo Pago
                 //importo archivo con SDK
-                include_once __DIR__.'/admin/todopago/vendor/autoload.php';
-                
-                $tpMerchantID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_MERCHANT_ID'");
-                $tpAPIKey = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_API_KEY'");
-
-                //común a todas los métodos
-                $http_header = array('Authorization'=>'TODOPAGO '.$tpAPIKey,
-                    'user_agent' => 'PHPSoapClient');
-                
-                //datos constantes
-                define('CURRENCYCODE', 032);
-                define('MERCHANT', $tpMerchantID);
-                define('ENCODINGMETHOD', 'XML');
-                define('SECURITY', $tpAPIKey);
-
-                $optionsSAR_comercio = array (
-                    'Security'=> SECURITY,
-                    'EncodingMethod'=>ENCODINGMETHOD,
-                    'Merchant'=>MERCHANT,
-                    'URL_OK'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraOk.php?operationid=". $_SESSION["NumeCarr"],
-                    'URL_ERROR'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraError.php?operationid=". $_SESSION["NumeCarr"],
-                );
-                
-                $optionsSAR_operacion = array(
-                    'MERCHANT'=>MERCHANT,
-                    'OPERATIONID'=>$_SESSION["NumeCarr"],
-                    'AMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""),
-                    'CSBTCITY'=>'Cordoba', //Ciudad de facturación, REQUERIDO.
-                    'CSBTCOUNTRY'=>'AR', //País de facturación. REQUERIDO. Código ISO.
-                    'CSBTCUSTOMERID'=>($numeUser != ''? $numeUser: $numeInvi), //Identificador del usuario al que se le emite la factura. REQUERIDO. No puede contener un correo electrónico.
-                    'CSBTIPADDRESS'=>get_ip_address(), //IP de la PC del comprador. REQUERIDO.
-                    'CSBTEMAIL'=>$datosUsuario["MailUser"], //Mail del usuario al que se le emite la factura. REQUERIDO.
-                    'CSBTFIRSTNAME'=>explode(" ", $datosUsuario["NombPers"])[0] ,//Nombre del usuario al que se le emite la factura. REQUERIDO.
-                    'CSBTLASTNAME'=>explode(" ", $datosUsuario["NombPers"], 2)[1], //Apellido del usuario al que se le emite la factura. REQUERIDO.
+                if ($datosUsuario["NombPers"] != '') {
+                    include_once 'admin/todopago/vendor/autoload.php';
                     
-                    'CSBTPHONENUMBER'=>str_replace(" ", "", 
-                                        str_replace(",", "", 
-                                        str_replace("-", "", 
-                                        str_replace(".", "", $datosUsuario["TeleUser"])))), //Teléfono del usuario al que se le emite la factura. No utilizar guiones, puntos o espacios. Incluir código de país. REQUERIDO.
+                    $tpMerchantID = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_MERCHANT_ID'");
+                    $tpAPIKey = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TP_API_KEY'");
+
+                    //común a todas los métodos
+                    $http_header = array('Authorization'=>'TODOPAGO '.$tpAPIKey,
+                        'user_agent' => 'PHPSoapClient');
                     
-                    'CSBTPOSTALCODE'=>$datosUsuario["CodiPost"], //Código Postal de la dirección de facturación. REQUERIDO.
-                    'CSBTSTATE'=>$datosUsuario["CodiProv"], //Provincia de la dirección de facturación. REQUERIDO. Ver tabla anexa de provincias.
-                    'CSBTSTREET1'=>$datosUsuario["DireUser"], //Domicilio de facturación (calle y nro). REQUERIDO.
-                    'CSPTCURRENCY'=>'ARS', //Moneda. REQUERIDO.
-                    'CSPTGRANDTOTALAMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //Con decimales opcional usando el punto como separador de decimales. No se permiten comas, ni como separador de miles ni como separador de decimales. REQUERIDO. (Ejemplos:$125,38-> 125.38 $12-> 12 o 12.00)
-                    'CSMDD8'=>'Y', //Usuario Guest? (Y/N). En caso de ser Y, el campo CSMDD9 no deberá enviarse. OPCIONAL.
-                    'CSSTCITY'=>$datosUsuario["NombLoca"], //Ciudad de envío de la orden. REQUERIDO.
-                    'CSSTCOUNTRY'=>'AR', //País de envío de la orden. REQUERIDO.
-                    'CSSTEMAIL'=>$datosUsuario["MailUser"], //Mail del destinatario, REQUERIDO.
-                    'CSSTFIRSTNAME'=>explode(" ", $datosUsuario["NombPers"])[0], //Nombre del destinatario. REQUERIDO.
-                    'CSSTLASTNAME'=>explode(" ", $datosUsuario["NombPers"], 2)[1], //Apellido del destinatario. REQUERIDO.
-                    'CSSTPHONENUMBER'=>str_replace(" ", "", 
-                                        str_replace(",", "", 
-                                        str_replace("-", "", 
-                                        str_replace(".", "", $datosUsuario["TeleUser"])))), //Número de teléfono del destinatario. REQUERIDO.
-                    'CSSTPOSTALCODE'=>$datosUsuario["CodiPost"], //Código postal del domicilio de envío. REQUERIDO.
-                    'CSSTSTATE'=>$datosUsuario["CodiProv"], //Provincia de envío. REQUERIDO. Son de 1 caracter
-                    'CSSTSTREET1'=>$datosUsuario["DireUser"], //Domicilio de envío. REQUERIDO.
-                    // 'CSMDD12'=>'',//Shipping DeadLine (Num Dias). NO REQUERIDO.
-                    // 'CSMDD13'=>'',//Método de Despacho. NO REQUERIDO.
-                    // 'CSMDD14'=>'',//Customer requires Tax Bill ? (Y/N). NO REQUERIDO.
-                    // 'CSMDD15'=>'',//Customer Loyality Number. NO REQUERIDO.
-                    // 'CSMDD16'=>'',//Promotional / Coupon Code. NO REQUERIDO.
+                    //datos constantes
+                    define('CURRENCYCODE', 032);
+                    define('MERCHANT', $tpMerchantID);
+                    define('ENCODINGMETHOD', 'XML');
+                    define('SECURITY', $tpAPIKey);
 
-                    //Retail: datos a enviar por cada producto, los valores deben estar separados con #:
-                    'CSITPRODUCTCODE'=>'default', //Código de producto. REQUERIDO. Valores posibles(adult_content;coupon;default;electronic_good;electronic_software;gift_certificate;handling_only;service;shipping_and_handling;shipping_only;subscription)
-                    'CSITPRODUCTDESCRIPTION'=>'Megaroller', //Descripción del producto. REQUERIDO.
-                    'CSITPRODUCTNAME'=>'Megaroller', //Nombre del producto. REQUERIDO.
-                    'CSITPRODUCTSKU'=>$_SESSION["NumeCarr"], //Código identificador del producto. REQUERIDO.
-                    'CSITTOTALAMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //CSITTOTALAMOUNT=CSITUNITPRICE*CSITQUANTITY "999999[.CC]" Con decimales opcional usando el punto como separador de decimales. No se permiten comas, ni como separador de miles ni como separador de decimales. REQUERIDO.
-                    'CSITQUANTITY'=>'1', //Cantidad del producto. REQUERIDO.
-                    'CSITUNITPRICE'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //Formato Idem CSITTOTALAMOUNT. REQUERIDO.
-                );
+                    $optionsSAR_comercio = array (
+                        'Security'=> SECURITY,
+                        'EncodingMethod'=>ENCODINGMETHOD,
+                        'Merchant'=>MERCHANT,
+                        'URL_OK'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraOk.php?operationid=". $_SESSION["NumeCarr"],
+                        'URL_ERROR'=>"http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz . "compraError.php?operationid=". $_SESSION["NumeCarr"],
+                    );
+                    
+                    $optionsSAR_operacion = array(
+                        'MERCHANT'=>MERCHANT,
+                        'OPERATIONID'=>$_SESSION["NumeCarr"],
+                        'AMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""),
+                        'CSBTCITY'=>'Cordoba', //Ciudad de facturación, REQUERIDO.
+                        'CSBTCOUNTRY'=>'AR', //País de facturación. REQUERIDO. Código ISO.
+                        'CSBTCUSTOMERID'=>($numeUser != ''? $numeUser: $numeInvi), //Identificador del usuario al que se le emite la factura. REQUERIDO. No puede contener un correo electrónico.
+                        'CSBTIPADDRESS'=>get_ip_address(), //IP de la PC del comprador. REQUERIDO.
+                        'CSBTEMAIL'=>$datosUsuario["MailUser"], //Mail del usuario al que se le emite la factura. REQUERIDO.
+                        'CSBTFIRSTNAME'=>explode(" ", $datosUsuario["NombPers"])[0] ,//Nombre del usuario al que se le emite la factura. REQUERIDO.
+                        'CSBTLASTNAME'=>explode(" ", $datosUsuario["NombPers"], 2)[1], //Apellido del usuario al que se le emite la factura. REQUERIDO.
+                        
+                        'CSBTPHONENUMBER'=>str_replace(" ", "", 
+                                            str_replace(",", "", 
+                                            str_replace("-", "", 
+                                            str_replace(".", "", $datosUsuario["TeleUser"])))), //Teléfono del usuario al que se le emite la factura. No utilizar guiones, puntos o espacios. Incluir código de país. REQUERIDO.
+                        
+                        'CSBTPOSTALCODE'=>$datosUsuario["CodiPost"], //Código Postal de la dirección de facturación. REQUERIDO.
+                        'CSBTSTATE'=>$datosUsuario["CodiProv"], //Provincia de la dirección de facturación. REQUERIDO. Ver tabla anexa de provincias.
+                        'CSBTSTREET1'=>$datosUsuario["DireUser"], //Domicilio de facturación (calle y nro). REQUERIDO.
+                        'CSPTCURRENCY'=>'ARS', //Moneda. REQUERIDO.
+                        'CSPTGRANDTOTALAMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //Con decimales opcional usando el punto como separador de decimales. No se permiten comas, ni como separador de miles ni como separador de decimales. REQUERIDO. (Ejemplos:$125,38-> 125.38 $12-> 12 o 12.00)
+                        'CSMDD8'=>'Y', //Usuario Guest? (Y/N). En caso de ser Y, el campo CSMDD9 no deberá enviarse. OPCIONAL.
+                        'CSSTCITY'=>$datosUsuario["NombLoca"], //Ciudad de envío de la orden. REQUERIDO.
+                        'CSSTCOUNTRY'=>'AR', //País de envío de la orden. REQUERIDO.
+                        'CSSTEMAIL'=>$datosUsuario["MailUser"], //Mail del destinatario, REQUERIDO.
+                        'CSSTFIRSTNAME'=>explode(" ", $datosUsuario["NombPers"])[0], //Nombre del destinatario. REQUERIDO.
+                        'CSSTLASTNAME'=>explode(" ", $datosUsuario["NombPers"], 2)[1], //Apellido del destinatario. REQUERIDO.
+                        'CSSTPHONENUMBER'=>str_replace(" ", "", 
+                                            str_replace(",", "", 
+                                            str_replace("-", "", 
+                                            str_replace(".", "", $datosUsuario["TeleUser"])))), //Número de teléfono del destinatario. REQUERIDO.
+                        'CSSTPOSTALCODE'=>$datosUsuario["CodiPost"], //Código postal del domicilio de envío. REQUERIDO.
+                        'CSSTSTATE'=>$datosUsuario["CodiProv"], //Provincia de envío. REQUERIDO. Son de 1 caracter
+                        'CSSTSTREET1'=>$datosUsuario["DireUser"], //Domicilio de envío. REQUERIDO.
+                        // 'CSMDD12'=>'',//Shipping DeadLine (Num Dias). NO REQUERIDO.
+                        // 'CSMDD13'=>'',//Método de Despacho. NO REQUERIDO.
+                        // 'CSMDD14'=>'',//Customer requires Tax Bill ? (Y/N). NO REQUERIDO.
+                        // 'CSMDD15'=>'',//Customer Loyality Number. NO REQUERIDO.
+                        // 'CSMDD16'=>'',//Promotional / Coupon Code. NO REQUERIDO.
 
-                //creo instancia de la clase TodoPago
-                $connector = new Sdk($http_header, "prod");
+                        //Retail: datos a enviar por cada producto, los valores deben estar separados con #:
+                        'CSITPRODUCTCODE'=>'default', //Código de producto. REQUERIDO. Valores posibles(adult_content;coupon;default;electronic_good;electronic_software;gift_certificate;handling_only;service;shipping_and_handling;shipping_only;subscription)
+                        'CSITPRODUCTDESCRIPTION'=>'Megaroller', //Descripción del producto. REQUERIDO.
+                        'CSITPRODUCTNAME'=>'Megaroller', //Nombre del producto. REQUERIDO.
+                        'CSITPRODUCTSKU'=>$_SESSION["NumeCarr"], //Código identificador del producto. REQUERIDO.
+                        'CSITTOTALAMOUNT'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //CSITTOTALAMOUNT=CSITUNITPRICE*CSITQUANTITY "999999[.CC]" Con decimales opcional usando el punto como separador de decimales. No se permiten comas, ni como separador de miles ni como separador de decimales. REQUERIDO.
+                        'CSITQUANTITY'=>'1', //Cantidad del producto. REQUERIDO.
+                        'CSITUNITPRICE'=>number_format($subtotal + $envio - $bonificacion, 2, ".", ""), //Formato Idem CSITTOTALAMOUNT. REQUERIDO.
+                    );
 
-                $rta = $connector->sendAuthorizeRequest($optionsSAR_comercio, $optionsSAR_operacion);
-                if($rta['StatusCode'] != -1) {
-                    //Error
-                    // $rta['StatusMessage'];
-                }
-                else {
-                    setcookie('RequestKey',$rta["RequestKey"],  time() + (86400 * 30), "/");
-                    $tp_URL = $rta["URL_Request"];
+                    //creo instancia de la clase TodoPago
+                    $connector = new Sdk($http_header, "prod");
+
+                    $rta = $connector->sendAuthorizeRequest($optionsSAR_comercio, $optionsSAR_operacion);
+                    if($rta['StatusCode'] != -1) {
+                        //Error
+                        $tp_Error = $rta['StatusMessage'];
+                    }
+                    else {
+                        setcookie('RequestKey',$rta["RequestKey"],  time() + (86400 * 30), "/");
+                        $tp_URL = $rta["URL_Request"];
+                    }
                 }
                 break;
         }
@@ -277,7 +280,7 @@
         function quitarProd1(strID) {
             $.post("php/carritosProcesar.php", { 
                 "operacion": "2",
-                "NumeProd": strID,
+                "CodiIden": strID,
                 },
                 function (data) {
                     if (data.estado === true) {
@@ -408,7 +411,7 @@
                 $strHTML.= $crlf.'    </div>';
                 $strHTML.= $crlf.'</div>';
                 $strHTML.= $crlf.'<div class="row">';
-                $strHTML.= $crlf.'    <div class="eliminar-item"><span class="clickable" data-js="quitarProd1('. $fila["NumeProd"] .');">ELIMINAR ITEM X</span></div>';
+                $strHTML.= $crlf.'    <div class="eliminar-item"><span class="clickable" onclick="quitarProd1('. $fila["CodiIden"] .');">ELIMINAR ITEM X</span></div>';
                 $strHTML.= $crlf.'</div>';
             }
             echo $strHTML;
@@ -421,7 +424,12 @@
         <div class="row">
             <div class="col-lg-6">
 				<h4>Datos de envío y contacto</h4>
-				<?php 
+                <?php 
+                    if (isset($tp_Error)) {
+                        $strSalida.= $crlf.'<p><strong>'.$tp_Error.'</strong></p>';
+                        echo $strSalida;
+                    }
+
 					if (isset($datosUsuario)) {
 						$strSalida = '';
 						if ($subtotal > 0 && $envio == 0 && $ship == "1") {

@@ -13,7 +13,7 @@ require_once 'php/conexion.php';
     <title>MEGAROLLER | Fábrica de Cortinas Roller</title>
 
     <?php include 'php/links-header.php'; ?>
-
+    <link href="admin/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -25,7 +25,7 @@ require_once 'php/conexion.php';
             <?php include 'php/header.php'; ?>
 
             <div class="container-full">
-                <h1>Error al recibir su pago!</h1>
+                <h1 style="min-height: 46.5vh; padding: 15vh 0;">Error al recibir su pago!<br>Por favor intentá nuevamente!<br><a href="mi-carrito.php"><i class="fa fa-shopping-cart fa-3x img-center" aria-hidden="true"></i></a></h1>
             </div>
             <!-- /.CONTENIDO -->
 

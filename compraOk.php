@@ -161,7 +161,7 @@ else {
             <?php include 'php/header.php'; ?>
 
             <div class="container-full">
-                <h1>Su compra fue exitosa!</h1>
+                <h1 style="min-height: 46.5vh; padding: 15vh 0;">Muchas gracias por su compra!</h1>
             </div>
             <!-- /.CONTENIDO -->
 

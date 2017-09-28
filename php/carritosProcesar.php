@@ -122,11 +122,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $impoTota = $cantProd * $impoUnit;
                 
                 $strSQL = "UPDATE carritosdetalles SET";
-                $strSQL = $crlf."CantProd = {$cantProd}";
-                $strSQL = $crlf.", ImpoUnit = {$impoUnit}";
-                $strSQL = $crlf.", ImpoTota = {$impoTota}";
+                $strSQL.= $crlf."CantProd = {$cantProd}";
+                $strSQL.= $crlf.", ImpoUnit = {$impoUnit}";
+                $strSQL.= $crlf.", ImpoTota = {$impoTota}";
                 $strSQL.= $crlf."WHERE NumeCarr = {$numeCarr}";
-                $strSQL = $crlf."AND NumeProd = {$numeProd};";
+                $strSQL.= $crlf."AND NumeProd = {$numeProd}";
                 $strSQL.= $crlf."AND Color = '{$color}'";
                 $strSQL.= $crlf."AND Montaje = '{$montaje}'";
                 $strSQL.= $crlf."AND Control = '{$control}'";
