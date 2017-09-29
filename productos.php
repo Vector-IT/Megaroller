@@ -42,11 +42,11 @@
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Blackout</h1>
-                                       <div class="col-md-9">
-                                          <div id="carousel-roller-blackout" class="carousel slide" data-ride="carousel">
-                                             <p class="overlay-desc">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
+                                           <p class="pad25">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
                                                 Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
                                              </p>
+                                       <div class="col-md-9">
+                                          <div id="carousel-roller-blackout" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
                                              <ol class="carousel-indicators">
                                                 <li data-target="#carousel-roller-blackout" data-slide-to="0" class="active"></li>
@@ -804,10 +804,11 @@
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Sistema Doble</h1>
+                                         <p class="pad25">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
+                                             </p>
                                        <div class="col-md-9">
                                           <div id="carousel-roller-sistema-doble" class="carousel slide" data-ride="carousel">
-                                             <p class="overlay-desc">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
-                                             </p>
+             
                                              <!-- Indicators -->
                                              <ol class="carousel-indicators">
                                                 <li data-target="#carousel-roller-sistema-doble" data-slide-to="0" class="active"></li>
@@ -973,11 +974,11 @@
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Dual</h1>
-                                       <div class="col-md-9">
-                                          <div id="carousel-roller-dual" class="carousel slide" data-ride="carousel">
-                                             <p class="overlay-desc">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
+                                       <p class="pad25">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
                                                 Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
                                              </p>
+                                       <div class="col-md-9">
+                                          <div id="carousel-roller-dual" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
                                              <ol class="carousel-indicators">
                                                 <li data-target="#carousel-roller-dual" data-slide-to="0" class="active"></li>
@@ -1121,12 +1122,12 @@
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
                                     <h1 class="nombre-producto">Toldos Brazos Invisibles o Extensibles</h1>
-                                    <div class="col-md-9">
-                                       <div id="carousel-toldo-brazo-invisible" class="carousel slide" data-ride="carousel">
-                                          <p class="overlay-desc">El toldo de brazos invisibles, es sumamente versátil, ajustándose absolutamente a todas las necesidades y lugares de instalación, su uso es muy variado, y si bien, es el toldo ideal para generar espacios habitables de sombra al aire libre, también se lo puede utilizar para controlar el impacto del sol sobre ventanas.
+                                                                              <p class="pad25">El toldo de brazos invisibles, es sumamente versátil, ajustándose absolutamente a todas las necesidades y lugares de instalación, su uso es muy variado, y si bien, es el toldo ideal para generar espacios habitables de sombra al aire libre, también se lo puede utilizar para controlar el impacto del sol sobre ventanas.
                                              Con brazos de poco desarrollo, 1.60mts o 2.10mts, se puede utilizar para evitar el impacto del el sol sobre ventanas o ventanales, controlando la temperatura del ambiente, evitando el calor excesivo sobre la abertura, e impidiendo que el sol ingrese al interior de la casa.
                                              Con brazos de gran desarrollo, como los de 2.60mts/3.10mts/3.60mts/4.10mts, se pueden lograr perfectos espacios de sombra en el exteriores, creando un agradable ambiente de sombra al aire libre.
                                           </p>
+                                    <div class="col-md-9">
+                                       <div id="carousel-toldo-brazo-invisible" class="carousel slide" data-ride="carousel">
                                           <!-- Indicators -->
                                           <ol class="carousel-indicators">
                                              <li data-target="#carousel-toldo-brazo-invisible" data-slide-to="0" class="active"></li>
@@ -1353,12 +1354,11 @@
                            <div class="tab-pane" id="toldo-brazo-punto-fijo">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
-                                    <h1 class="nombre-producto">
                                        <h1 class="nombre-producto">Toldos Brazos Punto Fijo</h1>
-                                    </h1>
+                                        <p class="pad25">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
+
                                     <div class="col-md-9">
                                        <div id="carousel-toldo-brazo-punto-fijo" class="carousel slide" data-ride="carousel">
-                                          <p class="overlay-desc">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
                                           <!-- Indicators -->
                                           <ol class="carousel-indicators">
                                              <li data-target="#carousel-toldo-brazo-punto-fijo" data-slide-to="0" class="active"></li>
@@ -1585,12 +1585,13 @@
                            <div class="tab-pane" id="toldo-vertical">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
-                                    <div class="col-md-9">
-                                       <h1 class="nombre-producto">Toldos Verticales</h1>
-                                       <div id="carousel-toldo-vertical" class="carousel slide" data-ride="carousel">
-                                          <p class="overlay-desc">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
+                                                                          <h1 class="nombre-producto">Toldos Verticales</h1>
+                                          <p class="pad25">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
                                              Este tipo de Toldos es ideal para cerrar una galería o quincho abierto y protegerse así del frio y viento, creando un nuevo ambiente funcional para su casa.  
                                           </p>
+                                    <div class="col-md-9">
+                                       <div id="carousel-toldo-vertical" class="carousel slide" data-ride="carousel">
+
                                           <!-- Indicators -->
                                           <ol class="carousel-indicators">
                                              <li data-target="#carousel-toldo-vertical" data-slide-to="0" class="active"></li>
@@ -1616,7 +1617,7 @@
                                     </div>
                                     <div class="col-md-3">
                                        <!-- Trigger the modal -->
-                                       <ul id="toldos" class="nav-color top40">
+                                       <ul id="toldos" class="nav-color">
                                           <p class="titulo-color">Coversol</p>
                                           <li>
                                              <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="0">
