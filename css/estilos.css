@@ -1264,8 +1264,13 @@ h1 {
 }
 
 #materiales-cortinas  .carousel-inner {
-    max-height: 400px;
+    max-height: 600px;
 }
+
+.modal .carousel-inner {
+    max-height: 400px !important;
+}
+
 
 .modal .carousel-indicators, .modal .carousel-indicators {
     left: 75% !important;
