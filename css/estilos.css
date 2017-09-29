@@ -1696,12 +1696,15 @@ ol.carousel-indicators.col-3 p {
 
 #lightbox-fotos-producto.modal .carousel-inner {
     width: 100% !important;
+	max-height: 600px !important;
 	
 }
 
 #lightbox-fotos-producto .carousel {
     margin-bottom: 0px !important;
 }
+
+
 
 /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
