@@ -149,11 +149,10 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                   <div class="row">
                      <div class="col-lg-6 bottom40">
                         <p><span>FÁBRICA Y SHOWROOM</span><br/>
-                           Urquiza 1204, Barrio Cofico, Córdoba<br/>
+                           Bedoya 178, Barrio Cofico, Córdoba<br/>
                            0351 4 713048 / 0351 155 228 460<br/>
                            <a href="mailto:ventas@megarollercortinas.com" target="_top">Email: ventas@megarollercortinas.com</a><br/>
-                           Lunes a viernes de 9hs a 15 hs,  sábados de 9hs a 13 hs<br/>
-                           +54 (0351) 446-1931
+                           Lunes a viernes de 9hs a 18 hs,  sábados de 9hs a 13 hs<br/>
                         </p>
                         <p><span>OFICINA COMERCIAL</span><br/>
                            Paseo del Jockey, Elias Yofre 1050 Barrio Jardín, Córdoba<br/>
@@ -229,7 +228,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
  function initMap() {
 
 	    var locations = [
-	      ['FÁBRICA Y SHOWROOM', -31.451066, -64.179614, 4],
+	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4], 
 	      ['OFICINA COMERCIAL', -31.400725, -64.189254, 5]
 	    ];
 	
