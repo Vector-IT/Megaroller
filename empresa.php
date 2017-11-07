@@ -13,7 +13,6 @@
       <title>MEGAROLLER | Fábrica de Cortinas Roller</title>
       
       <?php include 'php/links-header.php'; ?>
-
    </head>
    <body>
       <div id="wrapper">
@@ -177,24 +176,24 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                         <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" novalidate method="post" action="mail/contact_me.php">
                            <div class="row control-group">
                               <div class="form-group col-lg-6 floating-label-form-group controls">
-                                 <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
+                                 <input name="name" type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
                                  <p class="help-block text-danger"></p>
-                                 <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
+                                 <input name="phone" type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                                  <p class="help-block text-danger"></p>
                               </div>
                               <div class="form-group col-lg-6 floating-label-form-group controls">
-                                 <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor ingresa tu email.">
+                                 <input name="email" type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                  <p class="help-block text-danger"></p>
-                                 <input type="text" class="form-control" placeholder="Localidad" id="localidad" required data-validation-required-message="Por favor ingresa tu localidad.">
+                                 <input name="location" type="text" class="form-control" placeholder="Localidad" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
                                  <p class="help-block text-danger"></p>
                               </div>
                            </div>
                            <div class="row control-group">
                               <div class="form-group col-lg-12 floating-label-form-group controls">
-                                 <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
+                                 <textarea name="message" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
                                  <p class="help-block text-danger"></p>
                                  <button type="submit" class="btn btn-enviar">Enviar</button>
                               </div>
@@ -222,7 +221,15 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
       <!-- /#wrapper --> 
 
      <?php include 'php/scripts-footer.php'; ?>
-            
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>   
+
+  <script>
+  $(function () { $("input,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+  </script>
+
 	<script type="text/javascript">
  var map;
  function initMap() {
