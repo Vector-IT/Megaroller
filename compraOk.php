@@ -107,7 +107,7 @@ else {
     
     $url = "http://". $_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] != "80"? ":".$_SERVER['SERVER_PORT']: "") . $raiz .'admin/php/enviarMail.php';
     $fields = array(
-            'Para' => 'info@megarollercortinas.com',
+            'Para' => 'seabcortinasroller@hotmail.com',
             'Titulo' => $titulo,
             'Mensaje' => $mensajeHtml,
             'MensajeAlt' => $mensaje
