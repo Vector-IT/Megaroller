@@ -212,7 +212,7 @@ function carrito() {
     $total = 0;
     $cantProd = 0;
 
-    if (isset($_SESSION["NumeCarr"])) {
+    if (isset($_SESSION["NumeCarr"]) && $_SESSION["NumeCarr"] != "") {
         $strSQL = "SELECT cd.CodiIden, cd.NumeProd, cd.NombCate, cd.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, cd.RutaImag";
         $strSQL.= $crlf."FROM carritos c";
         $strSQL.= $crlf."INNER JOIN (SELECT cd.CodiIden, cd.NumeCarr, cd.NumeProd, pc.NombCate, p.NombProd, cd.CantProd, cd.ImpoUnit, cd.ImpoTota, pi.RutaImag";
