@@ -9,12 +9,12 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Producto X - MEGAROLLER | Fábrica de Cortinas Roller</title>
-     
-      
+
+
       <?php include 'php/links-header.php'; ?>
 
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
- 
+
       <!-- Fotorama -->
       <link href="fotorama.css" rel="stylesheet">
       <script src="fotorama.js"></script>
@@ -39,8 +39,8 @@
                         <div class="modal-dialog" role="document">
                            <div class="modal-content">
                               <div class="modal-header">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
-                                 <span aria-hidden="true">&times;</span>         
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
                                  </button>
                               </div>
                               <div class="modal-body">
@@ -193,12 +193,12 @@
                            <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,80 x 1,80 Mts. - $2.200</label>
                            <label class="radio-inline radio-margenes"><input type="radio" name="optradio">1,80 x 2,10 Mts. - $2.800</label>
                            <label class="radio-inline radio-margenes"><input type="radio" name="optradio">2,10 x 2,10 Mts. - $3.200</label>
-                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">2,10 x 2,80 Mts. - $3.800</label>                           
+                           <label class="radio-inline radio-margenes"><input type="radio" name="optradio">2,10 x 2,80 Mts. - $3.800</label>
                         <h5 class="top20">CONTROL DE POSICIÓN</h5>
                         <label class="radio-inline"><input name="optradio" type="radio">Derecha <img alt="" src="./img/item-producto/control-de-posicion-icon_derecha.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
                         <label class="radio-inline"><input type="radio" name="optradio">Izquierda <img alt="" src="./img/item-producto/control-de-posicion-icon_izquierda.png" style="margin-left: 5px; margin-right: 30px;" width="30px"> </label>
                      </div>
-<a type="button" href="#contacto" class="btn-consultar" data-toggle="modal" data-target="#consultar">Consultar por medidas especiales</a> 
+<a type="button" href="#contacto" class="btn-consultar" data-toggle="modal" data-target="#consultar">Consultar por medidas especiales</a>
                         <!-- Modal -->
                         <div class="modal fade" id="consultar" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel" aria-hidden="true">
                            <div class="modal-dialog" role="document">
@@ -217,7 +217,7 @@
                                              <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                                              <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                                              <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                                             <form name="sentMessage" id="contactForm" novalidate>
+                                             <form id="contactForm">
                                                 <div class="row control-group">
                                                    <div class="form-group col-lg-6 floating-label-form-group controls">
                                                       <label>Nombre</label>
@@ -226,6 +226,9 @@
                                                       <label>Email</label>
                                                       <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                                       <p class="help-block text-danger"></p>
+													  <label>Localidad</label>
+													<input name="location" type="text" class="form-control" placeholder="" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
+													<p class="help-block text-danger"></p>
                                                       <label>Teléfono</label>
                                                       <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                                                       <p class="help-block text-danger"></p>
@@ -244,7 +247,7 @@
                                        </div>
                                        <div class="row">
                                           <div class="col-lg-2"> </div>
-                                          <div class="col-lg-8 border-top"> 
+                                          <div class="col-lg-8 border-top">
                                              <img class="img-center" src="./img/logo.jpg" alt="">
                                           </div>
                                           <div class="col-lg-2"> </div>
@@ -306,7 +309,7 @@
                               <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
                            </div>
                         </div>
-                        <a href="#" type="button" class="hamburger animated fadeInLeft btn-agregar-carrito" data-toggle="offcanvas">Agregar a carro de compras</a> 
+                        <a href="#" type="button" class="hamburger animated fadeInLeft btn-agregar-carrito" data-toggle="offcanvas">Agregar a carro de compras</a>
                      </div>
                      <ul class="redes-sociales">
                         <li><a href="#"><img alt="" src="./img/item-producto/redes-fb.png"></a></li>
@@ -320,11 +323,11 @@
             <!-- /.CONTENIDO -->
       <?php include 'php/footer.php'; ?>
          </div>
-         <!-- /#page-content-wrapper --> 
+         <!-- /#page-content-wrapper -->
          <?php include 'php/sidebar.php'; ?>
       </div>
-      <!-- /#wrapper --> 
- 
+      <!-- /#wrapper -->
+
       <?php include 'php/scripts-footer.php'; ?>
       <script>
          // Open Modal
@@ -333,20 +336,20 @@
             $('#medidas').modal('show');
 
         });
-      </script>             
+      </script>
       <!-- Contact Form JavaScript -->
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
+      <!-- <script src="js/jqBootstrapValidation.js"></script>
+      <script src="js/contact_me.js"></script> -->
       <script>
          // Stop carousel
          $('.carousel').carousel({
            interval: false
          });
-           
+
       </script>
       <script>
          $(document).ready(function(){
-         
+
                    //-- Click on CANTIDAD
                    $(".btn-minus").on("click",function(){
                        var now = $(".section > div > input").val();
@@ -356,7 +359,7 @@
                        }else{
                            $(".section > div > div > input").val("1");
                        }
-                   })            
+                   })
                    $(".btn-plus").on("click",function(){
                        var now = $(".section > div > div > input").val();
                        if ($.isNumeric(now)){
@@ -364,8 +367,8 @@
                        }else{
                            $(".section > div > div > input").val("1");
                        }
-                   })                        
-             }); 
+                   })
+             });
       </script>
    </body>
 </html>

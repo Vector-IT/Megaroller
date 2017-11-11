@@ -11,18 +11,18 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <title>MEGAROLLER | Fábrica de Cortinas Roller</title>
-      
+
       <?php include 'php/links-header.php'; ?>
    </head>
    <body>
       <div id="wrapper">
          <div class="overlay"></div>
-         
+
          <!-- Page Content -->
          <div id="page-content-wrapper">
-         
+
               <?php include 'php/header.php'; ?>
-              
+
       <!-- SLIDER EMPRESA -->
       <div class="container-full">
          <div class="row noMargin">
@@ -63,7 +63,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 </p>
 <img class="img-center img-responsive" src="./img/empresa/100.jpg" alt="">
             </div>
-            <div class="col-lg-5">  
+            <div class="col-lg-5">
             <br/>
                <img class="img-center img-responsive" src="./img/empresa/empresa-1.jpg" alt="">
             </div>
@@ -71,13 +71,13 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
          </div>
          <div class="row noMargin  top40 bottom40">
             <div class="col-lg-1"></div>
-            <div class="col-lg-5 top20">  
-       
-  <p class="bigtxt top40">Las cortinas con sistema roller se destacan por su mecanismo de ascenso y descenso rotativo. Consisten en un panel de tela con un rodillo giratorio en la parte superior que permite enrollar o desenrollar la cortina manualmente a través de una cadena, o de manera mecanizada con motor eléctrico. 
+            <div class="col-lg-5 top20">
+
+  <p class="bigtxt top40">Las cortinas con sistema roller se destacan por su mecanismo de ascenso y descenso rotativo. Consisten en un panel de tela con un rodillo giratorio en la parte superior que permite enrollar o desenrollar la cortina manualmente a través de una cadena, o de manera mecanizada con motor eléctrico.
 </p>
 
 <p class="bigtxt">Nuestros productos son indicados para casas, departamentos, locales comerciales, oficinas y todo ambiente que requiera moderar o anular el ingreso de luminosidad al ambiente, favoreciendo a una mejor estética y decoración.  Las Cortinas Roller forman parte del estilo moderno en viviendas y oficinas y  son recomendadas para ventanas fijas o corredizas.</p>
-               
+
                <br/>
             </div>
             <div class="col-lg-5">
@@ -87,7 +87,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 • Regulan y filtran la temperatura ambiente  <br/>
 • Otorgan mayor privacidad al ambiente  <br/>
 • Acompañan la decoración y estética de los ambientes  <br/>
-• Larga durabilidad y resistencia 
+• Larga durabilidad y resistencia
 </p>
             </div>
             <div class="col-lg-1"></div>
@@ -114,13 +114,13 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
                <div class="row noMargin top40 bottom40">
-                  <div class="col-lg-4 noPadding"">  
+                  <div class="col-lg-4 noPadding"">
                      <img class="img-center" width="100%" height="auto" src="./img/empresa/empresa-2.jpg" alt="">
                   </div>
-                  <div class="col-lg-4 noPadding">  
+                  <div class="col-lg-4 noPadding">
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-3.jpg" alt="">
                   </div>
-                  <div class="col-lg-4 noPadding"">  
+                  <div class="col-lg-4 noPadding"">
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-4.jpg" alt="">
                   </div>
                </div>
@@ -129,14 +129,14 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
          </div>
          </div>
       </div>
-      
+
 
      <div id="contacto">
          <div class="container-full">
            <h1 class="titulo-contacto">Contacto</h1>
             <div class="row noMargin">
-               <div class="col-lg-12 noPadding top40">  
-               <div id="map" style="height: 380px; width: 100%;">     
+               <div class="col-lg-12 noPadding top40">
+               <div id="map" style="height: 380px; width: 100%;">
                </div>
             </div>
          </div>
@@ -162,7 +162,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                         <div class="seguinos">
                            <p><span style="font-size: 13px;">Seguinos</span></p>
                            <div class="redes-sociales">
-                           <?php 
+                           <?php
                            if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="img-center" src="./img/social_fb.png" alt=""></a>';
                            if ($twit != '') echo $crlf.'<a href="'. $twit .'" target="_blank"><img class="img-center" src="./img/social_tw.png" alt=""></a>';
                            if ($inst != '') echo $crlf.'<a href="'. $inst .'" target="_blank"><img class="img-center" src="./img/social_inst.png" alt=""></a>';
@@ -176,7 +176,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                         <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                        <form name="sentMessage" id="contactForm" novalidate method="post" action="mail/contact_me.php">
+                        <form id="contactForm">
                            <div class="row control-group">
                               <div class="form-group col-lg-6 floating-label-form-group controls">
                                  <input name="name" type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
@@ -213,18 +213,18 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
       <!-- /.CONTENIDO -->
 
            <?php include 'php/footer.php'; ?>
-           
+
                     </div>
-         <!-- /#page-content-wrapper --> 
+         <!-- /#page-content-wrapper -->
          <?php include 'php/sidebar.php'; ?>
       </div>
-      <!-- /#wrapper --> 
+      <!-- /#wrapper -->
 
      <?php include 'php/scripts-footer.php'; ?>
 
   <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>   
+  <!-- <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>    -->
 
   <script>
   $(function () { $("input,textarea").not("[type=submit]").jqBootstrapValidation(); } );
@@ -235,26 +235,26 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
  function initMap() {
 
 	    var locations = [
-	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4], 
+	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4],
 	      ['OFICINA COMERCIAL', -31.451057, -64.179586, 5]
 	    ];
-	
+
 	    map = new google.maps.Map(document.getElementById('map'), {
 	      zoom: 12,
 	      center: new google.maps.LatLng(-31.40, -64.17),
 	      mapTypeId: google.maps.MapTypeId.ROADMAP
 	    });
-	
+
 	    var infowindow = new google.maps.InfoWindow();
-	
+
 	    var marker, i;
-	
-	    for (i = 0; i < locations.length; i++) { 
+
+	    for (i = 0; i < locations.length; i++) {
 	      marker = new google.maps.Marker({
 	        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 	        map: map
 	      });
-	
+
 	      google.maps.event.addListener(marker, 'click', (function(marker, i) {
 	        return function() {
 	          infowindow.setContent(locations[i][0]);

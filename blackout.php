@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	require_once 'php/conexion.php';
-	   
+
 	   //Productos
 	$strSQL = "SELECT NumeProd, NombProd, ImpoVent, CantProd";
 	$strSQL.= $crlf."FROM productos";
@@ -32,7 +32,7 @@
             <!-- CONTENIDO -->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">                      
+                    <div class="col-sm-6">
                         <div class="carousel slide article-slide carousel-fade" id="article-photo-carousel" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner cont-slider">
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="item">
                                     <img alt="" title="" src="./img/item-producto/blackout/foto-negro.jpg">
-                                </div>                                
+                                </div>
                             </div>
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -108,11 +108,11 @@
                             <label class="radio-inline"><input type="radio" name="Montaje" value="Interior" checked style="margin-top: 15px;">Interior <img alt="" src="./img/item-producto/montaje-interior.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
                             <label class="radio-inline"><input type="radio" name="Montaje" value="Exterior" style="margin-top: 15px;">Exterior <img alt="" src="./img/item-producto/montaje-exterior.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
                             <h5>MEDIDAS ESTÁNDAR</h5>
-                            <?php 
+                            <?php
                                 $strSalida = "";
                                 while ($fila = $productos->fetch_assoc()) {
                                     //Categorias
-                                    $filtroCategorias.= ' OR pf.ValoFilt = 1';
+                                    $filtroCategorias = ' OR pf.ValoFilt = 1';
 
                                     //Promociones
                                     $strSQL = "SELECT NumeTipoProm, ValoProm, NumeTipoFilt, ValoFilt";
@@ -165,7 +165,7 @@
                             <label class="radio-inline"><input type="radio" name="Control" value="Derecha" checked>Derecha <img alt="" src="./img/item-producto/control-de-posicion-icon_derecha.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
                             <label class="radio-inline"><input type="radio" name="Control" value="Izquierda">Izquierda <img alt="" src="./img/item-producto/control-de-posicion-icon_izquierda.png" style="margin-left: 5px; margin-right: 30px;" width="30px"> </label>
                         </div>
-                        <a type="button" href="#contacto" class="btn-consultar" data-toggle="modal" data-target="#consultar">Consultar por medidas especiales</a> 
+                        <a type="button" href="#contacto" class="btn-consultar" data-toggle="modal" data-target="#consultar">Consultar por medidas especiales</a>
                     </div>
                 </div>
                 <div class="row">
@@ -215,7 +215,7 @@
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="0" class="active"></li>
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="1"></li>
                                                 <li data-target="#carousel-fotos-producto" data-slide-to="2"></li>
-                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>                                                                                             
+                                                <li data-target="#carousel-fotos-producto" data-slide-to="3"></li>
                                              </ol>
                                              <!-- Wrapper for slides -->
                                              <div class="carousel-inner">
@@ -230,7 +230,7 @@
                                                 </div>
                                                 <div class="item">
                                                    <img src="./img/item-producto/blackout/blackout4.jpg" alt="">
-                                                </div>                                                                                                                                                
+                                                </div>
                                              </div>
                                           </div>
 
@@ -257,7 +257,7 @@
                             <button id="btnAgregar" type="button" onclick="agregarProd()" class="animated fadeInLeft btn-agregar-carrito" >Agregar a carro de compras</button>
                         </div>
                         <ul class="redes-sociales">
-                        <?php 
+                        <?php
                               if ($face != '') echo $crlf.'<li><a href="'. $face .'" target="_blank"><img class="" src="./img/item-producto/redes-fb.png" alt=""></a></li>';
                               if ($twit != '') echo $crlf.'<li><a href="'. $twit .'" target="_blank"><img class="" src="./img/item-producto/redes-tw.png" alt=""></a></li>';
                               if ($inst != '') echo $crlf.'<li><a href="'. $inst .'" target="_blank"><img class="" src="./img/item-producto/redes-inst.png" alt=""></a></li>';
@@ -270,10 +270,10 @@
             <!-- /.CONTENIDO -->
             <?php include 'php/footer.php'; ?>
         </div>
-        <!-- /#page-content-wrapper --> 
+        <!-- /#page-content-wrapper -->
         <?php include 'php/sidebar.php';?>
     </div>
-    <!-- /#wrapper --> 
+    <!-- /#wrapper -->
 
     <!-- Modal -->
     <div class="modal fade" id="consultar" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel" aria-hidden="true">
@@ -293,7 +293,7 @@
                                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                                <form name="sentMessage" id="contactForm" novalidate>
+                                <form id="contactForm">
                                     <div class="row control-group">
                                         <div class="form-group col-lg-6 floating-label-form-group controls">
                                             <label>Nombre</label>
@@ -302,6 +302,9 @@
                                             <label>Email</label>
                                             <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                             <p class="help-block text-danger"></p>
+											<label>Localidad</label>
+											<input name="location" type="text" class="form-control" placeholder="" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
+                                 			<p class="help-block text-danger"></p>
                                             <label>Teléfono</label>
                                             <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                                             <p class="help-block text-danger"></p>
@@ -320,7 +323,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-2"> </div>
-                            <div class="col-lg-8 border-top"> 
+                            <div class="col-lg-8 border-top">
                                 <img class="img-center" src="./img/logo.jpg" alt="">
                             </div>
                             <div class="col-lg-2"> </div>
@@ -355,13 +358,13 @@
     <script>
         // Open Modal
         $(document).ready(function () {
-        
+
             $('#medidas').modal('show');
-        
+
         });
-    </script>             
+    </script>
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
 </body>
 </html>

@@ -29,7 +29,7 @@
 <div class="row noMargin">
   <div class="col-lg-4">
     <div class="redes-sociales">
-    <?php 
+    <?php
       if ($face != '') echo $crlf.'<a href="'. $face .'" target="_blank"><img class="img-center" src="./img/social_fb.png" alt=""></a>';
       if ($twit != '') echo $crlf.'<a href="'. $twit .'" target="_blank"><img class="img-center" src="./img/social_tw.png" alt=""></a>';
       if ($inst != '') echo $crlf.'<a href="'. $inst .'" target="_blank"><img class="img-center" src="./img/social_inst.png" alt=""></a>';
@@ -52,14 +52,14 @@
 <div id="navbar-collapse-grid" class="navbar-collapse collapse">
   <ul class="nav navbar-nav">
     <li>
-      <a class="presupuesto" type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar"><span style="">Presupuestar 
+      <a class="presupuesto" type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar"><span style="">Presupuestar
       <br/>cortinas a medida</span> </a>
     </li>
     <li>
       <div class="btn-group">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
         Tienda Online <br/>
-        Medidas Estandar 
+        Medidas Estandar
         <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
@@ -163,7 +163,7 @@
 							<input type="text" class="form-control form-custom" id="NombPers" placeholder="Nombre Completo *" required>
 							<label for="TeleUser">Teléfono *</label>
 							<input type="text" class="form-control form-custom" id="TeleUser" placeholder="Teléfono *" required>
-							<label for="MailUser">Mail *</label>   
+							<label for="MailUser">Mail *</label>
 							<input type="email" class="form-control form-custom" id="MailUser" placeholder="Correo Electrónico *" required>
 							<div class="row">
 								<div class="col-md-8">
@@ -196,7 +196,7 @@
 				<div class="modal-footer">
 					<div class="row">
 						<div class="col-md-4">
-							<button type="submit" class="btn btn-small pull-left">Registrarse</button>  
+							<button type="submit" class="btn btn-small pull-left">Registrarse</button>
 						</div>
 						<div class="col-md-8 text-right">
 							<p>Ya eres un usuario registrado? <button id="register_login_btn" type="button" class="btn btn-link">Iniciar sesión</button>    </p>
@@ -230,22 +230,22 @@
             <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
             <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
             <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-            <form name="sentMessage" id="contactForm" novalidate>
+            <form id="presupuesto">
               <div class="row control-group">
                 <div class="form-group col-lg-6 floating-label-form-group controls">
                   <label>Nombre</label>
                   <input type="text" class="form-control" placeholder="" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
                   <p class="help-block text-danger"></p>
                   <label class="top20">Tipo de Cortina</label>
-                  <select class="form-control" id="sel1">
+                  <select class="form-control" id="TipoCortina">
                     <option>Blackout</option>
                     <option>Sunscreen</option>
                     <option>Roller Dual</option>
                   </select>
                   <label class="top20">Ancho</label>
-                  <input type="number" required name="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" > 
+                  <input type="number" required id="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" >
                   <label class="top20">Alto</label>
-                  <input type="number" required name="alto" min="0" placeholder="Mts." step=".01" style="display: block;" >
+                  <input type="number" required id="alto" min="0" placeholder="Mts." step=".01" style="display: block;" >
                 </div>
                 <div class="form-group col-lg-6 floating-label-form-group controls">
                   <label>Email</label>
@@ -266,7 +266,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">     
+          <div class="col-lg-12">
             <img class="img-responsive img-center" alt="" src="./img/item-producto/medidas-1.jpg">
             <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-2.jpg">
             <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-3.jpg">
@@ -274,7 +274,7 @@
         </div>
         <div class="row">
           <div class="col-lg-2"> </div>
-          <div class="col-lg-8 border-top"> 
+          <div class="col-lg-8 border-top">
             <img class="img-center" src="./img/logo.jpg" alt="">
           </div>
           <div class="col-lg-2"> </div>

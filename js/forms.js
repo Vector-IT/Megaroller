@@ -1,3 +1,5 @@
+var $formUsado;
+
 $(function() {
     var $formLogin = $('#login-form');
     var $formLost = $('#lost-form');
@@ -49,7 +51,7 @@ $(function() {
                                 },
                                 function (data) {
                                     $formLost.find("#btnRecuperar").fadeIn();
-                                    
+
                                     if (data.estado === true) {
                                         msgChange($('#divLostMsg'), $('#iconLost'), $('#txtLostMsg'), "alert-success", "glyphicon-ok", data.msg, $("#login-modal"), true);
                                     }
@@ -109,7 +111,7 @@ $(function() {
                     }
                 );
                 break;
-            
+
             case "frmEnvio":
                 $.post("php/usuariosProcesar.php", {
                         operacion: "3",
@@ -141,7 +143,7 @@ $(function() {
                     }
                 );
                 break;
-            
+
             case "frmQuitarCuponDescuento":
                 $.post("php/carritosProcesar.php", {
                         operacion: "5"
@@ -154,19 +156,90 @@ $(function() {
                 );
                 break;
 
+			case 'contactForm':
+				$formUsado = $(this);
+
+				$.post("./mail/contact_me.php", {
+						name: $formUsado.find("input#name").val(),
+						phone: $formUsado.find("input#phone").val(),
+						email: $formUsado.find("input#email").val(),
+						location: $formUsado.find("input#location").val(),
+						message: $formUsado.find("textarea#message").val()
+					},
+					function(data) {
+						var strSalida;
+						if (data.indexOf('error') == -1) {
+						// Success message
+							strSalida = "<div class='alert alert-success'>";
+							strSalida+= "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>";
+							strSalida+= "<strong>Su mensaje ha sido enviado con éxito. </strong>";
+							strSalida+= "</div>";
+
+							$formUsado.trigger("reset");
+						} else {
+							// Fail message
+							strSalida = "<div class='alert alert-danger'>";
+							strSalida+= "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>";
+							strSalida+= "<strong>Disculpa " + $formUsado.find("input#name").val() + ", hay un problema con el servidor, intente luego por favor.";
+							strSalida+= "</div>";
+						}
+
+						$formUsado.find('#success').html(strSalida);
+					}
+				);
+				break;
+
+			case 'presupuesto':
+				$formUsado = $(this);
+
+				mensaje = 'Tipo de cortina: ' + $formUsado.find("#TipoCortina").val();
+				mensaje+= '\nAncho: ' + $formUsado.find("#ancho").val();
+				mensaje+= '\nAlto: ' + $formUsado.find("#alto").val();
+				mensaje+= '\n' + $formUsado.find("textarea#message").val();
+
+				$.post("./mail/contact_me.php", {
+						name: $formUsado.find("input#name").val(),
+						phone: $formUsado.find("input#phone").val(),
+						email: $formUsado.find("input#email").val(),
+						location: $formUsado.find("input#location").val(),
+						message: mensaje
+					},
+					function(data) {
+						var strSalida;
+						if (data.indexOf('error') == -1) {
+						// Success message
+							strSalida = "<div class='alert alert-success'>";
+							strSalida+= "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>";
+							strSalida+= "<strong>Su mensaje ha sido enviado con éxito. </strong>";
+							strSalida+= "</div>";
+
+							$formUsado.trigger("reset");
+						} else {
+							// Fail message
+							strSalida = "<div class='alert alert-danger'>";
+							strSalida+= "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>";
+							strSalida+= "<strong>Disculpa " + $formUsado.find("input#name").val() + ", hay un problema con el servidor, intente luego por favor.";
+							strSalida+= "</div>";
+						}
+
+						$formUsado.find('#success').html(strSalida);
+					}
+				);
+				break;
+
             default:
                 return true;
         }
         return false;
     });
-    
+
     $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
     $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
     $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
     $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
     $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
     $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
-    
+
     function modalAnimate ($oldForm, $newForm) {
         var $oldH = $oldForm.height();
         var $newH = $newForm.height();
@@ -177,21 +250,21 @@ $(function() {
             });
         });
     }
-    
+
     function msgFade ($msgId, $msgText) {
         $msgId.fadeOut($msgAnimateTime, function() {
             $(this).html($msgText).fadeIn($msgAnimateTime);
         });
     }
-    
+
     function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText, $modal, closeModal = true, reloadPage = false, ocultarMsg = true) {
         var $msgOld = "";
         msgFade($textTag, $msgText);
-        
+
         $divTag.attr('class', 'alert '+ $divClass);
-        
+
         $iconTag.attr('class', "glyphicon " + $iconClass);
-        
+
         if (ocultarMsg) {
             setTimeout(function() {
                 $divTag.attr('class', 'alert');
