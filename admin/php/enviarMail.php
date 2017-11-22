@@ -14,6 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	require_once 'phpmailer/PHPMailer.php';
 
 	$para = isset($_POST["Para"])? $_POST["Para"]: 'info@megarollercortinas.com';
+
 	$titulo = isset($_POST["Titulo"])? $_POST["Titulo"]: 'Megaroller Cortinas';
 	$mensaje = $_POST['Mensaje'];
 	$mensajeAlt = isset($_POST["MensajeAlt"])? $_POST["MensajeAlt"]: $_POST["Mensaje"];
@@ -28,8 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Username = 'web@megarollercortinas.com';
     $mail->Password = 'VectorNouveh5';
     //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;  
-	
+    $mail->Port = 587;
+
 	$mail->setFrom('web@megarollercortinas.com', 'Megaroller Cortinas');
 	$mail->addAddress($para);
 	$mail->Subject = $titulo;
@@ -46,9 +47,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	} else {
 		echo "Datos enviados!";
 	}
-} 
+}
 else {
 	header('HTTP/1.1 403 Forbidden');
 	header('Status: 403 Forbidden');
-}	
+}
 ?>

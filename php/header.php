@@ -235,30 +235,48 @@
                 <div class="form-group col-lg-6 floating-label-form-group controls">
                   <label>Nombre</label>
                   <input type="text" class="form-control" placeholder="" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
-                  <p class="help-block text-danger"></p>
-                  <label class="top20">Tipo de Cortina</label>
-                  <select class="form-control" id="TipoCortina">
-                    <option>Blackout</option>
-                    <option>Sunscreen</option>
-                    <option>Roller Dual</option>
-                  </select>
-                  <label class="top20">Ancho</label>
-                  <input type="number" required id="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" >
-                  <label class="top20">Alto</label>
-                  <input type="number" required id="alto" min="0" placeholder="Mts." step=".01" style="display: block;" >
-                </div>
+				</div>
                 <div class="form-group col-lg-6 floating-label-form-group controls">
                   <label>Email</label>
                   <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
-                  <p class="help-block text-danger"></p>
+				</div>
+                <div class="form-group col-lg-6 floating-label-form-group controls">
                   <label>Teléfono</label>
                   <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
-                  <p class="help-block text-danger"></p>
+				</div>
+				<div class="col-lg-11 noPadding" id="divCortinas">
+					<div>
+						<div class="form-group col-md-4 floating-label-form-group controls">
+							<label>Tipo de Cortina</label>
+							<select class="form-control" id="TipoCortina">
+								<option>Blackout</option>
+								<option>Sunscreen</option>
+								<option>Roller Dual</option>
+							</select>
+						</div>
+						<div class="form-group col-md-4 floating-label-form-group controls">
+							<label>Ancho</label>
+							<input type="number" class="form-control" required id="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" >
+						</div>
+						<div class="form-group col-md-4 floating-label-form-group controls">
+							<label>Alto</label>
+							<input type="number" class="form-control" required id="alto" min="0" placeholder="Mts." step=".01" style="display: block;" >
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 noPadding">
+					<label>&nbsp;</label><br>
+					<button type="button" class="btn btn-enviar" onclick="agregarCortinaPres()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+				</div>
+
+                <div class="form-group col-lg-12 floating-label-form-group controls">
                   <label>Consulta</label>
                   <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
-                  <p class="help-block text-danger"></p>
-                  <button type="submit" class="btn btn-enviar">Enviar</button>
-                </div>
+				</div>
+
+                <div class="form-group col-lg-12 floating-label-form-group controls text-right">
+				  <button type="submit" class="btn btn-enviar">Enviar</button>
+				</div>
               </div>
               <br>
               <div id="success"></div>

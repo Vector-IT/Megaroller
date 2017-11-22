@@ -24,7 +24,7 @@ $(document).ready(function () {
         }
 	});
 
-	$.post("php/carritosProcesar.php", { 
+	$.post("php/carritosProcesar.php", {
 		"operacion": "6",
 		},
 		function (data) {
@@ -42,11 +42,6 @@ $(document).ready(function () {
 });
 
 function busqSimple() {
-	$("#bsqTipo").val("");
-	$("#bsqEditorial").val("");
-	$("#bsqCategoria").val("");
-	$("#bsqAutor").val("");
-	$("#bsqFecha").val("");
 	$("#bsqTexto").val($("#bsqTexto1").val());
 	$("#bsqSubcat").val("");
 
@@ -71,7 +66,7 @@ $(document).ready(function () {
 
 	$('[data-toggle="offcanvas"]').click(function () {
 		$('#wrapper').toggleClass('toggled');
-	});  
+	});
 
 	$(".overlay").click(function() {
 		$('#wrapper').toggleClass('toggled');
@@ -82,12 +77,12 @@ $(document).ready(function () {
 function hamburger_cross() {
 	var overlay = $('.overlay');
 
-	if (isClosed == true) {		  
+	if (isClosed == true) {
 		overlay.hide();
 		trigger.removeClass('is-open');
 		trigger.addClass('is-closed');
 		isClosed = false;
-	} else {   
+	} else {
 		overlay.show();
 		trigger.removeClass('is-closed');
 		trigger.addClass('is-open');
@@ -96,7 +91,7 @@ function hamburger_cross() {
 }
 
 function agregarProd() {
-	$.post("php/carritosProcesar.php", { 
+	$.post("php/carritosProcesar.php", {
 		"operacion": "1",
 		"NumeProd": $("input[name='NumeProd']:checked").val(),
 		"Color": $(".inpColor.active").data("value"),
@@ -121,7 +116,7 @@ function agregarProd() {
 }
 
 function quitarProd(strID) {
-	$.post("php/carritosProcesar.php", { 
+	$.post("php/carritosProcesar.php", {
 		"operacion": "2",
 		"CodiIden": strID,
 		},
@@ -158,3 +153,9 @@ var myCallBackCaptcha = function() {
 		'theme' : 'light'
 	});
 };
+
+function agregarCortinaPres() {
+	var $cortina = $($("form#presupuesto #divCortinas").children()[0]).clone();
+
+	$cortina.appendTo("form#presupuesto #divCortinas");
+}

@@ -178,8 +178,8 @@ p {
 	margin-bottom: 15px;
 }
 .modal-title {
-	margin-top: -9px;
-	line-height: normal;
+	margin-top: -19px;
+	/* line-height: normal; */
 	font-family: 'BentonSans-Medium' !important;
 	color: #fff;
 	font-size: 17px;
@@ -375,7 +375,7 @@ span#text-lost-msg {
 	text-shadow:none !important;
 }
 
-.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
     font-weight: bold;
 	background-color: #fe7606 !important;
@@ -466,7 +466,7 @@ a.presupuesto:hover span {
 	font-weight: bold;
 	letter-spacing: 1px;
 }
-    
+
 .btn-group a:hover, .btn-group a:focus {
 	color: #FF7A00 !important;
 }
@@ -474,7 +474,7 @@ a.presupuesto:hover span {
 li:hover .btn-group a, li:focus .btn-group a {
 	color: #FF7A00 !important;
 }
-   
+
 .btn-group.open .dropdown-toggle {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -550,7 +550,7 @@ ul.dropdown-menu li a:hover {
 		width: 19.5%;
 		margin-right: 0.5%;
 	}
-	
+
 	.navbar-nav>li.sola-linea {
 		width: 13% !important;
 	}
@@ -642,7 +642,7 @@ p.subtituloSlider {
 
 @media all and (min-width: 768px) {
 	#buscador-portada {
-		
+
 	}
 }
 
@@ -1281,7 +1281,7 @@ h1 {
 
 .modal .carousel-inner, .modal .carousel-inner {
     width: 75% !important;
-	
+
 }
 
 .modal .carousel-inner > .item > img, .modal .carousel-inner > .item > img {
@@ -1297,7 +1297,7 @@ h1 {
 }
 
 .modal .carousel-indicators li.active , .modal .carousel-indicators li.active   {
-	
+
 }
 
 @media all and (min-width: 768px) {
@@ -1310,7 +1310,7 @@ h1 {
 }
 
 .modal.and.carousel {
-  position: fixed; 
+  position: fixed;
 }
 
 #materiales-cortinas .modal-header {
@@ -1697,7 +1697,7 @@ ol.carousel-indicators.col-3 p {
 #lightbox-fotos-producto.modal .carousel-inner {
     width: 100% !important;
 	max-height: 600px !important;
-	
+
 }
 
 #lightbox-fotos-producto .carousel {
@@ -2337,7 +2337,7 @@ img.img-producto-carrito {
     color: #fff;
     position: absolute;
     padding: 25px;
-	z-index: 999; 
+	z-index: 999;
 	width: 100%;
 	text-align: justify;
 }

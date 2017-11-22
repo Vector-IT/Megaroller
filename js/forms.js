@@ -192,9 +192,15 @@ $(function() {
 			case 'presupuesto':
 				$formUsado = $(this);
 
-				mensaje = 'Tipo de cortina: ' + $formUsado.find("#TipoCortina").val();
-				mensaje+= '\nAncho: ' + $formUsado.find("#ancho").val();
-				mensaje+= '\nAlto: ' + $formUsado.find("#alto").val();
+				mensaje = '';
+
+				for (var i = 0; i < $formUsado.find("select[id^='TipoCortina']").length; i++) {
+					mensaje+= '\nTipo de cortina: ' + $($formUsado.find("select[id^='TipoCortina']")[i]).val();
+					mensaje+= '\nAncho: ' + $($formUsado.find("input[id^='ancho']")[i]).val();
+					mensaje+= '\nAlto: ' + $($formUsado.find("input[id^='alto']")[i]).val();
+					mensaje+= '\n------';
+				};
+
 				mensaje+= '\n' + $formUsado.find("textarea#message").val();
 
 				$.post("./mail/contact_me.php", {
