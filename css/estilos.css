@@ -980,6 +980,10 @@ h1 {
     margin: 35px auto;
 }
 
+.vContacto {
+	color: black !important;
+	opacity: 1 !important;
+}
 
 /* CORTINAS */
 
@@ -1976,7 +1980,7 @@ p.cantidad {
 }
 
 .formulario p {
-	color: rgba(0, 0, 0, 0.5);
+	/* color: rgba(0, 0, 0, 0.5); */
 	margin-top: 15px;
 	text-align: center;
 	margin-bottom: 0px;
@@ -1991,7 +1995,7 @@ p.cantidad {
 }
 
 #contacto .formulario a {
-	color: rgba(0, 0, 0, 0.5);
+	/* color: rgba(0, 0, 0, 0.5); */
 	text-align: center;
 	display: block;
 }
@@ -2415,7 +2419,7 @@ img.img-producto-carrito {
 }
 
 #contacto .formulario p {
-	color: rgba(0, 0, 0, 0.5);
+	/* color: rgba(0, 0, 0, 0.5); */
 	margin-top: 15px;
 	text-align: left;
 	margin-bottom: 0px;
@@ -2433,7 +2437,7 @@ h1.titulo-contacto {
 }
 
 #contacto .formulario a {
-	color: rgba(0, 0, 0, 0.5);
+	/* color: rgba(0, 0, 0, 0.5); */
 	text-align: left;
 	display: block;
 }
@@ -2480,12 +2484,12 @@ footer {
 
 footer p {
 	color: #AAAAAA;
-	font-size: 11px;
+	font-size: 14px;
 }
 
 footer p span {
 	color: #fff;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 footer a {

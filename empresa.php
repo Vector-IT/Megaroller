@@ -147,13 +147,13 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
                <div class="col-lg-8  bottom40">
                   <div class="row">
                      <div class="col-lg-6 bottom40">
-					 	<p><span>FÁBRICA Y SHOWROOM</span><br/>
+					 	<p class="vContacto"><span>FÁBRICA Y SHOWROOM</span><br/>
 							Bedoya 178, Barrio Cofico, Córdoba<br/>
 							0351 471 5155 / 0351 155 228 460<br/>
 							<a href="mailto:ventas@megarollercortinas.com" target="_top">Email: ventas@megarollercortinas.com</a><br/>
 							Lunes a viernes de 9hs a 18 hs,  sábados de 9hs a 13 hs<br/>
 						</p>
-						<p><span>OFICINA COMERCIAL</span><br/>
+						<p class="vContacto"><span>OFICINA COMERCIAL</span><br/>
 							0351 157 315 091<br/>
 							<a href="mailto:paseo@megarollercortinas.com" target="_top">Email: paseo@megarollercortinas.com</a><br/>
 							Atención de lunes a domingo de 10hs a 22 hs
