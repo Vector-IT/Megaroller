@@ -234,8 +234,8 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
  function initMap() {
 
 	    var locations = [
-	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4],
-	      ['OFICINA COMERCIAL', -31.451057, -64.179586, 5]
+	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4]
+	    //   ,['OFICINA COMERCIAL', -31.451057, -64.179586, 5]
 	    ];
 
 	    map = new google.maps.Map(document.getElementById('map'), {
