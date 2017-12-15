@@ -41,7 +41,7 @@
         <a href="javascript:void(0);" onclick="abrirCarrito();" class="mis-compras pull-right" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png"  alt="Mi Carrito" title="Mi Carrito" style="width: 25px;margin-top: 5px;"><span class="cantidad-productos cantProds"><?php echo $cantCarrito?></span></a>
 		<div id="divLogin" class="logueo pull-right" <?php echo (isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="#login-modal" data-toggle="modal" class="navbar-link" role="button"><img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;" alt="Ingresar" title="Ingresar"> <div class="pull-right" style="margin: 8px 15px 0 0;">Ingresar</div></a></div>
 		<div id="divLogout" class="logueo pull-right" <?php echo (!isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>><a href="php/logout.php" class="navbar-link clickable" title="Cerrar sesión"><img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;"> <div class="pull-right" style="margin: 8px 15px 0 0;"><?php echo (isset($_SESSION['NumeUser'])? $_SESSION["NombPers"]: '')?></div></a></div>
-		<p class="telefonos pull-right">0351 464 66 60 | 0351 155 228 460</p>
+		<p class="telefonos pull-right">0351 471 51 55 | 0351 155 228 460</p>
     <a class="mail pull-right" href="mailto:ventas@megarollercortinas.com" target="_top">ventas@megarollercortinas.com</a>
 </div>
 </div>
