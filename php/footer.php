@@ -21,7 +21,7 @@
                         <div class="titulo-footer">Contacto</div>
                         <div class="row">
                          <div class="col-sm-6 top20">
-						<p class="vContacto"><span>FÁBRICA Y SHOWROOM</span><br/>
+						<p><span>FÁBRICA Y SHOWROOM</span><br/>
 							Bedoya 178, Barrio Cofico, Córdoba<br/>
 							0351 471 51 55 / 0351 157 315 091<br/>
 							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a><br/>
@@ -29,7 +29,7 @@
 						</p>
 						</div>
 						<div class="col-sm-6 top20">
-							<p class="vContacto"><span>LOCAL COMERCIAL</span><br/>
+							<p><span>LOCAL COMERCIAL</span><br/>
                                           Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
