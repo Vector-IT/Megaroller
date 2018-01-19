@@ -157,7 +157,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
-							Lunes a viernes de 9 a 14hs y 17 a 22hs<br/>
+							Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
 						</p>
                         <div class="seguinos">
                            <p><span style="font-size: 13px;">Seguinos</span></p>
@@ -236,7 +236,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 
 	    var locations = [
 	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4]
-	    //   ,['OFICINA COMERCIAL', -31.451057, -64.179586, 5]
+	      ,['LOCAL COMERCIAL', -31.372780, -64.276840, 5]
 	    ];
 
 	    map = new google.maps.Map(document.getElementById('map'), {

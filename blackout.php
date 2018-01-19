@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <script src="js/productos.js"></script>
+
+
 </head>
 <body>
     <div id="wrapper">
@@ -340,7 +342,7 @@
                             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
-							Lunes a viernes de 9 a 14hs y 17 a 22hs<br/>
+							Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
 						</p>
                             </div>
                         </div>

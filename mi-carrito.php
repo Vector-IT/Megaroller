@@ -328,7 +328,7 @@
                             }
                             elseif ($subtotal > 0) {
                                 $strSalida.= $crlf.'<div class="col-lg-6">';
-                                $strSalida.= $crlf.'<a href="'.$preference['response']['init_point'].'" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
+                                $strSalida.= $crlf.'<a style="background: #ff7a00 !important; font-size: 15px !important; font-weight: bold; letter-spacing: 1px;" href="'.$preference['response']['init_point'].'" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
                                 $strSalida.= $crlf.'</div>';
                             }
                         }
@@ -344,7 +344,7 @@
                             }
                             elseif ($subtotal > 0) {
                                 $strSalida.= $crlf.'<div class="col-lg-6">';
-                                $strSalida.= $crlf.'<a href="'.$tp_URL.'" name="TP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
+                                $strSalida.= $crlf.'<a style="background: #ff7a00 !important; font-size: 15px !important; font-weight: bold; letter-spacing: 1px;" href="'.$tp_URL.'" name="TP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
                                 $strSalida.= $crlf.'</div>';
                             }
                         }
@@ -512,7 +512,7 @@
                                         $strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos personales y Comprar</a>';
                                     }
                                     elseif ($subtotal > 0) {
-                                        $strSalida.= $crlf.'<a href="'.$preference['response']['init_point'].'" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
+                                        $strSalida.= $crlf.'<a style="background: #ff7a00 !important; font-size: 15px !important; font-weight: bold; letter-spacing: 1px;" href="'.$preference['response']['init_point'].'" name="MP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
                                     }
                                 }
                                 break;
@@ -526,7 +526,7 @@
                                         $strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro pushRight" data-toggle="modal">Cargar datos personales y Comprar</a>';
                                     }
                                     elseif ($subtotal > 0) {
-                                        $strSalida.= $crlf.'<a href="'.$tp_URL.'" name="TP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
+                                        $strSalida.= $crlf.'<a style="background: #ff7a00 !important; font-size: 15px !important; font-weight: bold; letter-spacing: 1px;" href="'.$tp_URL.'" name="TP-Checkout" class="btn-carrito-negro pushRight" onclick="compra()">Realizar compra</a>';
                                     }
                                 }
                                 break;
