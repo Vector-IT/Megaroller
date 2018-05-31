@@ -23,7 +23,7 @@
                          <div class="col-sm-6 top20">
 						<p><span>FÁBRICA Y SHOWROOM</span><br/>
 							Bedoya 178, Barrio Cofico, Córdoba<br/>
-							0351 471 51 55 / 0351 157 315 091<br/>
+							0351 471 51 55 / 0351 157 319 051<br/>
 							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a><br/>
 							Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
 						</p>

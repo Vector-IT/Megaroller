@@ -261,7 +261,7 @@
 												Lunes a viernes de 9hs a 18 hs,  sábados de 9hs a 13 hs<br/>
 											</p>
 											<p class="vContacto"><span>OFICINA COMERCIAL</span><br/>
-												0351 157 315 091<br/>
+												0351 157 319 051<br/>
 												<a href="mailto:paseo@megarollercortinas.com" target="_top">Email: paseo@megarollercortinas.com</a><br/>
 												Atención de lunes a domingo de 10hs a 22 hs
 											</p>
