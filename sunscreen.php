@@ -350,8 +350,14 @@ Su tela de apariencia microperforada también brinda la posibilidad de disfrutar
 						<p class="vContacto"><span>LOCAL COMERCIAL</span><br/>
                             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
-							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
+							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a>
 							Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
+						</p>
+                        <p class="vContacto"><span>ZONA SUR</span><br/>
+            Av. Valparaiso 3790 (Frente Jockey Club)<br/>
+							0351 157 319 666<br/>
+							<a href="mailto:valparaiso@megarollercortinas.com" target="_top">Email: valparaiso@megarollercortinas.com</a>
+							Lunes a viernes de 9 a 19hs - Sábados 9 a 13:30hs<br/>
 						</p>
                             </div>
                         </div>

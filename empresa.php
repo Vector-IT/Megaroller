@@ -114,13 +114,13 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
                <div class="row noMargin top40 bottom40">
-                  <div class="col-lg-4 noPadding"">
+                  <div class="col-lg-4 noPadding">
                      <img class="img-center" width="100%" height="auto" src="./img/empresa/empresa-2.jpg" alt="">
                   </div>
                   <div class="col-lg-4 noPadding">
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-3.jpg" alt="">
                   </div>
-                  <div class="col-lg-4 noPadding"">
+                  <div class="col-lg-4 noPadding">
                      <img class="img-center" width="100%" height="auto"  src="./img/empresa/empresa-4.jpg" alt="">
                   </div>
                </div>
@@ -150,14 +150,20 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 					 	<p class="vContacto"><span>FÁBRICA Y SHOWROOM</span><br/>
 							Bedoya 178, Barrio Cofico, Córdoba<br/>
 							0351 471 51 55 / 0351 157 319 051<br/>
-							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a><br/>
+							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a>
 							Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
 						</p>
 						<p class="vContacto"><span>LOCAL COMERCIAL</span><br/>
             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
-							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
+							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a>
 							Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
+						</p>
+            <p class="vContacto"><span>ZONA SUR</span><br/>
+            Av. Valparaiso 3790 (Frente Jockey Club)<br/>
+							0351 157 319 666<br/>
+							<a href="mailto:valparaiso@megarollercortinas.com" target="_top">Email: valparaiso@megarollercortinas.com</a>
+							Lunes a viernes de 9 a 19hs - Sábados 9 a 13:30hs<br/>
 						</p>
                         <div class="seguinos">
                            <p><span style="font-size: 13px;">Seguinos</span></p>
@@ -236,7 +242,8 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 
 	    var locations = [
 	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4]
-	      ,['LOCAL COMERCIAL', -31.372780, -64.276840, 5]
+        ,['LOCAL COMERCIAL', -31.372780, -64.276840, 5]
+        ,['LOCAL ZONA SUR', -31.456739, -64.186802, 6]
 	    ];
 
 	    map = new google.maps.Map(document.getElementById('map'), {
