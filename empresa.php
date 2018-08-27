@@ -153,7 +153,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a>
 							Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
 						</p>
-						<p class="vContacto"><span>LOCAL COMERCIAL</span><br/>
+						<p class="vContacto"><span>LOCAL ZONA NORTE</span><br/>
             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a>
@@ -242,7 +242,7 @@ Con Marca propia, la firma se dedica a comercializar sus productos en todo el pa
 
 	    var locations = [
 	      ['FÁBRICA Y SHOWROOM', -31.4003831, -64.1793193, 4]
-        ,['LOCAL COMERCIAL', -31.372780, -64.276840, 5]
+        ,['LOCAL ZONA NORTE', -31.372780, -64.276840, 5]
         ,['LOCAL ZONA SUR', -31.456739, -64.186802, 6]
 	    ];
 

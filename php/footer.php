@@ -29,7 +29,7 @@
 						</p>
 						</div>
 						<div class="col-sm-6 top20">
-							<p><span>LOCAL COMERCIAL</span><br/>
+							<p><span>LOCAL ZONA NORTE</span><br/>
                                           Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>

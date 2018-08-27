@@ -338,7 +338,7 @@
 							<a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a><br/>
 							Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
 						</p>
-						<p class="vContacto"><span>LOCAL COMERCIAL</span><br/>
+						<p class="vContacto"><span>LOCAL ZONA NORTE</span><br/>
                             Paseo Acaece, Valle Escondido Local 11<br/>
 							0351 156 135 314<br/>
 							<a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a><br/>
