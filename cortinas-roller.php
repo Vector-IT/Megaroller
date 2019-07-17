@@ -1,7 +1,7 @@
 <?php
-	session_start();
-  require_once 'php/conexion.php';
-?>
+   session_start();
+    require_once 'php/conexion.php';
+   ?>
 <!DOCTYPE html>
 <html lang="es">
    <head>
@@ -23,8 +23,8 @@
             <div id="materiales-cortinas" class="container-full">
                <div class="row noMargin">
                   <div class="col-sm-1"></div>
-                  <div class="col-sm-10">
-                     <h1 class="gris alignCenter bottom40 top40">Cortinas</h1>
+                  <div class="col-sm-10 top40">
+                     <h1 class="alignCenter top40">Cortinas Roller <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
                      <div id="tabs-materiales" class="top40">
                         <div class="tabbable">
                            <ul  class="nav nav-pills">
@@ -36,15 +36,17 @@
                               </li>
                               <li><a href="#roller-dual" data-toggle="tab">Roller Dual</a>
                               </li>
+                              <li><a href="#roller-translucida" data-toggle="tab">Roller Translucida</a>
+                              </li>
                            </ul>
-                           <div class="tab-content clearfix">
+                           <div class="tab-content clearfix top40">
                               <div class="tab-pane active" id="roller-blackout">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Blackout</h1>
-                                           <p class="pad25">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
-                                                Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
-                                             </p>
+                                       <p class="pad25">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
+                                          Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
+                                       </p>
                                        <div class="col-md-9">
                                           <div id="carousel-roller-blackout" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
@@ -67,7 +69,7 @@
                                                 </div>
                                                 <div class="item">
                                                    <img src="./img/productos/blackout6.jpg" alt="">
-                                                </div>                                                
+                                                </div>
                                              </div>
                                           </div>
                                           <img class="img-center img-responsive" src="./img/empresa/unitec.jpg" alt="" width="200" height="auto">
@@ -186,7 +188,7 @@
                                        <div class="tabbable">
                                           <ul class="nav nav-tabs">
                                              <li class="active"><a data-toggle="tab" href="#sunscreen1">Sunscreen 1%</a></li>
-                                             <li><a data-toggle="tab" href="#sunscreen3">Sunscreen 3%</a></li>
+                                             <li style="display:none;"><a data-toggle="tab" href="#sunscreen3">Sunscreen 3%</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen4">Sunscreen 4%</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen5">Sunscreen 5%</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen5bicolor">Sunscreen Bicolor 5%</a></li>
@@ -209,7 +211,7 @@
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>                                                         
+                                                         </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
                                                          </div>
@@ -301,7 +303,7 @@
                                              <div id="sunscreen3" class="tab-pane fade">
                                                 <div class="col-md-9">
                                                    <div id="carousel-sunscreen3" class="carousel slide" data-ride="carousel">
-                                                     <!-- Indicators -->
+                                                      <!-- Indicators -->
                                                       <ol class="carousel-indicators">
                                                          <li data-target="#carousel-sunscreen3" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen3" data-slide-to="1"></li>
@@ -315,7 +317,7 @@
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>                                                         
+                                                         </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
                                                          </div>
@@ -407,7 +409,7 @@
                                              <div id="sunscreen4" class="tab-pane fade">
                                                 <div class="col-md-9">
                                                    <div id="carousel-sunscreen4" class="carousel slide" data-ride="carousel">
-                                                     <!-- Indicators -->
+                                                      <!-- Indicators -->
                                                       <ol class="carousel-indicators">
                                                          <li data-target="#carousel-sunscreen4" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen4" data-slide-to="1"></li>
@@ -421,7 +423,7 @@
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>                                                         
+                                                         </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
                                                          </div>
@@ -550,7 +552,7 @@
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>                                                         
+                                                         </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
                                                          </div>
@@ -680,7 +682,7 @@
                                              <div id="sunscreen5bicolor" class="tab-pane fade">
                                                 <div class="col-md-9">
                                                    <div id="carousel-sunscreen5bicolor" class="carousel slide" data-ride="carousel">
-                                                     <!-- Indicators -->
+                                                      <!-- Indicators -->
                                                       <ol class="carousel-indicators">
                                                          <li data-target="#carousel-sunscreen5bicolor" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen5bicolor" data-slide-to="1"></li>
@@ -694,7 +696,7 @@
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>                                                         
+                                                         </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
                                                          </div>
@@ -804,11 +806,10 @@
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Sistema Doble</h1>
-                                         <p class="pad25">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
-                                             </p>
+                                       <p class="pad25">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
+                                       </p>
                                        <div class="col-md-9">
                                           <div id="carousel-roller-sistema-doble" class="carousel slide" data-ride="carousel">
-             
                                              <!-- Indicators -->
                                              <ol class="carousel-indicators">
                                                 <li data-target="#carousel-roller-sistema-doble" data-slide-to="0" class="active"></li>
@@ -849,7 +850,7 @@
                                                 </a>
                                              </li>
                                           </ul>
-                                         <!-- Modal -->
+                                          <!-- Modal -->
                                           <div class="modal fade and carousel slide" id="lightbox-sunscreen1-2" style="display: none;">
                                              <div class="modal-dialog modal-lg">
                                                 <!-- Modal content-->
@@ -860,68 +861,67 @@
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="sunscreen1-carousel" data-ride="carousel">
-                                                                  <!-- Wrapper for slides -->
-                                                                  <div class="carousel-inner cont-slider">
-                                                                     <div class="item active">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-5.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-6.jpg">
-                                                                     </div>
-                                                                  </div>
-                                                                  <!-- Indicators -->
-                                                                  <ol class="carousel-indicators col-2">
-                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-1-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Blanco</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="1" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Beige</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="2" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Gris</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="3" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-4-color.jpg');"></div>
-                                                                        <p class="codigo-color">Beige/Beige</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="4" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-5-color.jpg');"></div>
-                                                                        <p class="codigo-color">Beige/Negro</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="5" data-target="#lightbox-sunscreen1-2">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-6-color.jpg');"></div>
-                                                                        <p class="codigo-color">Negro/Negro</p>
-                                                                     </li>
-                                                                  </ol>
-                                                               </div>
-                                                               <div class="row">
-                                                                  <div class="col-md-9">
-                                                                     <img class="inline-block img-responsive" src="./img/empresa/mermet.jpg" alt="" width="200" height="auto">
-                                                                     <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
-                                                                  </div>
-                                                                  <div class="col-md-3"></div>
-                                                               </div>
+                                                         <!-- Wrapper for slides -->
+                                                         <div class="carousel-inner cont-slider">
+                                                            <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-5.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-6.jpg">
                                                             </div>
                                                          </div>
+                                                         <!-- Indicators -->
+                                                         <ol class="carousel-indicators col-2">
+                                                            <li class="active" data-slide-to="0" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-1-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Blanco</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Gris</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-4-color.jpg');"></div>
+                                                               <p class="codigo-color">Beige/Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-5-color.jpg');"></div>
+                                                               <p class="codigo-color">Beige/Negro</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="5" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-6-color.jpg');"></div>
+                                                               <p class="codigo-color">Negro/Negro</p>
+                                                            </li>
+                                                         </ol>
+                                                      </div>
+                                                      <div class="row">
+                                                         <div class="col-md-9">
+                                                            <img class="inline-block img-responsive" src="./img/empresa/mermet.jpg" alt="" width="200" height="auto">
+                                                            <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
+                                                         </div>
+                                                         <div class="col-md-3"></div>
                                                       </div>
                                                    </div>
-                                                   <!-- Fin Modal content-->
-
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
                                           <!-- Modal -->
                                           <div class="modal fade and carousel slide" id="lightbox-blackout-2">
                                              <div class="modal-dialog modal-lg">
@@ -996,8 +996,8 @@
                                     <div class="col-sm-12 noPadding">
                                        <h1 class="nombre-producto">Roller Dual</h1>
                                        <p class="pad25">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
-                                                Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
-                                             </p>
+                                          Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
+                                       </p>
                                        <div class="col-md-9">
                                           <div id="carousel-roller-dual" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
@@ -1115,6 +1115,139 @@
                                  </div>
                                  <!-- /.row -->
                               </div>
+                              <div class="tab-pane" id="roller-translucida">
+                                 <div class="row noMargin pad25">
+                                    <div class="col-sm-12 noPadding">
+                                       <h1 class="nombre-producto">Roller Translucida</h1>
+                                       <p class="pad25">
+                                       </p>
+                                       <div class="col-md-9">
+                                          <div id="carousel-roller-translucida" class="carousel slide" data-ride="carousel">
+                                             <!-- Indicators -->
+                                             <ol class="carousel-indicators">
+                                                <li data-target="#carousel-roller-translucida" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-roller-translucida" data-slide-to="1"></li>
+                                                <li data-target="#carousel-roller-translucida" data-slide-to="2"></li>
+                                             </ol>
+                                             <!-- Wrapper for slides -->
+                                             <div class="carousel-inner">
+                                                <div class="item active">
+                                                   <img src="./img/productos/translucida-1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/translucida-2.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/translucida-3.jpg" alt="">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <img class="img-center img-responsive" src="./img/empresa/unitec.jpg" alt="" width="200" height="auto">
+                                       </div>
+                                       <div class="col-md-3">
+                                          <!-- Trigger the modal -->
+                                          <img class="img-center img-responsive" src="./img/productos/translucida/blackout.jpg" alt="" width="" height="">
+                                          <ul class="nav-color">
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="0">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0004_1-color.jpg');"></div>
+                                                   <p class="codigo-color">Blanco</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="1">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0003_2-color.jpg');"></div>
+                                                   <p class="codigo-color">Natural</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="2">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0002_3-color.jpg');"></div>
+                                                   <p class="codigo-color">Beige</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0001_4-color.jpg');"></div>
+                                                   <p class="codigo-color">Gris</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0000_5-color.jpg');"></div>
+                                                   <p class="codigo-color">Negro</p>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                          <!-- Modal -->
+                                          <div class="modal fade and carousel slide" id="lightbox-translucida">
+                                             <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                   <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h4 class="modal-title">Blackout</h4>
+                                                   </div>
+                                                   <div class="modal-body">
+                                                      <div class="carousel slide article-slide carousel-fade" id="roller-blackout-carousel" data-ride="carousel">
+                                                         <!-- Wrapper for slides -->
+                                                         <div class="carousel-inner cont-slider">
+                                                            <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0004_1.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0003_2.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0002_3.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0001_4.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0000_5.jpg">
+                                                            </div>
+                                                         </div>
+                                                         <!-- Indicators -->
+                                                         <ol class="carousel-indicators col-2">
+                                                            <li class="active" data-slide-to="0" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0004_1-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0003_2-color.jpg');"></div>
+                                                               <p class="codigo-color">Natural</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0002_3-color.jpg');"></div>
+                                                               <p class="codigo-color">Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0001_4-color.jpg');"></div>
+                                                               <p class="codigo-color">Gris</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0000_5-color.jpg');"></div>
+                                                               <p class="codigo-color">Negro</p>
+                                                            </li>
+                                                         </ol>
+                                                      </div>
+                                                      <div class="row">
+                                                         <div class="col-md-9">
+                                                            <img class="img-center img-responsive" src="./img/empresa/unitec.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
+                                                         </div>
+                                                         <div class="col-md-3"></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.row -->
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -1123,816 +1256,76 @@
                </div>
             </div>
             <!-- /.TABS MATERIALES CORTINAS -->
-            <!-- TABS MATERIALES TOLDOS -->
-            <div id="materiales-toldos" class="container-full">
-               <div class="row noMargin">
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-10">
-                     <h1 class="gris alignCenter bottom40 top40">Toldos</h1>
-                     <div id="tabs-materiales" class="top40">
-                        <ul  class="nav nav-pills">
-                           <li class="active"><a  href="#toldo-brazo-invisible" data-toggle="tab">Toldos Brazos Invisibles o Extensibles</a>
-                           </li>
-                           <li><a href="#toldo-brazo-punto-fijo" data-toggle="tab">Toldos Brazos Punto Fijo</a>
-                           </li>
-                           <li><a href="#toldo-vertical" data-toggle="tab">Toldos Verticales</a>
-                           </li>
-                        </ul>
-                        <div class="tab-content clearfix">
-                           <div class="tab-pane active" id="toldo-brazo-invisible">
-                              <div class="row noMargin pad25">
-                                 <div class="col-sm-12 noPadding">
-                                    <h1 class="nombre-producto">Toldos Brazos Invisibles o Extensibles</h1>
-                                                                              <p class="pad25">El toldo de brazos invisibles, es sumamente versátil, ajustándose absolutamente a todas las necesidades y lugares de instalación, su uso es muy variado, y si bien, es el toldo ideal para generar espacios habitables de sombra al aire libre, también se lo puede utilizar para controlar el impacto del sol sobre ventanas.
-                                             Con brazos de poco desarrollo, 1.60mts o 2.10mts, se puede utilizar para evitar el impacto del el sol sobre ventanas o ventanales, controlando la temperatura del ambiente, evitando el calor excesivo sobre la abertura, e impidiendo que el sol ingrese al interior de la casa.
-                                             Con brazos de gran desarrollo, como los de 2.60mts/3.10mts/3.60mts/4.10mts, se pueden lograr perfectos espacios de sombra en el exteriores, creando un agradable ambiente de sombra al aire libre.
-                                          </p>
-                                    <div class="col-md-9">
-                                       <div id="carousel-toldo-brazo-invisible" class="carousel slide" data-ride="carousel">
-                                          <!-- Indicators -->
-                                          <ol class="carousel-indicators">
-                                             <li data-target="#carousel-toldo-brazo-invisible" data-slide-to="0" class="active"></li>
-                                             <li data-target="#carousel-toldo-brazo-invisible" data-slide-to="1"></li>
-                                             <li data-target="#carousel-toldo-brazo-invisible" data-slide-to="2"></li>
-                                          </ol>
-                                          <!-- Wrapper for slides -->
-                                          <div class="carousel-inner">
-                                             <div class="item active">
-                                                <img src="./img/productos/toldo-brazo-invisible.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-brazo-invisible2.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-brazo-invisible3.jpg" alt="">
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                       <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                    </div>
-                                    <div class="col-md-3">
-                                       <!-- Trigger the modal -->
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">PVC</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="0">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="1">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="2">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                <p class="codigo-color">Natural</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="3">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="4">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="5">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <hr>
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">Textil</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="6">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="7">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="8">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="9">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="10">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                <p class="codigo-color">Beige</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-invisible" data-toggle="modal" data-slide-to="11">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <!-- Modal -->
-                                       <div class="modal fade and carousel slide" id="lightbox-toldo-brazo-invisible">
-                                          <div class="modal-dialog modal-lg">
-                                             <!-- Modal content-->
-                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                   <h4 class="modal-title">Toldos Brazos Invisibles o Extensibles</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                   <div class="carousel slide article-slide carousel-fade" id="toldo-brazo-invisible-carousel" data-ride="carousel">
-                                                      <!-- Wrapper for slides -->
-                                                      <div class="carousel-inner cont-slider">
-                                                         <div class="item active">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-6.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-6.jpg">
-                                                         </div>
-                                                      </div>
-                                                      <!-- Indicators -->
-                                                      <ol class="carousel-indicators col-3">
-                                                         <li class="active" data-slide-to="0" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="1" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="2" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Natural</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="3" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="4" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="5" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="6" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="7" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="8" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="9" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="10" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Beige</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="11" data-target="#lightbox-toldo-brazo-invisible">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                      </ol>
-                                                   </div>
-                                                   <div class="row">
-                                                      <div class="col-md-3"></div>
-                                                      <div class="col-md-6">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                      </div>
-                                                      <div class="col-md-3"></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <!-- Fin Modal content-->
-                                    </div>
+            <div class="container">
+               <div class="row top40">
+                  <h2 class="text-center top40">¡SOLICITÁ TU PRESUPUESTO AHORA!</h2>
+                  <div class="col-sm-7 top40">
+                     <form id="presupuesto">
+                        <div class="row control-group">
+                           <div class="form-group col-lg-6 floating-label-form-group controls">
+                              <label>Nombre</label>
+                              <input type="text" class="form-control" placeholder="" id="name" required data-validation-required-message="Por favor ingresa tu nombre.">
+                           </div>
+                           <div class="form-group col-lg-6 floating-label-form-group controls">
+                              <label>Email</label>
+                              <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
+                           </div>
+                           <div class="form-group col-lg-6 floating-label-form-group controls">
+                              <label>Teléfono</label>
+                              <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
+                           </div>
+                           <div class="col-lg-11 noPadding" id="divCortinas">
+                              <div>
+                                 <div class="form-group col-md-4 floating-label-form-group controls">
+                                    <label>Tipo de Cortina</label>
+                                    <select class="form-control" id="TipoCortina">
+                                       <option>Blackout</option>
+                                       <option>Sunscreen</option>
+                                       <option>Sistema Doble</option>
+                                       <option>Roller Dual</option>
+                                       <option>Roller Translúcida</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group col-md-4 floating-label-form-group controls">
+                                    <label>Ancho</label>
+                                    <input type="number" class="form-control" required id="ancho" min="0" placeholder="Mts." step=".01" style="display: block;" >
+                                 </div>
+                                 <div class="form-group col-md-4 floating-label-form-group controls">
+                                    <label>Alto</label>
+                                    <input type="number" class="form-control" required id="alto" min="0" placeholder="Mts." step=".01" style="display: block;" >
                                  </div>
                               </div>
-                              <!-- /.row -->
                            </div>
-                           <div class="tab-pane" id="toldo-brazo-punto-fijo">
-                              <div class="row noMargin pad25">
-                                 <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Toldos Brazos Punto Fijo</h1>
-                                        <p class="pad25">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
-
-                                    <div class="col-md-9">
-                                       <div id="carousel-toldo-brazo-punto-fijo" class="carousel slide" data-ride="carousel">
-                                          <!-- Indicators -->
-                                          <ol class="carousel-indicators">
-                                             <li data-target="#carousel-toldo-brazo-punto-fijo" data-slide-to="0" class="active"></li>
-                                             <li data-target="#carousel-toldo-brazo-punto-fijo" data-slide-to="1"></li>
-                                             <li data-target="#carousel-toldo-brazo-punto-fijo" data-slide-to="2"></li>
-                                          </ol>
-                                          <!-- Wrapper for slides -->
-                                          <div class="carousel-inner">
-                                             <div class="item active">
-                                                <img src="./img/productos/toldo-brazo-punto-fijo.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-brazo-punto-fijo2.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-brazo-punto-fijo3.jpg" alt="">
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                       <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                    </div>
-                                    <div class="col-md-3">
-                                       <!-- Trigger the modal -->
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">PVC</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="0">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="1">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="2">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                <p class="codigo-color">Natural</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="3">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="4">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="5">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <hr>
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">Textil</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="6">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="7">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="8">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="9">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="10">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                <p class="codigo-color">Beige</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-brazo-punto-fijo" data-toggle="modal" data-slide-to="11">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <!-- Modal -->
-                                       <div class="modal fade and carousel slide" id="lightbox-toldo-brazo-punto-fijo">
-                                          <div class="modal-dialog modal-lg">
-                                             <!-- Modal content-->
-                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                   <h4 class="modal-title">Toldos Brazos Punto Fijo</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                   <div class="carousel slide article-slide carousel-fade" id="toldo-brazo-punto-fijo-carousel" data-ride="carousel">
-                                                      <!-- Wrapper for slides -->
-                                                      <div class="carousel-inner cont-slider">
-                                                         <div class="item active">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-6.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-6.jpg">
-                                                         </div>
-                                                      </div>
-                                                      <!-- Indicators -->
-                                                      <ol class="carousel-indicators col-3">
-                                                         <li class="active" data-slide-to="0" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="1" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="2" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Natural</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="3" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="4" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="5" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="6" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="7" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="8" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="9" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="10" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Beige</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="11" data-target="#lightbox-toldo-brazo-punto-fijo">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                      </ol>
-                                                   </div>
-                                                   <div class="row">
-                                                      <div class="col-md-3"></div>
-                                                      <div class="col-md-6">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                      </div>
-                                                      <div class="col-md-3"></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <!-- Fin Modal content-->
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- /.row -->
+                           <div class="col-lg-1 noPadding">
+                              <label>&nbsp;</label><br>
+                              <button type="button" class="btn btn-enviar" onclick="agregarCortinaPres()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
                            </div>
-                           <div class="tab-pane" id="toldo-vertical">
-                              <div class="row noMargin pad25">
-                                 <div class="col-sm-12 noPadding">
-                                                                          <h1 class="nombre-producto">Toldos Verticales</h1>
-                                          <p class="pad25">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
-                                             Este tipo de Toldos es ideal para cerrar una galería o quincho abierto y protegerse así del frio y viento, creando un nuevo ambiente funcional para su casa.  
-                                          </p>
-                                    <div class="col-md-9">
-                                       <div id="carousel-toldo-vertical" class="carousel slide" data-ride="carousel">
-
-                                          <!-- Indicators -->
-                                          <ol class="carousel-indicators">
-                                             <li data-target="#carousel-toldo-vertical" data-slide-to="0" class="active"></li>
-                                             <li data-target="#carousel-toldo-vertical" data-slide-to="1"></li>
-                                             <li data-target="#carousel-toldo-vertical" data-slide-to="2"></li>
-                                          </ol>
-                                          <!-- Wrapper for slides -->
-                                          <div class="carousel-inner">
-                                             <div class="item active">
-                                                <img src="./img/productos/toldo-vertical.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-vertical2.jpg" alt="">
-                                             </div>
-                                             <div class="item">
-                                                <img src="./img/productos/toldo-vertical3.jpg" alt="">
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <img class="inline-block img-responsive" src="./img/empresa/coversol.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                       <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                       <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                    </div>
-                                    <div class="col-md-3">
-                                       <!-- Trigger the modal -->
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">Coversol</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="0">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="1">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="2">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-3-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="3">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-4-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Claro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="4">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-5-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="5">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/coversol-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <hr>
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">PVC</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="6">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="7">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="8">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                <p class="codigo-color">Natural</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="9">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="10">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="11">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <hr>
-                                       <ul id="toldos" class="nav-color">
-                                          <p class="titulo-color">Textil</p>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="12">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                <p class="codigo-color">Negro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="13">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                <p class="codigo-color">Gris</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="14">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                <p class="codigo-color">Verde Oscuro</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="15">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                <p class="codigo-color">Maíz</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="16">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                <p class="codigo-color">Beige</p>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#lightbox-toldo-vertical" data-toggle="modal" data-slide-to="17">
-                                                <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                <p class="codigo-color">Blanco</p>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                       <!-- Modal -->
-                                       <div class="modal fade and carousel slide" id="lightbox-toldo-vertical">
-                                          <div class="modal-dialog modal-lg">
-                                             <!-- Modal content-->
-                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                   <h4 class="modal-title">Toldos Verticales</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                   <div class="carousel slide article-slide carousel-fade" id="toldo-vertical-carousel" data-ride="carousel">
-                                                      <!-- Wrapper for slides -->
-                                                      <div class="carousel-inner cont-slider">
-                                                         <div class="item active">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/coversol-6.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/pvc-6.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-1.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-2.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-3.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-4.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-5.jpg">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img alt="" title="" src="./img/productos/toldos/textil-6.jpg">
-                                                         </div>
-                                                      </div>
-                                                      <!-- Indicators -->
-                                                      <ol class="carousel-indicators col-3">
-                                                         <li class="active" data-slide-to="0" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="1" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="2" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="3" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Claro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="4" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="5" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/coversol-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="6" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="7" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="8" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Natural</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="9" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="10" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="11" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/pvc-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="12" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-1-color.jpg');"></div>
-                                                            <p class="codigo-color">Negro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="13" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-2-color.jpg');"></div>
-                                                            <p class="codigo-color">Gris</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="14" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-3-color.jpg');"></div>
-                                                            <p class="codigo-color">Verde Oscuro</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="15" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-4-color.jpg');"></div>
-                                                            <p class="codigo-color">Maíz</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="16" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Beige</p>
-                                                         </li>
-                                                         <li class="" data-slide-to="17" data-target="#lightbox-toldo-vertical">
-                                                            <div class="color" style="background-image: url('./img/productos/toldos/textil-6-color.jpg');"></div>
-                                                            <p class="codigo-color">Blanco</p>
-                                                         </li>
-                                                      </ol>
-                                                   </div>
-                                                   <div class="row">
-                                                      <div class="col-md-2"></div>
-                                                      <div class="col-md-8">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/coversol.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/el-zonda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                         <img class="inline-block img-responsive" src="./img/empresa/sauleda.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                      </div>
-                                                      <div class="col-md-2"></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <!-- Fin Modal content-->
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- /.row -->
+                           <div class="form-group col-lg-12 floating-label-form-group controls">
+                              <label>Consulta</label>
+                              <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
                            </div>
-                           <!-- /.row -->
+                           <div class="form-group col-lg-12 floating-label-form-group controls text-right">
+                              <button type="submit" class="btn btn-enviar">Enviar</button>
+                           </div>
                         </div>
-                     </div>
+                        <br>
+                        <div id="success"></div>
+                     </form>
+                  </div>
+                  <div class="col-sm-5 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
+                     <img class="img-center" src="./img/home/_0003_icono2.png" width="135px" height="135px"/>
+                     <div style="margin: 15px;"><strong>¿CÓMO TOMAR MEDIDAS?</strong><br/> Lee <button type="button"  data-toggle="modal" data-target="#medidas">AQUI</button> el instructivo<br/> para tomar la medida correcta de tu cortina. </div>
+
+                     <img class="img-center top40" src="./img/home/_0004_icono1.png" width="135px" height="135px"/>
+                     <div style="margin: 15px;"><strong>¿DUDAS?</strong><br/> ¡Comunicate con un asesor ahora! <br/>
+                     0351 471 51 55</div>
                   </div>
                </div>
-               <div class="col-sm-1"></div>
             </div>
+            <?php include 'php/footer.php'; ?>
          </div>
-         <!-- /.TABS MATERIALES TOLDOS -->
-         <?php include 'php/footer.php'; ?>
-      </div>
-      <!-- /#page-content-wrapper --> 
-      <?php include 'php/sidebar.php'; ?>
+         <!-- /#page-content-wrapper --> 
+         <?php include 'php/sidebar.php'; ?>
       </div>
       <!-- /#wrapper --> 
       <?php include 'php/scripts-footer.php'; ?>

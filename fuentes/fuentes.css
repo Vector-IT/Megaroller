@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'BentonSans-Bold';
-	src: url('../fuentes/BentonSans Bold.eot');
-	src: url('../fuentes/BentonSans Bold.eot?#iefix') format('embedded-opentype'), url('../fuentes/BentonSans Bold.woff2') format('woff2'), url('../fuentes/BentonSans Bold.woff') format('woff'), url('../fuentes/BentonSans Bold.svg#BentonSans Bold') format('svg');
+	src: url('../fuentes/BentonSans-Bold.eot');
+	src: url('../fuentes/BentonSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fuentes/BentonSans-Bold.woff2') format('woff2'), url('../fuentes/BentonSans-Bold.woff') format('woff'), url('../fuentes/BentonSans-Bold.svg#BentonSans-Bold') format('svg');
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -20,8 +20,8 @@
 
 @font-face {
 	font-family: 'BentonSans-Regular';
-	src: url('../fuentes/BentonSans Regular.eot');
-	src: url('../fuentes/BentonSans Regular.eot?#iefix') format('embedded-opentype'), url('../fuentes/BentonSans Regular.woff2') format('woff2'), url('../fuentes/BentonSans Regular.woff') format('woff'), url('../fuentes/BentonSans Regular.svg#BentonSans Regular') format('svg');
+	src: url('../fuentes/BentonSans-Regular.eot');
+	src: url('../fuentes/BentonSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fuentes/BentonSans-Regular.woff2') format('woff2'), url('../fuentes/BentonSans-Regular.woff') format('woff'), url('../fuentes/BentonSans-Regular.svg#BentonSans-Regular') format('svg');
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;

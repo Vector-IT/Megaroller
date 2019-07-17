@@ -33,7 +33,8 @@
             <?php include 'php/header.php'; ?>
             <!-- CONTENIDO -->
             <div class="container">
-                <div class="row">
+                <div class="row top40">
+                <h1 class="alignCenter top40">Cortinas Roller Blackuot <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
                     <div class="col-sm-6">
                         <div class="carousel slide article-slide carousel-fade" id="article-photo-carousel" data-ride="carousel">
                             <!-- Wrapper for slides -->
@@ -79,32 +80,11 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="col-sm-6 top40 info-producto">
-                        <h1 class="nombre-producto">Roller Blackout</h1>
+                    <div class="col-sm-6 info-producto">
+                        <h2 class="nombre-producto">Roller Blackout</h2>
                         <h5 class="border">SELECCIONA EL COLOR</h5>
                         <div class="espacio-indicadores"></div>
                         <div style="margin-left:18px;margin-top: 15px;margin-bottom: 15px;"><strong>RECOMENDACIÓN vea como calcular la medida justa para su cortina<button type="button" class="btn-click" data-toggle="modal" data-target="#medidas">click aquí</button></strong></div>
-                        <!-- Modal Medidas -->
-                        <div class="modal fade" id="medidas" tabindex="-1" role="dialog" aria-labelledby="medidasLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                    <h4 class="modal-title" id="myModalLabel" style="color:#FFF;">Medidas de aberturas</h4>
-                                    <div class="modal-body">
-                                        <img class="img-responsive img-center" alt="" src="./img/item-producto/medidas-1.jpg">
-                                        <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-2.jpg">
-                                        <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-3.jpg">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="caracteristicas">
                             <h5 class="border">TIPO DE MONTAJE</h5>
                             <label class="radio-inline"><input type="radio" name="Montaje" value="Interior" checked style="margin-top: 15px;">Interior <img alt="" src="./img/item-producto/montaje-interior.png" style="margin-left: 5px; margin-right: 30px;" width="30px"></label>
@@ -173,7 +153,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="info-producto">
-                            <h2>Descripción</h2>
+                            <h3>Descripción</h3>
                             <p>Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.<br/>
                                 Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
                             </p>
@@ -266,6 +246,23 @@
                               if ($goog != '') echo $crlf.'<li><a href="'. $goog .'" target="_blank"><img class="" src="./img/item-producto/redes-g.png" alt=""></a></li>';
                         ?>
                         </ul>
+                    </div>
+                </div>
+                <div class="row bottom40">
+                    <div class="col-md-4 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
+                        <img style="opacity: 0.6;" class="img-center top40" src="./img/home/_0003_icono2.png" width="135px" height="135px"/>
+                        <div style="margin: 15px;"><button type="button"  data-toggle="modal" data-target="#medidas"><strong>¿CÓMO TOMAR MEDIDAS?</strong><br/> Lee AQUI el instructivo para tomar la medida correcta de tu cortina.</button></div>
+                    </div>
+                    <div class="col-md-4 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
+                        <img style="opacity: 0.6;" class="img-center top40" src="./img/home/_0004_icono1.png" width="135px" height="135px"/>
+                        <div style="margin: 15px;"><strong>¿DUDAS?</strong><br/> ¡Comunicate con un asesor ahora! <br/>
+                            0351 471 51 55
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
+                        <img style="opacity: 0.6;" class="img-center top40" src="./img/home/_0000_icono5.png" width="135px" height="135px"/>
+                        <div style="margin: 15px;"><strong>ENVÍO</strong><br/> A todo el país
+                        </div>
                     </div>
                 </div>
             </div>

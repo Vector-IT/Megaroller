@@ -52,33 +52,34 @@
 <div id="navbar-collapse-grid" class="navbar-collapse collapse">
   <ul class="nav navbar-nav">
     <li>
-      <a class="presupuesto" type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar"><span style="">Presupuestar
-      <br/>cortinas a medida</span> </a>
-    </li>
-    <li>
       <div class="btn-group">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-        Tienda Online <br/>
-        Medidas Estandar
+        Tienda Online
         <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="blackout.php">Blackout</a></li>
-          <li><a href="sunscreen.php">Sunscreen</a></li>
+          <li><a href="blackout.php">Roller Blackout</a></li>
+          <li><a href="sunscreen.php">Roller Sunscreen</a></li>
         </ul>
       </div>
+	</li>
+	<li>
+	<a href="franquicias.php" style="background: #3d3d3d !important; color: #fff;">Franquicias</a>
     </li>
-    <li  class="btn-round sola-linea">
-      <a href="empresa.php#contacto">Contacto</a>
+	<li>
+      <a href="index.php/#contacto">Contacto</a>
     </li>
-    <li class="btn-round sola-linea">
-      <a href="productos.php">Productos</a>
+	<li>
+      <a href="mobiliario.php">Mobiliario</a>
     </li>
-    <li  class="btn-round sola-linea">
-      <a href="empresa.php">Empresa</a>
+    <li>
+      <a href="toldos.php">Toldos</a>
     </li>
-    <li  class="btn-round sola-linea">
-      <a href="index.php">Home</a>
+    <li>
+      <a href="bandas-verticales.php">Bandas Verticales</a>
+    </li>
+    <li>
+      <a href="cortinas-roller.php">Cortinas Roller</a>
     </li>
   </ul>
 </div>
@@ -212,6 +213,28 @@
 </div>
 <!-- /.MODAL LOGIN -->
 
+                        <!-- Modal Medidas -->
+                        <div class="modal fade" id="medidas" tabindex="-1" role="dialog" aria-labelledby="medidasLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <h4 class="modal-title" id="myModalLabel" style="color:#FFF;">Medidas de aberturas</h4>
+                                    <div class="modal-body">
+                                        <img class="img-responsive img-center" alt="" src="./img/item-producto/medidas-1.jpg">
+                                        <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-2.jpg">
+                                        <img class="img-responsive img-center"  alt="" src="./img/item-producto/medidas-3.jpg">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						
 <!-- Modal Presupuestar -->
 <div class="modal fade" id="presupuestar" tabindex="-1" role="dialog" aria-labelledby="presupuestarModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
