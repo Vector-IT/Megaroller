@@ -144,14 +144,14 @@
             <div id="contacto">
                <div class="container-full text-center">
                   <div class="row noMargin">
-                     <div class="col-lg-12 noPadding top40">
+                     <div class="col-lg-12 noPadding top20">
                         <h2>Contacto</h2>
-                        <div id="map" style="height: 380px; width: 100%;">
+                        <div id="map" class="top20" style="height: 380px; width: 100%;">
                         </div>
                      </div>
                   </div>
                   <div class="container-full formulario top40">
-                     <div class="row noMargin">
+                     <div class="row noMargin bottom40">
                         <div class="col-lg-2">
                         </div>
                         <div class="col-lg-8  bottom40">
