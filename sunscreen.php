@@ -32,8 +32,8 @@
             <?php include 'php/header.php'; ?>
             <!-- CONTENIDO -->
             <div class="container">
-            <div class="row top40">
-                <h1 class="alignCenter top40">Cortinas Roller Sunscreen 5% <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
+            <div class="row">
+                <h1 class="alignCenter">Cortinas Roller Sunscreen 5% <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
                     <div class="col-sm-6">
                         <div class="carousel slide article-slide carousel-fade" id="article-photo-carousel" data-ride="carousel">
                             <!-- Wrapper for slides -->

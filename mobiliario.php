@@ -22,8 +22,8 @@
             <div id="materiales-toldos" class="container-full">
                <div class="row noMargin">
                   <div class="col-sm-1"></div>
-                  <div class="col-sm-10 top40">
-                     <h1 class="alignCenter bottom40">Mobiliario  <img src="./img/iconos_0000_mobiliario.png" style="height: 30px; margin-top: -5px;"></h1>
+                  <div class="col-sm-10">
+                     <h1 class="alignCenter">Mobiliario  <img src="./img/iconos_0000_mobiliario.png" style="height: 30px; margin-top: -5px;"></h1>
                      <div class="gal bottom40">
                         <img src="./img/mobiliario/mobiliario-3.jpg">
                         <img src="./img/mobiliario/mobiliario-5.jpg">

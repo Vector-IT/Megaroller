@@ -23,9 +23,9 @@
             <div id="materiales-toldos" class="container-full">
                <div class="row noMargin">
                   <div class="col-sm-1"></div>
-                  <div class="col-sm-10 top40">
-                     <h1 class="alignCenter bottom40">Toldos  <img src="./img/iconos_0001_toldo.png" style="height: 30px; margin-top: -5px;"></h1>
-                     <div id="tabs-materiales" class="top40">
+                  <div class="col-sm-10">
+                     <h1 class="alignCenter">Toldos  <img src="./img/iconos_0001_toldo.png" style="height: 30px; margin-top: -5px;"></h1>
+                     <div id="tabs-materiales">
                         <ul  class="nav nav-pills">
                            <li class="active"><a  href="#toldo-brazo-invisible" data-toggle="tab">Toldos Brazos Invisibles o Extensibles</a>
                            </li>
@@ -38,7 +38,7 @@
                            <div class="tab-pane active" id="toldo-brazo-invisible">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
-                                    <h1 class="nombre-producto">Toldos Brazos Invisibles o Extensibles</h1>
+                                    <h2 class="text-center">Toldos Brazos Invisibles o Extensibles</h2>
                                     <p class="pad25">El toldo de brazos invisibles, es sumamente versátil, ajustándose absolutamente a todas las necesidades y lugares de instalación, su uso es muy variado, y si bien, es el toldo ideal para generar espacios habitables de sombra al aire libre, también se lo puede utilizar para controlar el impacto del sol sobre ventanas.
                                        Con brazos de poco desarrollo, 1.60mts o 2.10mts, se puede utilizar para evitar el impacto del el sol sobre ventanas o ventanales, controlando la temperatura del ambiente, evitando el calor excesivo sobre la abertura, e impidiendo que el sol ingrese al interior de la casa.
                                        Con brazos de gran desarrollo, como los de 2.60mts/3.10mts/3.60mts/4.10mts, se pueden lograr perfectos espacios de sombra en el exteriores, creando un agradable ambiente de sombra al aire libre.
@@ -271,7 +271,7 @@
                            <div class="tab-pane" id="toldo-brazo-punto-fijo">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
-                                    <h1 class="nombre-producto">Toldos Brazos Punto Fijo</h1>
+                                    <h2 class="text-center">Toldos Brazos Punto Fijo</h2>
                                     <p class="pad25">La función principal de este tipo de toldos, es controlar las altas temperaturas sobre la propia abertura, impidiendo que el sol ingrese al interior del ambiente. Su Inclinación o Caída esta determinada por el movimiento tipo pívot del brazo, permitiendo la posibilidad de variar su inclinación de forma progresiva hasta el punto deseado, quedando en 45 , 90 o 180 grados con el toldo totalmente extendido.</p>
                                     <div class="col-md-9">
                                        <div id="carousel-toldo-brazo-punto-fijo" class="carousel slide" data-ride="carousel">
@@ -501,7 +501,7 @@
                            <div class="tab-pane" id="toldo-vertical">
                               <div class="row noMargin pad25">
                                  <div class="col-sm-12 noPadding">
-                                    <h1 class="nombre-producto">Toldos Verticales</h1>
+                                    <h2 class="text-center">Toldos Verticales</h2>
                                     <p class="pad25">Estos Toldos permiten crear ambientes mas frescos debido al filtrado de los rayos UV que se realiza antes que lleguen al interior del ambiente y brindan la posibilidad de cerrar espacios exteriores integrando y generando un nuevo ambiente funcional a la casa. Su sencillo accionamiento en sentido vertical y enrollable permite controlar los rayos solares manteniendo la visibilidad y otorgando agradables condiciones de temperatura.
                                        Este tipo de Toldos es ideal para cerrar una galería o quincho abierto y protegerse así del frio y viento, creando un nuevo ambiente funcional para su casa.  
                                     </p>

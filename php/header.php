@@ -67,7 +67,7 @@
 	<a href="franquicias.php" style="background: #3d3d3d !important; color: #fff;">Franquicias</a>
     </li>
 	<li>
-      <a href="index.php/#contacto">Contacto</a>
+      <a href="/#contacto">Contacto</a>
     </li>
 	<li>
       <a href="mobiliario.php">Mobiliario</a>

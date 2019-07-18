@@ -23,9 +23,9 @@
             <div id="materiales-cortinas" class="container-full">
                <div class="row noMargin">
                   <div class="col-sm-1"></div>
-                  <div class="col-sm-10 top40">
-                     <h1 class="alignCenter bottom40 top40">Bandas Verticales <img src="./img/iconos_0002_verticales.png" style="height: 30px; margin-top: -5px;"></h1>
-                     <div id="tabs-materiales" class="top40">
+                  <div class="col-sm-10">
+                     <h1 class="alignCenter">Bandas Verticales <img src="./img/iconos_0002_verticales.png" style="height: 30px; margin-top: -5px;"></h1>
+                     <div id="tabs-materiales">
                         <div class="tabbable" class="top40">
                            <ul  class="nav nav-pills" style="display: none;">
                               <li class="active"><a  href="#bandas-verticales" data-toggle="tab">Bandas Verticales</a>
@@ -46,6 +46,8 @@
                                                 <li data-target="#carousel-bandas-verticales" data-slide-to="0" class="active"></li>
                                                 <li data-target="#carousel-bandas-verticales" data-slide-to="1"></li>
                                                 <li data-target="#carousel-bandas-verticales" data-slide-to="2"></li>
+                                                <li data-target="#carousel-bandas-verticales" data-slide-to="3"></li>
+                                                <li data-target="#carousel-bandas-verticales" data-slide-to="4"></li>
                                              </ol>
                                              <!-- Wrapper for slides -->
                                              <div class="carousel-inner">
@@ -57,7 +59,13 @@
                                                 </div>
                                                 <div class="item">
                                                    <img src="./img/productos/bandas-verticales/bandas-verticales-3.jpg" alt="">
-                                                </div>                                            
+                                                </div>        
+                                                <div class="item">
+                                                   <img src="./img/productos/bandas-verticales/bandas-verticales-4.jpg" alt="">
+                                                </div>  
+                                                <div class="item">
+                                                   <img src="./img/productos/bandas-verticales/bandas-verticales-5.jpg" alt="">
+                                                </div>                                      
                                              </div>
                                           </div>
                                        </div>
@@ -641,7 +649,7 @@
                                  <div class="form-group col-md-4 floating-label-form-group controls">
                                     <label>Tipo de Cortina</label>
                                     <select class="form-control" id="TipoCortina">
-                                       <option>bandas-verticales</option>
+                                       <option>Bandas Verticales</option>
                                        <option>Sunscreen</option>
                                        <option>Sistema Doble</option>
                                        <option>Roller Dual</option>

@@ -23,9 +23,9 @@
             <div id="materiales-cortinas" class="container-full">
                <div class="row noMargin">
                   <div class="col-sm-1"></div>
-                  <div class="col-sm-10 top40">
-                     <h1 class="alignCenter top40">Cortinas Roller <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
-                     <div id="tabs-materiales" class="top40">
+                  <div class="col-sm-10">
+                     <h1 class="alignCenter">Cortinas Roller <img src="./img/iconos_0003_roller.png" style="height: 30px; margin-top: -5px;"></h1>
+                     <div id="tabs-materiales">
                         <div class="tabbable">
                            <ul  class="nav nav-pills">
                               <li class="active"><a  href="#roller-blackout" data-toggle="tab">Roller Blackout</a>
@@ -43,7 +43,7 @@
                               <div class="tab-pane active" id="roller-blackout">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Roller Blackout</h1>
+                                       <h2 class="text-center">Roller Blackout</h2>
                                        <p class="pad25">Nuestras Cortinas Roller Blackout están fabricadas con los mejores componentes del mercado. Este tejido, de origen USA o CHINA, está constituido a base de fibra de vidrio y recubierto con 3 láminas de PVC.
                                           Su factor de oscurecimiento es prácticamente del 100%, ya que la tela logra evitar completamente la filtración de luz al tiempo que resiste las altas temperaturas.
                                        </p>
@@ -55,10 +55,22 @@
                                                 <li data-target="#carousel-roller-blackout" data-slide-to="1"></li>
                                                 <li data-target="#carousel-roller-blackout" data-slide-to="2"></li>
                                                 <li data-target="#carousel-roller-blackout" data-slide-to="3"></li>
+                                                <li data-target="#carousel-roller-blackout" data-slide-to="4"></li>
+                                                <li data-target="#carousel-roller-blackout" data-slide-to="5"></li>
+                                                <li data-target="#carousel-roller-blackout" data-slide-to="6"></li>
                                              </ol>
                                              <!-- Wrapper for slides -->
                                              <div class="carousel-inner">
                                                 <div class="item active">
+                                                   <img src="./img/productos/blackout7.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/blackout8.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/blackout9.jpg" alt="">
+                                                </div>
+                                                <div class="item">
                                                    <img src="./img/productos/blackout.jpg" alt="">
                                                 </div>
                                                 <div class="item">
@@ -181,7 +193,7 @@
                               <div class="tab-pane" id="roller-sunscreen">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Roller Sunscreen</h1>
+                                       <h2 class="text-center">Roller Sunscreen</h2>
                                        <p class="pad25">Nuestras Cortinas Roller Sunscreen son fabricadas con la más alta calidad, este material es importado de EEUU o Europa y ofrece ventajas con respecto a otras telas, dado que filtra y modera la entrada de luz natural protegiendo el ambiente y su mobiliario de los rayos UV, ayuda a regular la temperatura ambiente y otorga una agradable decoración y estética.
                                           Su tela de apariencia microperforada también brinda la posibilidad de disfrutar de espacios más frescos e íntimos, permitiendo ver a través de ella y contemplar el paisaje exterior.
                                        </p>
@@ -202,21 +214,17 @@
                                                          <li data-target="#carousel-sunscreen1" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen1" data-slide-to="1"></li>
                                                          <li data-target="#carousel-sunscreen1" data-slide-to="2"></li>
-                                                         <li data-target="#carousel-sunscreen1" data-slide-to="3"></li>
                                                       </ol>
                                                       <!-- Wrapper for slides -->
                                                       <div class="carousel-inner">
                                                          <div class="item active">
-                                                            <img src="./img/productos/cortina-sunscreen.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen5.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen6.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen4.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen7.jpg" alt="">
                                                          </div>
                                                       </div>
                                                    </div>
@@ -414,21 +422,17 @@
                                                          <li data-target="#carousel-sunscreen4" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen4" data-slide-to="1"></li>
                                                          <li data-target="#carousel-sunscreen4" data-slide-to="2"></li>
-                                                         <li data-target="#carousel-sunscreen4" data-slide-to="3"></li>
                                                       </ol>
                                                       <!-- Wrapper for slides -->
                                                       <div class="carousel-inner">
                                                          <div class="item active">
-                                                            <img src="./img/productos/cortina-sunscreen.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen8.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen9.jpg" alt="">
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen4.jpg" alt="">
                                                          </div>
                                                       </div>
                                                    </div>
@@ -542,22 +546,14 @@
                                                       <ol class="carousel-indicators">
                                                          <li data-target="#carousel-sunscreen5" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen5" data-slide-to="1"></li>
-                                                         <li data-target="#carousel-sunscreen5" data-slide-to="2"></li>
-                                                         <li data-target="#carousel-sunscreen5" data-slide-to="3"></li>
                                                       </ol>
                                                       <!-- Wrapper for slides -->
                                                       <div class="carousel-inner">
                                                          <div class="item active">
-                                                            <img src="./img/productos/cortina-sunscreen.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen10.jpg" alt="">
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen4.jpg" alt="">
                                                          </div>
                                                       </div>
                                                    </div>
@@ -686,22 +682,14 @@
                                                       <ol class="carousel-indicators">
                                                          <li data-target="#carousel-sunscreen5bicolor" data-slide-to="0" class="active"></li>
                                                          <li data-target="#carousel-sunscreen5bicolor" data-slide-to="1"></li>
-                                                         <li data-target="#carousel-sunscreen5bicolor" data-slide-to="2"></li>
-                                                         <li data-target="#carousel-sunscreen5bicolor" data-slide-to="3"></li>
                                                       </ol>
                                                       <!-- Wrapper for slides -->
                                                       <div class="carousel-inner">
                                                          <div class="item active">
-                                                            <img src="./img/productos/cortina-sunscreen.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen11.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen4.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen12.jpg" alt="">
                                                          </div>
                                                       </div>
                                                    </div>
@@ -805,7 +793,7 @@
                               <div class="tab-pane" id="roller-sistema-doble">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Roller Sistema Doble</h1>
+                                       <h2 class="text-center">Roller Sistema Doble</h2>
                                        <p class="pad25">Las Cortinas Roller Sistema Doble combinan una Cortina realizada en tela Blackout con otra cortina de tela Sunscreen logrando así un completo control de la luz solar. Proporciona un oscurecimiento total para el ambientes, donde la privacidad y la oscuridad es sumamente necesaria, dado por el Blackout, y otorga un filtrado en el ingreso de luminosidad necesario dado por el Sunscreen. Estas Cortinas son perfectas para dormitorios, livings, salas de estar, lofts y comedores.
                                        </p>
                                        <div class="col-md-9">
@@ -815,14 +803,22 @@
                                                 <li data-target="#carousel-roller-sistema-doble" data-slide-to="0" class="active"></li>
                                                 <li data-target="#carousel-roller-sistema-doble" data-slide-to="1"></li>
                                                 <li data-target="#carousel-roller-sistema-doble" data-slide-to="2"></li>
+                                                <li data-target="#carousel-roller-sistema-doble" data-slide-to="3"></li>
+                                                <li data-target="#carousel-roller-sistema-doble" data-slide-to="4"></li>
                                              </ol>
                                              <!-- Wrapper for slides -->
                                              <div class="carousel-inner">
                                                 <div class="item active">
-                                                   <img src="./img/productos/doble-sistema.jpg" alt="">
+                                                   <img src="./img/productos/doble-sistema6.jpg" alt="">
                                                 </div>
                                                 <div class="item">
-                                                   <img src="./img/productos/doble-sistema2.jpg" alt="">
+                                                   <img src="./img/productos/doble-sistema4.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/doble-sistema5.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                   <img src="./img/productos/doble-sistema.jpg" alt="">
                                                 </div>
                                                 <div class="item">
                                                    <img src="./img/productos/doble-sistema3.jpg" alt="">
@@ -994,7 +990,7 @@
                               <div class="tab-pane" id="roller-dual">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Roller Dual</h1>
+                                       <h2 class="text-center">Roller Dual</h2>
                                        <p class="pad25">La cortina Dual es un sistema innovador confeccionada con un paño de tela que cuenta con franjas transparentes y traslúcidas, colocado doblemente, permitiendo una regulación adecuada de la luz que ingresa al ambiente. Con altos estándares de calidad y diseño, la cortina Dual es uno de los productos que más promete en el ambiente de la protección solar. Combina un diseño contemporáneo y funcional dos elementos importantes para cubrir las necesidades de una cortina, visión a través de ella y privacidad controlable a voluntad.
                                           Estas Cortinas son Ideales para ambientes como Living, Comedor, Salas de Reunión y Oficinas.
                                        </p>
@@ -1012,7 +1008,7 @@
                                                    <img src="./img/productos/roller-dual.jpg" alt="">
                                                 </div>
                                                 <div class="item">
-                                                   <img src="./img/productos/roller-dual2.jpg" alt="">
+                                                   <img src="./img/productos/roller-dual2.jpeg" alt="">
                                                 </div>
                                                 <div class="item">
                                                    <img src="./img/productos/roller-dual3.jpg" alt="">
@@ -1118,7 +1114,7 @@
                               <div class="tab-pane" id="roller-translucida">
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
-                                       <h1 class="nombre-producto">Roller Translucida</h1>
+                                       <h2 class="text-center">Roller Translucida</h2>
                                        <p class="pad25">
                                        </p>
                                        <div class="col-md-9">
@@ -1150,32 +1146,32 @@
                                           <ul class="nav-color">
                                              <li>
                                                 <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="0">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0004_1-color.jpg');"></div>
-                                                   <p class="codigo-color">Blanco</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="1">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0003_2-color.jpg');"></div>
-                                                   <p class="codigo-color">Natural</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="2">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0002_3-color.jpg');"></div>
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
                                                    <p class="codigo-color">Beige</p>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0001_4-color.jpg');"></div>
-                                                   <p class="codigo-color">Gris</p>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="1">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
+                                                   <p class="codigo-color">Crudo</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="2">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
+                                                   <p class="codigo-color">Gris Claro</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0000_5-color.jpg');"></div>
-                                                   <p class="codigo-color">Negro</p>
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
+                                                   <p class="codigo-color">Gris Oscuro</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
+                                                   <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
+                                                   <p class="codigo-color">Crudo</p>
                                                 </a>
                                              </li>
                                           </ul>
@@ -1193,50 +1189,44 @@
                                                          <!-- Wrapper for slides -->
                                                          <div class="carousel-inner cont-slider">
                                                             <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0004_1.jpg">
+                                                               <img alt="" title="" src="./img/productos/translucida/beige.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0003_2.jpg">
+                                                               <img alt="" title="" src="./img/productos/translucida/crudo.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0002_3.jpg">
+                                                               <img alt="" title="" src="./img/productos/translucida/gris-claro.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0001_4.jpg">
+                                                               <img alt="" title="" src="./img/productos/translucida/gris-oscuro.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/BLACKOUT_0000_5.jpg">
+                                                               <img alt="" title="" src="./img/productos/translucida/lino.jpg">
                                                             </div>
                                                          </div>
                                                          <!-- Indicators -->
                                                          <ol class="carousel-indicators col-2">
                                                             <li class="active" data-slide-to="0" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0004_1-color.jpg');"></div>
-                                                               <p class="codigo-color">Blanco</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0003_2-color.jpg');"></div>
-                                                               <p class="codigo-color">Natural</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="2" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0002_3-color.jpg');"></div>
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
                                                                <p class="codigo-color">Beige</p>
                                                             </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
+                                                               <p class="codigo-color">Crudo</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-translucida">
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
+                                                               <p class="codigo-color">Gris Claro</p>
+                                                            </li>
                                                             <li class="" data-slide-to="3" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0001_4-color.jpg');"></div>
-                                                               <p class="codigo-color">Gris</p>
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
+                                                               <p class="codigo-color">Gris Oscuro</p>
                                                             </li>
                                                             <li class="" data-slide-to="4" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/BLACKOUT_0000_5-color.jpg');"></div>
-                                                               <p class="codigo-color">Negro</p>
+                                                               <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
+                                                               <p class="codigo-color">Lino</p>
                                                             </li>
                                                          </ol>
-                                                      </div>
-                                                      <div class="row">
-                                                         <div class="col-md-9">
-                                                            <img class="img-center img-responsive" src="./img/empresa/unitec.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                         </div>
-                                                         <div class="col-md-3"></div>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -1279,6 +1269,7 @@
                                  <div class="form-group col-md-4 floating-label-form-group controls">
                                     <label>Tipo de Cortina</label>
                                     <select class="form-control" id="TipoCortina">
+                                       <option>Bandas Verticales</option>
                                        <option>Blackout</option>
                                        <option>Sunscreen</option>
                                        <option>Sistema Doble</option>
