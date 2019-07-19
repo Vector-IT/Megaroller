@@ -19,11 +19,11 @@
          <!-- Page Content -->
          <div id="page-content-wrapper">
             <?php include 'php/header.php'; ?>
-            <div id="materiales-toldos" class="container-full">
+            <div id="franquicias" class="container-full">
                <div class="row noMargin">
                   <div class="col-md-1"></div>
-                  <div class="col-md-10 top40">
-                     <h1 class="alignCenter bottom40">Franquicias</h1>
+                  <div class="col-md-10">
+                     <h1 class="alignCenter">Franquicias</h1>
                      <div class="row noMargin">
                         <div class="col-lg-8">
                            <h2 class="txt-naranja">¿PORQUÉ ADQUIRIR UNA FRANQUICIA MEGAROLLER?</h2>

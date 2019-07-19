@@ -429,7 +429,7 @@
                                                             <img src="./img/productos/cortina-sunscreen8.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen9.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen9.jpeg" alt="">
                                                          </div>
                                                          <div class="item">
                                                             <img src="./img/productos/cortina-sunscreen3.jpg" alt="">
@@ -689,7 +689,7 @@
                                                             <img src="./img/productos/cortina-sunscreen11.jpg" alt="">
                                                          </div>
                                                          <div class="item">
-                                                            <img src="./img/productos/cortina-sunscreen12.jpg" alt="">
+                                                            <img src="./img/productos/cortina-sunscreen12.jpeg" alt="">
                                                          </div>
                                                       </div>
                                                    </div>
@@ -1115,8 +1115,7 @@
                                  <div class="row noMargin pad25">
                                     <div class="col-sm-12 noPadding">
                                        <h2 class="text-center">Roller Translucida</h2>
-                                       <p class="pad25">
-                                       </p>
+                                       <p class="pad25">Este Material, a base de Poliester, permite el ingreso de luminosidad pero sin visión, manteniendo siempre la privacidad en el ambiente y filtrando los rayos UV, protegiendo así los pisos de madera y mobiliario. Es ideal para Ventanas que se ubican en Frentes o ambientes donde necesito privacidad, principalmente de noche. Existe una amplia gama de Colores y tramas disponibles.</p>
                                        <div class="col-md-9">
                                           <div id="carousel-roller-translucida" class="carousel slide" data-ride="carousel">
                                              <!-- Indicators -->
@@ -1171,7 +1170,7 @@
                                              <li>
                                                 <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
                                                    <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
-                                                   <p class="codigo-color">Crudo</p>
+                                                   <p class="codigo-color">Lino</p>
                                                 </a>
                                              </li>
                                           </ul>
@@ -1247,7 +1246,7 @@
             </div>
             <!-- /.TABS MATERIALES CORTINAS -->
             <div class="container">
-               <div class="row top40">
+               <div class="row top40 noMargin">
                   <h2 class="text-center top40">¡SOLICITÁ TU PRESUPUESTO AHORA!</h2>
                   <div class="col-sm-7 top40">
                      <form id="presupuesto">
@@ -1306,10 +1305,10 @@
                   <div class="col-sm-5 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
                      <img class="img-center" src="./img/home/_0003_icono2.png" width="135px" height="135px"/>
                      <div style="margin: 15px;"><strong>¿CÓMO TOMAR MEDIDAS?</strong><br/> Lee <button type="button"  data-toggle="modal" data-target="#medidas">AQUI</button> el instructivo<br/> para tomar la medida correcta de tu cortina. </div>
-
                      <img class="img-center top40" src="./img/home/_0004_icono1.png" width="135px" height="135px"/>
                      <div style="margin: 15px;"><strong>¿DUDAS?</strong><br/> ¡Comunicate con un asesor ahora! <br/>
-                     0351 471 51 55</div>
+                        0351 471 51 55
+                     </div>
                   </div>
                </div>
             </div>

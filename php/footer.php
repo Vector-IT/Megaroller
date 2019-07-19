@@ -11,9 +11,13 @@
                         <div class="titulo-footer">megaroller</div>
                         <ul>
                            <li><a href="index.php">Home</a></li>
-                           <li><a href="empresa.php">Empresa</a></li>
-                           <li><a href="productos.php">Productos</a></li>
-                           <li><a href="#">Tienda Online Medidas Estandar</a>
+                           <li><a href="cortinas-roller.php">Cortinas Roller</a></li>
+                           <li><a href="bandas-verticales.php">Bandas Verticales</a></li>
+                           <li><a href="toldos.php">Toldos</a></li>
+                           <li><a href="index.php/#contacto">Contacto</a></li>
+                           <li><a href="franquicias.php">Franquicias</a></li>
+                           <li><a href="blackout.php">Tienda Online - Balckout Medidas Estandar</a></li>
+                           <li><a href="sunscreen.php">Tienda Online - Sunscreen Medidas Estandar</a></li>
                            <li><a type="button" href="#presupuestar" data-toggle="modal" data-target="#presupuestar">Presupuestar cortinas a medida</a></li>
                         </ul>
                      </div>

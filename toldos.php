@@ -824,7 +824,7 @@
          </div>
          <!-- /.TABS MATERIALES TOLDOS -->
          <div class="container">
-            <div class="row top40">
+            <div class="row top40 noMargin">
                <h2 class="text-center top40">¡SOLICITÁ TU PRESUPUESTO AHORA!</h2>
                <div class="col-sm-7 top40">
                   <form id="contactForm">
