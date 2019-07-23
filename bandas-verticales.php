@@ -74,37 +74,37 @@
                                           <ul class="nav-color">
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-1" data-toggle="modal" data-slide-to="0">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester.jpg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-1.jpg');"></div>
                                                    <p class="codigo-color">Blackout Polyester</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-2" data-toggle="modal" data-slide-to="1">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-beach/linea-beach.jpeg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-beach/maceio-blanco.jpg');"></div>
                                                    <p class="codigo-color">Línea Beach</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-3" data-toggle="modal" data-slide-to="2">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-carina/linea-carina.jpeg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-carina/verde-fluor.jpg');"></div>
                                                    <p class="codigo-color">Línea Carina</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-4" data-toggle="modal" data-slide-to="3">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/linea-devon.jpeg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
                                                    <p class="codigo-color">Línea Devon</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-5" data-toggle="modal" data-slide-to="4">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/linea-lima.jpeg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/taupe.jpg');"></div>
                                                    <p class="codigo-color">Línea Lima</p>
                                                 </a>
                                              </li>
                                              <li>
                                                 <a href="#lightbox-bandas-verticales-6" data-toggle="modal" data-slide-to="5">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lino/linea-lino.jpeg');"></div>
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lino/beige.jpg');"></div>
                                                    <p class="codigo-color">linea Lino</p>
                                                 </a>
                                              </li>
