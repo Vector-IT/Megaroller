@@ -311,8 +311,13 @@
                                             <input type="email" class="form-control" placeholder="" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                             <p class="help-block text-danger"></p>
 											<label>Localidad</label>
-											<input name="location" type="text" class="form-control" placeholder="" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
-                                 			<p class="help-block text-danger"></p>
+                                            <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
+                                             <option>Córdoba Centro</option>
+                                             <option>Córdoba Zona Norte</option>
+                                             <option>Córdoba Zona Sur</option>
+                                             <option>Freyre</option>
+                                          </select>
+                                          <p class="help-block text-danger"></p>
                                             <label>Teléfono</label>
                                             <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                                             <p class="help-block text-danger"></p>
@@ -332,7 +337,7 @@
                         <div class="row">
                             <div class="col-lg-2"> </div>
                             <div class="col-lg-8 border-top">
-                                <img class="img-center" src="./img/logo.jpg" alt="">
+                                <img class="img-center" src="./img/logo.jpg" alt="" width="300px">
                             </div>
                             <div class="col-lg-2"> </div>
                         </div>

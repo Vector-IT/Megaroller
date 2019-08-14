@@ -50,7 +50,7 @@
                <div class="pull-right" style="margin: 8px 15px 0 0;"><?php echo (isset($_SESSION['NumeUser'])? $_SESSION["NombPers"]: '')?></div>
             </a>
          </div>
-         <p class="telefonos pull-right">0351 471 51 55 | 0351 155 228 460</p>
+         <p class="telefonos pull-right">0351 471 51 55 | 0351 157 319 051</p>
          <a class="mail pull-right" href="mailto:ventas@megarollercortinas.com" target="_top">ventas@megarollercortinas.com</a>
       </div>
    </div>
@@ -270,6 +270,16 @@
                            <div class="form-group col-lg-6 floating-label-form-group controls">
                               <label>Teléfono</label>
                               <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
+                           </div>
+                           <div class="form-group col-lg-6 floating-label-form-group controls">
+                           <label>Localidad</label>
+                           <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
+                                             <option>Córdoba Centro</option>
+                                             <option>Córdoba Zona Norte</option>
+                                             <option>Córdoba Zona Sur</option>
+                                             <option>Freyre</option>
+                                          </select>
+                           <p class="help-block text-danger"></p>
                            </div>
                            <div class="col-lg-11 noPadding" id="divCortinas">
                               <div>

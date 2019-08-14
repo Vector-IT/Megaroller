@@ -73,51 +73,64 @@
                                           <!-- Trigger the modal -->
                                           <ul class="nav-color">
                                              <li>
-                                                <a href="#lightbox-bandas-verticales-1" data-toggle="modal" data-slide-to="0">
+                                                <a href="#lightbox-bandas-verticales-9" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/beige.jpg');"></div>
+                                                   <p class="codigo-color">Blackout Vinílico</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-bandas-verticales-10" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
+                                                   <p class="codigo-color">Patagonia</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-bandas-verticales-2" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-beach/maceio-blanco.jpg');"></div>
+                                                   <p class="codigo-color">Beach</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-bandas-verticales-7" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/linea-malaga.jpg');"></div>
+                                                   <p class="codigo-color">Malaga</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-bandas-verticales-8" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-shantung/linea-shantung.jpg');"></div>
+                                                   <p class="codigo-color">Shantung</p>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#lightbox-bandas-verticales-1" data-toggle="modal">
                                                 <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-1.jpg');"></div>
                                                    <p class="codigo-color">Blackout Polyester</p>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="#lightbox-bandas-verticales-2" data-toggle="modal" data-slide-to="1">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-beach/maceio-blanco.jpg');"></div>
-                                                   <p class="codigo-color">Línea Beach</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-bandas-verticales-3" data-toggle="modal" data-slide-to="2">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-carina/verde-fluor.jpg');"></div>
-                                                   <p class="codigo-color">Línea Carina</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-bandas-verticales-4" data-toggle="modal" data-slide-to="3">
+                                                <a href="#lightbox-bandas-verticales-4" data-toggle="modal">
                                                 <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
-                                                   <p class="codigo-color">Línea Devon</p>
+                                                   <p class="codigo-color">Devon</p>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="#lightbox-bandas-verticales-5" data-toggle="modal" data-slide-to="4">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/taupe.jpg');"></div>
-                                                   <p class="codigo-color">Línea Lima</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-bandas-verticales-6" data-toggle="modal" data-slide-to="5">
+                                                <a href="#lightbox-bandas-verticales-6" data-toggle="modal">
                                                 <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lino/beige.jpg');"></div>
-                                                   <p class="codigo-color">linea Lino</p>
+                                                   <p class="codigo-color">Lino</p>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="#lightbox-bandas-verticales-7" data-toggle="modal" data-slide-to="6">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/linea-malaga.jpg');"></div>
-                                                   <p class="codigo-color">Línea Malaga</p>
+                                                <a href="#lightbox-bandas-verticales-3" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-carina/verde-fluor.jpg');"></div>
+                                                   <p class="codigo-color">Carina</p>
                                                 </a>
                                              </li>
+                                             
                                              <li>
-                                                <a href="#lightbox-bandas-verticales-8" data-toggle="modal" data-slide-to="7">
-                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-shantung/linea-shantung.jpg');"></div>
-                                                   <p class="codigo-color">Línea Shantung</p>
+                                                <a href="#lightbox-bandas-verticales-5" data-toggle="modal">
+                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/taupe.jpg');"></div>
+                                                   <p class="codigo-color">Lima</p>
                                                 </a>
                                              </li>
                                           </ul>
@@ -135,6 +148,12 @@
                                                          <!-- Wrapper for slides -->
                                                          <div class="carousel-inner cont-slider">
                                                             <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-5.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-4.jpg">
+                                                            </div>
+                                                            <div class="item">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-1.jpg">
                                                             </div>
                                                             <div class="item">
@@ -144,40 +163,36 @@
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-3.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-4.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-5.jpg">
-                                                            </div>
-                                                            <div class="item">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-6.jpg">
                                                             </div>
                                                          </div>
                                                          <!-- Indicators -->
                                                          <ol class="carousel-indicators col-3">
                                                             <li class="active" data-slide-to="0" data-target="#lightbox-bandas-verticales-1">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-1.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-5.jpg');"></div>
+                                                               <p class="codigo-color">Cairo Blanco</p>
                                                             </li>
                                                             <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-1">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-2.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-4.jpg');"></div>
+                                                               <p class="codigo-color">Cairo Marfil</p>
                                                             </li>
                                                             <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-1">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-3.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-1.jpg');"></div>
+                                                               <p class="codigo-color">Edessa Blanco</p>
                                                             </li>
                                                             <li class="" data-slide-to="3" data-target="#lightbox-bandas-verticales-1">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-4.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-2.jpg');"></div>
+                                                               <p class="codigo-color">Edessa Natural</p>
                                                             </li>
+                                                            
                                                             <li class="" data-slide-to="4" data-target="#lightbox-bandas-verticales-1">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-5.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-3.jpg');"></div>
+                                                               <p class="codigo-color">Dune Line</p>
                                                             </li>
+                                                            
                                                             <li class="" data-slide-to="5" data-target="#lightbox-bandas-verticales-1">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-polyester/blackout-polyester-6.jpg');"></div>
-                                                               <p class="codigo-color"></p>
+                                                               <p class="codigo-color">Zimbawe Beige</p>
                                                             </li>
                                                          </ol>
                                                       </div>
@@ -193,7 +208,7 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Beach</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Beach</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-2" data-ride="carousel">
@@ -230,7 +245,7 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Carina</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Carina</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-3" data-ride="carousel">
@@ -358,7 +373,7 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Devon</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Devon</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-4" data-ride="carousel">
@@ -366,6 +381,9 @@
                                                          <div class="carousel-inner cont-slider">
                                                             <div class="item active">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/beige.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/chocolate.jpg">
                                                             </div>
                                                             <div class="item">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/gris.jpg">
@@ -384,14 +402,18 @@
                                                                <p class="codigo-color">Beige</p>
                                                             </li>
                                                             <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-4">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/chocolate.jpg');"></div>
+                                                               <p class="codigo-color">Chocolate</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-4">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
                                                                <p class="codigo-color">Gris</p>
                                                             </li>
-                                                            <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-4">
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-bandas-verticales-4">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/marfil.jpg');"></div>
                                                                <p class="codigo-color">Marfil</p>
                                                             </li>
-                                                            <li class="" data-slide-to="3" data-target="#lightbox-bandas-verticales-4">
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-bandas-verticales-4">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/negro.jpg');"></div>
                                                                <p class="codigo-color">Negro</p>
                                                             </li>
@@ -409,17 +431,17 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Lima</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Lima</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-5" data-ride="carousel">
                                                          <!-- Wrapper for slides -->
                                                          <div class="carousel-inner cont-slider">
                                                             <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-lima/beige.jpg">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-lima/blanco.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-lima/blanco.jpg">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-lima/beige.jpg">
                                                             </div>
                                                             <div class="item">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/linea-lima/gris-oscuro.jpg">
@@ -437,12 +459,12 @@
                                                          <!-- Indicators -->
                                                          <ol class="carousel-indicators col-3">
                                                             <li class="active" data-slide-to="0" data-target="#lightbox-bandas-verticales-5">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/beige.jpg');"></div>
-                                                               <p class="codigo-color">Beige</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-5">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/blanco.jpg');"></div>
                                                                <p class="codigo-color">Blanco</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-5">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/beige.jpg');"></div>
+                                                               <p class="codigo-color">Beige</p>
                                                             </li>
                                                             <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-5">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-lima/gris-oscuro.jpg');"></div>
@@ -474,7 +496,7 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Lino</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Lino</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-6" data-ride="carousel">
@@ -518,17 +540,18 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Malaga</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Malaga</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-7" data-ride="carousel">
                                                          <!-- Wrapper for slides -->
                                                          <div class="carousel-inner cont-slider">
+                                                            
                                                             <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-malaga/beige.jpg">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-malaga/blanco.jpg">
                                                             </div>
                                                             <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-malaga/blanco.jpg">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-malaga/beige.jpg">
                                                             </div>
                                                             <div class="item">
                                                                <img alt="" title="" src="./img/productos/bandas-verticales/linea-malaga/gris.jpg">
@@ -540,13 +563,14 @@
                                                          <!-- Indicators -->
                                                          <ol class="carousel-indicators col-3">
                                                             <li class="active" data-slide-to="0" data-target="#lightbox-bandas-verticales-7">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/blanco.jpg');"></div>
+                                                               <p class="codigo-color">Blanco</p>
+                                                            </li>   
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-7">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/beige.jpg');"></div>
                                                                <p class="codigo-color">Beige</p>
                                                             </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-7">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/blanco.jpg');"></div>
-                                                               <p class="codigo-color">Blanco</p>
-                                                            </li>
+                                                            
                                                             <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-7">
                                                                <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-malaga/gris.jpg');"></div>
                                                                <p class="codigo-color">Gris</p>
@@ -569,7 +593,7 @@
                                                 <div class="modal-content">
                                                    <div class="modal-header">
                                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Bandas Verticales - Línea Shantung</h4>
+                                                      <h4 class="modal-title">Bandas Verticales - Shantung</h4>
                                                    </div>
                                                    <div class="modal-body">
                                                       <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-8" data-ride="carousel">
@@ -613,6 +637,122 @@
                                              </div>
                                           </div>
                                           <!-- Fin Modal content-->
+                                          <!-- Modal 9 -->
+                                          <div class="modal fade and carousel slide" id="lightbox-bandas-verticales-9">
+                                             <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                   <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h4 class="modal-title">Bandas Verticales - Blackout Vinílico</h4>
+                                                   </div>
+                                                   <div class="modal-body">
+                                                      <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-9" data-ride="carousel">
+                                                         <!-- Wrapper for slides -->
+                                                         <div class="carousel-inner cont-slider">
+                                                            <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-vinilico/blanco.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-vinilico/natural.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-vinilico/beige.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-vinilico/gris.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/bandas-verticales/blackout-vinilico/negro.jpg">
+                                                            </div>
+                                                         </div>
+                                                         <!-- Indicators -->
+                                                         <ol class="carousel-indicators col-3">
+                                                            <li class="active" data-slide-to="0" data-target="#lightbox-bandas-verticales-9">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/blanco.jpg');"></div>
+                                                               <p class="codigo-color">Blanco</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-9">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/natural.jpg');"></div>
+                                                               <p class="codigo-color">Natural</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-9">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/beige.jpg');"></div>
+                                                               <p class="codigo-color">Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-bandas-verticales-9">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/gris.jpg');"></div>
+                                                               <p class="codigo-color">Gris</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-bandas-verticales-9">
+                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/blackout-vinilico/negro.jpg');"></div>
+                                                               <p class="codigo-color">Negro</p>
+                                                            </li>
+                                                         </ol>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
+                                          <!-- Modal 10 -->
+                                          <div class="modal fade and carousel slide" id="lightbox-bandas-verticales-10">
+                                             <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                   <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      <h4 class="modal-title">Bandas Verticales - Patagonia</h4>
+                                                   </div>
+                                                   <div class="modal-body">
+                                                      <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-10" data-ride="carousel">
+                                                         <!-- Wrapper for slides -->
+                                                         <div class="carousel-inner cont-slider">
+                                                            <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/patagonia/crudo.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/patagonia/lino.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/patagonia/beige.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/patagonia/gris-claro.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/patagonia/gris-oscuro.jpg">
+                                                            </div>
+                                                         </div>
+                                                         <!-- Indicators -->
+                                                         <ol class="carousel-indicators col-3">
+                                                            <li class="active" data-slide-to="0" data-target="#lightbox-bandas-verticales-10">
+                                                               <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
+                                                               <p class="codigo-color">Crudo</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-bandas-verticales-10">
+                                                               <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
+                                                               <p class="codigo-color">Lino</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-bandas-verticales-10">
+                                                               <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
+                                                               <p class="codigo-color">Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-bandas-verticales-10">
+                                                               <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
+                                                               <p class="codigo-color">Gris Claro</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-bandas-verticales-10">
+                                                               <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
+                                                               <p class="codigo-color">Gris Oscuro</p>
+                                                            </li>
+                                                         </ol>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Fin Modal content-->
                                        </div>
                                     </div>
                                  </div>
@@ -644,11 +784,23 @@
                               <label>Teléfono</label>
                               <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                            </div>
-                           <div class="col-lg-11 noPadding" id="divCortinas">
+                           <div class="form-group col-lg-6 floating-label-form-group controls">
+                           <label>Localidad</label>
+                           <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
+                                             <option value=""></option>
+                                             <option>Córdoba Centro</option>
+                                             <option>Córdoba Zona Norte</option>
+                                             <option>Córdoba Zona Sur</option>
+                                             <option>Freyre</option>
+                                          </select>
+                           <p class="help-block text-danger"></p>
+                           </div>
+                           <div class="col-lg-12 noPadding" id="divCortinas">
                               <div>
                                  <div class="form-group col-md-4 floating-label-form-group controls">
                                     <label>Tipo de Cortina</label>
                                     <select class="form-control" id="TipoCortina">
+                                       <option value=""></option>
                                        <option>Bandas Verticales</option>
                                        <option>Sunscreen</option>
                                        <option>Sistema Doble</option>
@@ -666,9 +818,8 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-lg-1 noPadding">
-                              <label>&nbsp;</label><br>
-                              <button type="button" class="btn btn-enviar" onclick="agregarCortinaPres()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                           <div class="col-lg-12 noPadding">
+                              <button style="width: 100%; font-weight: 700; float: unset !important;" type="button" class="btn btn-enviar" onclick="agregarCortinaPres()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> AGREGAR MÁS</button>
                            </div>
                            <div class="form-group col-lg-12 floating-label-form-group controls">
                               <label>Consulta</label>

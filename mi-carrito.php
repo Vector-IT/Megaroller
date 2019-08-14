@@ -435,14 +435,14 @@
 						$strSalida = '';
 						if ($subtotal > 0 && $envio == 0 && $ship == "1") {
 							$strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro" data-toggle="modal">Cargar datos de envío y Comprar</a>';
-							$strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Coordinar Envío / Retiro en tienda</a>';
+							$strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Retiro en tienda</a>';
 						}
 						else {
                             if ($ship == "1") {
                                 $strSalida.= $crlf.'<div><strong>ENVIO A DOMICILIO</strong></div>';
                             }
                             else {
-                                $strSalida.= $crlf.'<div><strong>COORDINAR ENVIO / RETIRO EN TIENDA</strong></div>';
+                                $strSalida.= $crlf.'<div><strong>RETIRO EN TIENDA</strong></div>';
                             }
 							$strSalida.= $crlf.'<div><strong>Nombre completo: </strong> '.$datosUsuario["NombPers"].'</div>';
 							$strSalida.= $crlf.'<div><strong>Teléfono: </strong> '.$datosUsuario["TeleUser"].'</div>';
@@ -453,7 +453,7 @@
 							$strSalida.= $crlf.'<div><strong>Provincia: </strong> '.$datosUsuario["NombProv"].'</div>';
                             $strSalida.= $crlf.'<a href="#mdlEnvio" class="btn-carrito-negro" data-toggle="modal">Modificar datos</a>';
                             if ($ship == "1") {
-                                $strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Coordinar Envío / Retiro en tienda</a>';
+                                $strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Retiro en tienda</a>';
                             }
                             else {
                                 $strSalida.= $crlf.'<a href="javascript:void(0);" class="btn-carrito-negro" onclick="envio()">Envío a domicilio</a>';

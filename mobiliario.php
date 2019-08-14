@@ -27,7 +27,7 @@
                      <div class="gal bottom40">
                         <img src="./img/mobiliario/mobiliario-3.jpg">
                         <img src="./img/mobiliario/mobiliario-5.jpg">
-                        <img src="./img/mobiliario/mobiliario-15.jpeg">
+                        <img src="./img/mobiliario/mobiliario-15.jpg">
                         <img src="./img/mobiliario/mobiliario-14.jpeg">
                         <img src="./img/mobiliario/mobiliario-7.jpg">
                         <img src="./img/mobiliario/mobiliario-4.jpg">

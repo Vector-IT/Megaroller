@@ -195,7 +195,13 @@
                                        <div class="form-group col-sm-6 floating-label-form-group controls">
                                           <input name="email" type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                           <p class="help-block text-danger"></p>
-                                          <input name="location" type="text" class="form-control" placeholder="Localidad" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
+                                          <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
+                                             <option value="">Localidad</option>
+                                             <option>Córdoba Centro</option>
+                                             <option>Córdoba Zona Norte</option>
+                                             <option>Córdoba Zona Sur</option>
+                                             <option>Freyre</option>
+                                          </select>
                                           <p class="help-block text-danger"></p>
                                        </div>
                                     </div>
