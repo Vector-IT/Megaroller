@@ -37,7 +37,7 @@
                               <li><a href="#roller-sistema-doble" data-toggle="tab">Roller Sistema Doble</a>
                               </li>
                               <li><a href="#roller-dual" data-toggle="tab">Roller Dual</a>
-                              </li>                             
+                              </li>
                            </ul>
                            <div class="tab-content clearfix top40">
                               <div class="tab-pane active" id="roller-blackout">
@@ -203,9 +203,8 @@
                                              <li style="display:none;"><a data-toggle="tab" href="#sunscreen3">Sunscreen 3%</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen4">Sunscreen 4%</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen5">Sunscreen 5%</a></li>
-                                             <li><a data-toggle="tab" href="#sunscreen5bicolor">Sunscreen Bicolor 5%</a></li>
+                                             <li><a data-toggle="tab" href="#sunscreen5bicolor">Sunscreen 5% Bicolor</a></li>
                                              <li><a data-toggle="tab" href="#sunscreen5-tokyo">Sunscreen 5% Tokyo</a></li>
-                                             
                                              <li><a data-toggle="tab" href="#sunscreen10-rustico">Sunscreen 10% Rústico</a></li>
                                           </ul>
                                           <div class="tab-content noPadding">
@@ -221,18 +220,18 @@
                                                       </ol>
                                                       <!-- Wrapper for slides -->
                                                       <div class="carousel-inner">
-                                                      <div class="item active">
-                                                                        <img src="./img/productos/cortina-sunscreen10.jpg" alt="">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img src="./img/productos/sunscreen1-1.jpg" alt="">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img src="./img/productos/sunscreen1-2.jpg" alt="">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
-                                                                     </div>
+                                                         <div class="item active">
+                                                            <img src="./img/productos/cortina-sunscreen10.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/sunscreen1-1.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/sunscreen1-2.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/cortina-sunscreen2.jpg" alt="">
+                                                         </div>
                                                       </div>
                                                    </div>
                                                    <img class="inline-block img-responsive" src="./img/empresa/mermet.jpg" alt="" width="200" height="auto">
@@ -493,12 +492,6 @@
                                                             <p class="codigo-color">Granite</p>
                                                          </a>
                                                       </li>
-                                                      <li>
-                                                         <a href="#lightbox-sunscreen4" data-toggle="modal" data-slide-to="4">
-                                                            <div class="color" style="background-image: url('./img/productos/sunscreen4/sunscreen4-5-color.jpg');"></div>
-                                                            <p class="codigo-color">Carbón</p>
-                                                         </a>
-                                                      </li>
                                                    </ul>
                                                    <!-- Modal -->
                                                    <div class="modal fade and carousel slide" id="lightbox-sunscreen4">
@@ -525,9 +518,6 @@
                                                                      <div class="item">
                                                                         <img alt="" title="" src="./img/productos/sunscreen4/sunscreen4-4.jpg">
                                                                      </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen4/sunscreen4-5.jpg">
-                                                                     </div>
                                                                   </div>
                                                                   <!-- Indicators -->
                                                                   <ol class="carousel-indicators col-2">
@@ -546,10 +536,6 @@
                                                                      <li class="" data-slide-to="3" data-target="#lightbox-sunscreen4">
                                                                         <div class="color" style="background-image: url('./img/productos/sunscreen4/sunscreen4-4-color.jpg');"></div>
                                                                         <p class="codigo-color">Granite</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="4" data-target="#lightbox-sunscreen4">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen4/sunscreen4-5-color.jpg');"></div>
-                                                                        <p class="codigo-color">Carbón</p>
                                                                      </li>
                                                                   </ol>
                                                                </div>
@@ -624,7 +610,6 @@
                                                             <p class="codigo-color">Blanco/Gris</p>
                                                          </a>
                                                       </li>
-                                                      
                                                       <li>
                                                          <a href="#lightbox-sunscreen5" data-toggle="modal" data-slide-to="5">
                                                             <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-5-color.jpg');"></div>
@@ -661,7 +646,7 @@
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
                                                                      </div>
                                                                      <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
+                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
                                                                      </div>
                                                                      <div class="item">
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-maiz.jpg">
@@ -670,7 +655,7 @@
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
                                                                      </div>
                                                                      <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
+                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
                                                                      </div>
                                                                      <div class="item">
                                                                         <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-5.jpg">
@@ -693,10 +678,9 @@
                                                                         <p class="codigo-color">Blanco/Beige</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="2" data-target="#lightbox-sunscreen5">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-maiz-bg.jpg');"></div>
-                                                                           <p class="codigo-color">Maíz</p>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-maiz-bg.jpg');"></div>
+                                                                        <p class="codigo-color">Maíz</p>
                                                                      </li>
-                                                                                                                                        
                                                                      <li class="" data-slide-to="3" data-target="#lightbox-sunscreen5">
                                                                         <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-4-color.jpg');"></div>
                                                                         <p class="codigo-color">Beige/Beige</p>
@@ -710,8 +694,8 @@
                                                                         <p class="codigo-color">Beige/Negro</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="6" data-target="#lightbox-sunscreen5">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-negro-gris-bg.jpg');"></div>
-                                                                           <p class="codigo-color">Negro/Gris</p>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-negro-gris-bg.jpg');"></div>
+                                                                        <p class="codigo-color">Negro/Gris</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="7" data-target="#lightbox-sunscreen5">
                                                                         <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-6-color.jpg');"></div>
@@ -797,7 +781,7 @@
                                                          <div class="modal-content">
                                                             <div class="modal-header">
                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                               <h4 class="modal-title">Sunscreen Bicolor 5%</h4>
+                                                               <h4 class="modal-title">Sunscreen 5% Bicolor</h4>
                                                             </div>
                                                             <div class="modal-body">
                                                                <div class="carousel slide article-slide carousel-fade" id="sunscreen5bicolor-carousel" data-ride="carousel">
@@ -872,7 +856,7 @@
                                                          </div>
                                                       </div>
                                                    </div>
-                                                   <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
+                                                   <img class="img-center img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
                                                 </div>
                                                 <div class="col-md-3">
                                                    <!-- Trigger the modal -->
@@ -930,8 +914,8 @@
                                                                         <p class="codigo-color">Lino Bronce</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="2" data-target="#lightbox-sunscreen5-tokyo">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen5-tokyo/negro-blanco-negro.jpg');"></div>
-                                                                           <p class="codigo-color">Negro Blanco Negro</p>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5-tokyo/negro-blanco-negro.jpg');"></div>
+                                                                        <p class="codigo-color">Negro Blanco Negro</p>
                                                                      </li>
                                                                   </ol>
                                                                </div>
@@ -1019,8 +1003,8 @@
                                                                         <p class="codigo-color">Natural</p>
                                                                      </li>
                                                                      <li class="" data-slide-to="2" data-target="#lightbox-sunscreen10-rustico">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen10-rustico/gris.jpg');"></div>
-                                                                           <p class="codigo-color">Gris</p>
+                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen10-rustico/gris.jpg');"></div>
+                                                                        <p class="codigo-color">Gris</p>
                                                                      </li>
                                                                   </ol>
                                                                </div>
@@ -1099,79 +1083,78 @@
                                                       <h4 class="modal-title">Sunscreen</h4>
                                                    </div>
                                                    <div class="modal-body">
-                                                               <div class="carousel slide article-slide carousel-fade" id="sunscreen5-carousel" data-ride="carousel">
-                                                                  <!-- Wrapper for slides -->
-                                                                  <div class="carousel-inner cont-slider">
-                                                                     <div class="item active">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-maiz.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-5.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-negro-gris.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-6.jpg">
-                                                                     </div>
-                                                                  </div>
-                                                                  <!-- Indicators -->
-                                                                  <ol class="carousel-indicators col-2">
-                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-1-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Blanco</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="1" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Beige</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="2" data-target="#lightbox-sunscreen5">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-maiz-bg.jpg');"></div>
-                                                                           <p class="codigo-color">Maíz</p>
-                                                                     </li>
-                                                                                                                                        
-                                                                     <li class="" data-slide-to="3" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-4-color.jpg');"></div>
-                                                                        <p class="codigo-color">Beige/Beige</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="4" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
-                                                                        <p class="codigo-color">Blanco/Gris</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="5" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-5-color.jpg');"></div>
-                                                                        <p class="codigo-color">Beige/Negro</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="6" data-target="#lightbox-sunscreen5">
-                                                                           <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-negro-gris-bg.jpg');"></div>
-                                                                           <p class="codigo-color">Negro/Gris</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="7" data-target="#lightbox-sunscreen5">
-                                                                        <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-6-color.jpg');"></div>
-                                                                        <p class="codigo-color">Negro/Negro</p>
-                                                                     </li>
-                                                                  </ol>
-                                                               </div>
-                                                               <div class="row">
-                                                                  <div class="col-md-9">
-                                                                     <img class="inline-block img-responsive" src="./img/empresa/mermet.jpg" alt="" width="200" height="auto">
-                                                                     <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
-                                                                  </div>
-                                                                  <div class="col-md-3"></div>
-                                                               </div>
+                                                      <div class="carousel slide article-slide carousel-fade" id="sunscreen5-carousel" data-ride="carousel">
+                                                         <!-- Wrapper for slides -->
+                                                         <div class="carousel-inner cont-slider">
+                                                            <div class="item active">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-1.jpg">
                                                             </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-2.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-maiz.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-4.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-3.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-5.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-negro-gris.jpg">
+                                                            </div>
+                                                            <div class="item">
+                                                               <img alt="" title="" src="./img/productos/sunscreen5/sunscreen5-6.jpg">
+                                                            </div>
+                                                         </div>
+                                                         <!-- Indicators -->
+                                                         <ol class="carousel-indicators col-2">
+                                                            <li class="active" data-slide-to="0" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-1-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Blanco</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="1" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-3-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="2" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-maiz-bg.jpg');"></div>
+                                                               <p class="codigo-color">Maíz</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="3" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-4-color.jpg');"></div>
+                                                               <p class="codigo-color">Beige/Beige</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="4" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-2-color.jpg');"></div>
+                                                               <p class="codigo-color">Blanco/Gris</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="5" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-5-color.jpg');"></div>
+                                                               <p class="codigo-color">Beige/Negro</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="6" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-negro-gris-bg.jpg');"></div>
+                                                               <p class="codigo-color">Negro/Gris</p>
+                                                            </li>
+                                                            <li class="" data-slide-to="7" data-target="#lightbox-sunscreen1-2">
+                                                               <div class="color" style="background-image: url('./img/productos/sunscreen5/sunscreen5-6-color.jpg');"></div>
+                                                               <p class="codigo-color">Negro/Negro</p>
+                                                            </li>
+                                                         </ol>
+                                                      </div>
+                                                      <div class="row">
+                                                         <div class="col-md-9">
+                                                            <img class="inline-block img-responsive" src="./img/empresa/mermet.jpg" alt="" width="200" height="auto">
+                                                            <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto">
+                                                         </div>
+                                                         <div class="col-md-3"></div>
+                                                      </div>
+                                                   </div>
                                                 </div>
                                              </div>
                                           </div>
@@ -1273,7 +1256,7 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
+                                          <img class="img-center img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
                                        </div>
                                        <div class="col-md-3">
                                           <!-- Trigger the modal -->
@@ -1373,253 +1356,362 @@
                                     <div class="col-sm-12 noPadding">
                                        <h2 class="text-center">Roller Translucida</h2>
                                        <p class="pad25">Este Material, a base de Poliester, permite el ingreso de luminosidad pero sin visión, manteniendo siempre la privacidad en el ambiente y filtrando los rayos UV, protegiendo así los pisos de madera y mobiliario. Es ideal para Ventanas que se ubican en Frentes o ambientes donde necesito privacidad, principalmente de noche. Existe una amplia gama de Colores y tramas disponibles.</p>
-                                       <div class="col-md-9">
-                                          <div id="carousel-roller-translucida" class="carousel slide" data-ride="carousel">
-                                             <!-- Indicators -->
-                                             <ol class="carousel-indicators">
-                                                <li data-target="#carousel-roller-translucida" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-roller-translucida" data-slide-to="1"></li>
-                                                <li data-target="#carousel-roller-translucida" data-slide-to="2"></li>
-                                             </ol>
-                                             <!-- Wrapper for slides -->
-                                             <div class="carousel-inner">
-                                                <div class="item active">
-                                                   <img src="./img/productos/translucida-1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/productos/translucida-2.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                   <img src="./img/productos/translucida-3.jpg" alt="">
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-3">
-                                          <!-- Trigger the modal -->
-                                          <img class="img-center img-responsive" src="./img/productos/translucida/blackout.jpg" alt="" width="" height="">
-                                          <ul class="nav-color">
-                                             <li>
-                                                <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="3">
-                                                   <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
-                                                   <p class="codigo-color">Patagonia</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="1">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
-                                                   <p class="codigo-color">Crudo</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="2">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
-                                                   <p class="codigo-color">Lino</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
-                                                   <p class="codigo-color">Beige</p>
-                                                </a>
-                                             </li>
-                                             
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="4">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
-                                                   <p class="codigo-color">Gris Claro</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="5">
-                                                   <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
-                                                   <p class="codigo-color">Gris Oscuro</p>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="#lightbox-devon" data-toggle="modal" data-slide-to="1">
-                                                   <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/chocolate.jpg');"></div>
-                                                   <p class="codigo-color">Devon</p>
-                                                </a>
-                                             </li>
+                                       <div class="tabbable">
+                                          <ul class="nav nav-tabs">
+                                             <li class="active"><a data-toggle="tab" href="#roller-translucida-linea-patagonia">Línea Patagonia</a></li>
+                                             <li><a data-toggle="tab" href="#roller-translucida-nombre">Nombre?</a></li>
+                                             <li><a data-toggle="tab" href="#roller-translucida-linea-devon">Línea Devon</a></li>
                                           </ul>
-                                          <!-- Modal -->
-                                          <div class="modal fade and carousel slide" id="lightbox-translucida">
-                                             <div class="modal-dialog modal-lg">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                   <div class="modal-header">
-                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Roller Translucida</h4>
-                                                   </div>
-                                                   <div class="modal-body">
-                                                      <div class="carousel slide article-slide carousel-fade" id="roller-translucida" data-ride="carousel">
-                                                         <!-- Wrapper for slides -->
-                                                         <div class="carousel-inner cont-slider">
-                                                            <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/translucida/crudo.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/lino.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/beige.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/gris-claro.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/translucida/gris-oscuro.jpg">
-                                                            </div>
-                                                            
+                                          <div class="tab-content noPadding">
+                                             <div id="roller-translucida-linea-patagonia" class="tab-pane active">
+                                                <div class="col-md-9">
+                                                   <div id="carousel-roller-translucida-1" class="carousel slide" data-ride="carousel">
+                                                      <!-- Indicators -->
+                                                      <ol class="carousel-indicators">
+                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="0" class="active"></li>
+                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="1"></li>
+                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="2"></li>
+                                                      </ol>
+                                                      <!-- Wrapper for slides -->
+                                                      <div class="carousel-inner">
+                                                         <div class="item active">
+                                                            <img src="./img/productos/translucida-1.jpg" alt="">
                                                          </div>
-                                                         <!-- Indicators -->
-                                                         <ol class="carousel-indicators col-2">
-                                                            <li class="active" data-slide-to="0" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
-                                                               <p class="codigo-color">Crudo</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
-                                                               <p class="codigo-color">Lino</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="2" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
-                                                               <p class="codigo-color">Beige</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="3" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
-                                                               <p class="codigo-color">Gris Claro</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="4" data-target="#lightbox-translucida">
-                                                               <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
-                                                               <p class="codigo-color">Gris Oscuro</p>
-                                                            </li>
-                                                         </ol>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-2.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-3.jpg" alt="">
+                                                         </div>
                                                       </div>
                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <!-- Fin Modal content-->
-                                            <!-- Patagonia -->
-                                            <div class="modal fade and carousel slide" id="lightbox-patagonia">
-                                             <div class="modal-dialog modal-lg">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                   <div class="modal-header">
-                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Roller Translucida - Patagonia</h4>
-                                                   </div>
-                                                   <div class="modal-body">
-                                                      <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-10" data-ride="carousel">
-                                                         <!-- Wrapper for slides -->
-                                                         <div class="carousel-inner cont-slider">
-                                                            <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/patagonia/crudo.jpg">
+                                                <div class="col-md-3">
+                                                <ul class="nav-color">
+                                                   <li>
+                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="0">
+                                                         <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
+                                                         <p class="codigo-color">Crudo</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="1">
+                                                         <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
+                                                         <p class="codigo-color">Lino</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="2">
+                                                         <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
+                                                         <p class="codigo-color">Beige</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="3">
+                                                         <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
+                                                         <p class="codigo-color">Gris Claro</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="4">
+                                                         <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
+                                                         <p class="codigo-color">Gris Oscuro</p>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                                   <!-- Patagonia -->
+                                                   <div class="modal fade and carousel slide" id="lightbox-patagonia">
+                                                      <div class="modal-dialog modal-lg">
+                                                         <!-- Modal content-->
+                                                         <div class="modal-content">
+                                                            <div class="modal-header">
+                                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                               <h4 class="modal-title">Roller Translucida - Patagonia</h4>
                                                             </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/patagonia/lino.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/patagonia/beige.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/patagonia/gris-claro.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/patagonia/gris-oscuro.jpg">
+                                                            <div class="modal-body">
+                                                               <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-10" data-ride="carousel">
+                                                                  <!-- Wrapper for slides -->
+                                                                  <div class="carousel-inner cont-slider">
+                                                                     <div class="item active">
+                                                                        <img alt="" title="" src="./img/productos/patagonia/crudo.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/patagonia/lino.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/patagonia/beige.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/patagonia/gris-claro.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/patagonia/gris-oscuro.jpg">
+                                                                     </div>
+                                                                  </div>
+                                                                  <!-- Indicators -->
+                                                                  <ol class="carousel-indicators col-3">
+                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-patagonia">
+                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
+                                                                        <p class="codigo-color">Crudo</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="1" data-target="#lightbox-patagonia">
+                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
+                                                                        <p class="codigo-color">Lino</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="2" data-target="#lightbox-patagonia">
+                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
+                                                                        <p class="codigo-color">Beige</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="3" data-target="#lightbox-patagonia">
+                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
+                                                                        <p class="codigo-color">Gris Claro</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="4" data-target="#lightbox-patagonia">
+                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
+                                                                        <p class="codigo-color">Gris Oscuro</p>
+                                                                     </li>
+                                                                  </ol>
+                                                               </div>
                                                             </div>
                                                          </div>
-                                                         <!-- Indicators -->
-                                                         <ol class="carousel-indicators col-3">
-                                                            <li class="active" data-slide-to="0" data-target="#lightbox-patagonia">
-                                                               <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
-                                                               <p class="codigo-color">Crudo</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-patagonia">
-                                                               <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
-                                                               <p class="codigo-color">Lino</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="2" data-target="#lightbox-patagonia">
-                                                               <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
-                                                               <p class="codigo-color">Beige</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="3" data-target="#lightbox-patagonia">
-                                                               <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
-                                                               <p class="codigo-color">Gris Claro</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="4" data-target="#lightbox-patagonia">
-                                                               <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
-                                                               <p class="codigo-color">Gris Oscuro</p>
-                                                            </li>
-                                                         </ol>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Fin Modal content-->
+                                                </div>
+                                             </div>
+                                             <div id="roller-translucida-nombre" class="tab-pane fade">
+                                                <div class="col-md-9">
+                                                   <div id="carousel-roller-translucida-2" class="carousel slide" data-ride="carousel">
+                                                      <!-- Indicators -->
+                                                      <ol class="carousel-indicators">
+                                                         <li data-target="#carousel-roller-translucida-2" data-slide-to="0" class="active"></li>
+                                                         <li data-target="#carousel-roller-translucida-2" data-slide-to="1"></li>
+                                                         <li data-target="#carousel-roller-translucida-2" data-slide-to="2"></li>
+                                                      </ol>
+                                                      <!-- Wrapper for slides -->
+                                                      <div class="carousel-inner">
+                                                         <div class="item active">
+                                                            <img src="./img/productos/translucida-1.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-2.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-3.jpg" alt="">
+                                                         </div>
                                                       </div>
                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <!-- Fin Modal content-->
-
-
-                                          <!-- Devon -->
-                                          <div class="modal fade and carousel slide" id="lightbox-devon">
-                                             <div class="modal-dialog modal-lg">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                   <div class="modal-header">
-                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                      <h4 class="modal-title">Roller Translucida - Devon</h4>
-                                                   </div>
-                                                   <div class="modal-body">
-                                                      <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-4" data-ride="carousel">
-                                                         <!-- Wrapper for slides -->
-                                                         <div class="carousel-inner cont-slider">
-                                                            <div class="item active">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/beige.jpg">
+                                                <div class="col-md-3">
+                                                   <ul class="nav-color">
+                                                      <li>
+                                                         <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="1">
+                                                            <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
+                                                            <p class="codigo-color">Crudo</p>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="2">
+                                                            <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
+                                                            <p class="codigo-color">Lino</p>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="3">
+                                                            <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
+                                                            <p class="codigo-color">Beige</p>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="4">
+                                                            <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
+                                                            <p class="codigo-color">Gris Claro</p>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#lightbox-translucida" data-toggle="modal" data-slide-to="5">
+                                                            <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
+                                                            <p class="codigo-color">Gris Oscuro</p>
+                                                         </a>
+                                                      </li>
+                                                   </ul>
+                                                   <!-- Modal -->
+                                                   <div class="modal fade and carousel slide" id="lightbox-translucida">
+                                                      <div class="modal-dialog modal-lg">
+                                                         <!-- Modal content-->
+                                                         <div class="modal-content">
+                                                            <div class="modal-header">
+                                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                               <h4 class="modal-title">Roller Translucida</h4>
                                                             </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/chocolate.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/gris.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/marfil.jpg">
-                                                            </div>
-                                                            <div class="item">
-                                                               <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/negro.jpg">
+                                                            <div class="modal-body">
+                                                               <div class="carousel slide article-slide carousel-fade" id="roller-translucida" data-ride="carousel">
+                                                                  <!-- Wrapper for slides -->
+                                                                  <div class="carousel-inner cont-slider">
+                                                                     <div class="item active">
+                                                                        <img alt="" title="" src="./img/productos/translucida/crudo.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/translucida/lino.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/translucida/beige.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/translucida/gris-claro.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/translucida/gris-oscuro.jpg">
+                                                                     </div>
+                                                                  </div>
+                                                                  <!-- Indicators -->
+                                                                  <ol class="carousel-indicators col-2">
+                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-translucida">
+                                                                        <div class="color" style="background-image: url('./img/productos/translucida/crudo.jpg');"></div>
+                                                                        <p class="codigo-color">Crudo</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="1" data-target="#lightbox-translucida">
+                                                                        <div class="color" style="background-image: url('./img/productos/translucida/lino.jpg');"></div>
+                                                                        <p class="codigo-color">Lino</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="2" data-target="#lightbox-translucida">
+                                                                        <div class="color" style="background-image: url('./img/productos/translucida/beige.jpg');"></div>
+                                                                        <p class="codigo-color">Beige</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="3" data-target="#lightbox-translucida">
+                                                                        <div class="color" style="background-image: url('./img/productos/translucida/gris-claro.jpg');"></div>
+                                                                        <p class="codigo-color">Gris Claro</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="4" data-target="#lightbox-translucida">
+                                                                        <div class="color" style="background-image: url('./img/productos/translucida/gris-oscuro.jpg');"></div>
+                                                                        <p class="codigo-color">Gris Oscuro</p>
+                                                                     </li>
+                                                                  </ol>
+                                                               </div>
                                                             </div>
                                                          </div>
-                                                         <!-- Indicators -->
-                                                         <ol class="carousel-indicators col-3">
-                                                            <li class="active" data-slide-to="0" data-target="#lightbox-devon">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/beige.jpg');"></div>
-                                                               <p class="codigo-color">Beige</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="1" data-target="#lightbox-devon">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/chocolate.jpg');"></div>
-                                                               <p class="codigo-color">Chocolate</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="2" data-target="#lightbox-devon">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
-                                                               <p class="codigo-color">Gris</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="3" data-target="#lightbox-devon">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/marfil.jpg');"></div>
-                                                               <p class="codigo-color">Marfil</p>
-                                                            </li>
-                                                            <li class="" data-slide-to="4" data-target="#lightbox-devon">
-                                                               <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/negro.jpg');"></div>
-                                                               <p class="codigo-color">Negro</p>
-                                                            </li>
-                                                         </ol>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Fin Modal content-->
+                                                </div>
+                                             </div>
+                                             <div id="roller-translucida-linea-devon" class="tab-pane fade">
+                                                <div class="col-md-9">
+                                                   <div id="carousel-roller-translucida-3" class="carousel slide" data-ride="carousel">
+                                                      <!-- Indicators -->
+                                                      <ol class="carousel-indicators">
+                                                         <li data-target="#carousel-roller-translucida-3" data-slide-to="0" class="active"></li>
+                                                         <li data-target="#carousel-roller-translucida-3" data-slide-to="1"></li>
+                                                         <li data-target="#carousel-roller-translucida-3" data-slide-to="2"></li>
+                                                      </ol>
+                                                      <!-- Wrapper for slides -->
+                                                      <div class="carousel-inner">
+                                                         <div class="item active">
+                                                            <img src="./img/productos/translucida-1.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-2.jpg" alt="">
+                                                         </div>
+                                                         <div class="item">
+                                                            <img src="./img/productos/translucida-3.jpg" alt="">
+                                                         </div>
                                                       </div>
                                                    </div>
                                                 </div>
+                                                <div class="col-md-3">
+                                                <ul class="nav-color">
+                                                   <li>
+                                                      <a href="#lightbox-devon" data-toggle="modal" data-slide-to="0">
+                                                         <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/beige.jpg');"></div>
+                                                         <p class="codigo-color">Beige</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-devon" data-toggle="modal" data-slide-to="1">
+                                                         <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/chocolate.jpg');"></div>
+                                                         <p class="codigo-color">Chocolate</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-devon" data-toggle="modal" data-slide-to="2">
+                                                         <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
+                                                         <p class="codigo-color">Gris</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-devon" data-toggle="modal" data-slide-to="3">
+                                                         <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/marfil.jpg');"></div>
+                                                         <p class="codigo-color">Marfil</p>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="#lightbox-devon" data-toggle="modal" data-slide-to="4">
+                                                         <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/negro.jpg');"></div>
+                                                         <p class="codigo-color">Negro</p>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                                   <!-- Devon -->
+                                                   <div class="modal fade and carousel slide" id="lightbox-devon">
+                                                      <div class="modal-dialog modal-lg">
+                                                         <!-- Modal content-->
+                                                         <div class="modal-content">
+                                                            <div class="modal-header">
+                                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                               <h4 class="modal-title">Roller Translucida - Devon</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-4" data-ride="carousel">
+                                                                  <!-- Wrapper for slides -->
+                                                                  <div class="carousel-inner cont-slider">
+                                                                     <div class="item active">
+                                                                        <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/beige.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/chocolate.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/gris.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/marfil.jpg">
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <img alt="" title="" src="./img/productos/bandas-verticales/linea-devon/negro.jpg">
+                                                                     </div>
+                                                                  </div>
+                                                                  <!-- Indicators -->
+                                                                  <ol class="carousel-indicators col-3">
+                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-devon">
+                                                                        <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/beige.jpg');"></div>
+                                                                        <p class="codigo-color">Beige</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="1" data-target="#lightbox-devon">
+                                                                        <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/chocolate.jpg');"></div>
+                                                                        <p class="codigo-color">Chocolate</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="2" data-target="#lightbox-devon">
+                                                                        <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/gris.jpg');"></div>
+                                                                        <p class="codigo-color">Gris</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="3" data-target="#lightbox-devon">
+                                                                        <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/marfil.jpg');"></div>
+                                                                        <p class="codigo-color">Marfil</p>
+                                                                     </li>
+                                                                     <li class="" data-slide-to="4" data-target="#lightbox-devon">
+                                                                        <div class="color" style="background-image: url('./img/productos/bandas-verticales/linea-devon/negro.jpg');"></div>
+                                                                        <p class="codigo-color">Negro</p>
+                                                                     </li>
+                                                                  </ol>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Fin Modal content-->
+                                                </div>
                                              </div>
                                           </div>
-                                          <!-- Fin Modal content-->
                                        </div>
                                     </div>
                                  </div>
@@ -1652,15 +1744,9 @@
                               <input type="tel" class="form-control" placeholder="" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
                            </div>
                            <div class="form-group col-lg-6 floating-label-form-group controls">
-                           <label>Localidad</label>
-                           <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
-                                             <option value=""></option>
-                                             <option>Córdoba Centro</option>
-                                             <option>Córdoba Zona Norte</option>
-                                             <option>Córdoba Zona Sur</option>
-                                             <option>Freyre</option>
-                                          </select>
-                           <p class="help-block text-danger"></p>
+                              <label>Localidad</label>
+                              <input name="location" type="text" class="form-control" placeholder="" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
+                              <p class="help-block text-danger"></p>
                            </div>
                            <div class="col-lg-12 noPadding" id="divCortinas">
                               <div>
@@ -1718,5 +1804,11 @@
       </div>
       <!-- /#wrapper --> 
       <?php include 'php/scripts-footer.php'; ?>
+      <script>
+         $(".carousel").carousel({
+           interval: 3000,
+           wrap: true
+         });
+      </script>
    </body>
 </html>

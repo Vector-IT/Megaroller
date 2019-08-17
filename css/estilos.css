@@ -578,7 +578,7 @@ ul.dropdown-menu li a:hover {
 		margin-right: 0%!important;
 	}
 	.navbar-nav>li>a {
-		font-size: 12px !important;
+		font-size: 14px !important;
 	}
 	a.presupuesto {
 		font-size: 12px !important;
@@ -1554,7 +1554,7 @@ ol.carousel-indicators.col-3 p {
 
 #bandas-verticales .nav-color li .codigo-color {
 	display: block;
-	font-size: 10.5px;
+	font-size: 9.5px;
 	font-weight: bold;
 }
 

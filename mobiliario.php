@@ -33,7 +33,18 @@
                         <img src="./img/mobiliario/mobiliario-4.jpg">
 
                         <img src="./img/mobiliario/mobiliario-6.jpg">
-                        <img src="./img/mobiliario/mobiliario-9.jpg">     
+                        <img src="./img/mobiliario/mobiliario-9.jpg">  
+                        <p style="
+                           font-size: 20px;
+                           text-transform: uppercase;
+                           text-align: center;
+                           padding: 45px 15px;
+                           border: 1px solid #888;
+                           margin-top: 10px;
+                           font-weight: bold;
+                           color: #000;
+                           letter-spacing: 1.5px;
+                        ">¡Consultanos por otros modelos!</p>  
                         <img src="./img/mobiliario/mobiliario-10.jpg">
                         <img src="./img/mobiliario/mobiliario-1.jpg">
                         

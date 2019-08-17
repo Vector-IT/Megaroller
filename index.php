@@ -150,23 +150,26 @@
                            <div class="row">
                               <div class="col-sm-6 bottom40">
                                  <p class="vContacto"><span>FÁBRICA Y SHOWROOM</span><br/>
-                                    Bedoya 178, Barrio Cofico, Córdoba<br/>
-                                    0351 471 51 55 / 0351 157 319 051<br/>
+                                    Bedoya 178, Barrio Cofico, Córdoba - (0351) 471 51 55 / 157 319 051<br/>
                                     <a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a>
                                     Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
                                  </p>
                                  <p class="vContacto"><span>LOCAL ZONA NORTE</span><br/>
-                                    Paseo Acaece, Valle Escondido Local 11<br/>
-                                    0351 156 135 314<br/>
+                                    Paseo Acaece, Valle Escondido Local 11 - (0351) 156 135 314<br/>
                                     <a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a>
                                     Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
                                  </p>
-                                 <p class="vContacto"><span>ZONA SUR</span><br/>
-                                    Av. Valparaiso 3790 (Frente Jockey Club)<br/>
-                                    0351 157 319 666<br/>
+                                 <p class="vContacto"><span>LOCAL ZONA SUR</span><br/>
+                                    Av. Valparaiso 3790 (Frente Jockey Club) - (0351) 157 319 666<br/>
                                     <a href="mailto:valparaiso@megarollercortinas.com" target="_top">Email: valparaiso@megarollercortinas.com</a>
                                     Lunes a viernes de 9 a 19hs - Sábados 9 a 13:30hs<br/>
                                  </p>
+                                 <p class="vContacto"><span>FRANQUICIA</span><br/>
+                                 Bv. 25 de Mayo 779, Freyre - (03564) 153 78 589<br>
+                                 <a href="mailto:freyre@megarollercortinas.com" target="_top">freyre@megarollercortinas.com</a>
+                                 Lunes a viernes de 8 a 12hs y 16 a 20hs - Sábados 9 a 12hs<br>
+                                 </p>
+                        
                                  <div class="seguinos">
                                     <p><span style="font-size: 13px;">Seguinos</span></p>
                                     <div class="redes-sociales">
@@ -195,19 +198,14 @@
                                        <div class="form-group col-sm-6 floating-label-form-group controls">
                                           <input name="email" type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor ingresa tu email.">
                                           <p class="help-block text-danger"></p>
-                                          <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
-                                             <option value="">Localidad</option>
-                                             <option>Córdoba Centro</option>
-                                             <option>Córdoba Zona Norte</option>
-                                             <option>Córdoba Zona Sur</option>
-                                             <option>Freyre</option>
-                                          </select>
+
+                                          <input name="location" type="text" class="form-control" placeholder="Localidad" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
                                           <p class="help-block text-danger"></p>
                                        </div>
                                     </div>
                                     <div class="row control-group">
                                        <div class="form-group col-sm-12 floating-label-form-group controls">
-                                          <textarea name="message" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
+                                          <textarea style="min-height: 250px;" name="message" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
                                           <p class="help-block text-danger"></p>
                                           <button type="submit" class="btn btn-enviar">Enviar</button>
                                        </div>
@@ -275,5 +273,12 @@
       </script>
       <!-- Google Map -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7N26a5O4bjW16yv4xW-w7hvWKzERCPME&callback=initMap" async defer></script>
+   
+      <script>
+$(".carousel").carousel({
+  interval: 3000,
+  wrap: true
+});
+</script>
    </body>
 </html>

@@ -786,13 +786,8 @@
                            </div>
                            <div class="form-group col-lg-6 floating-label-form-group controls">
                            <label>Localidad</label>
-                           <select name="location" class="form-control" id="location" required data-validation-required-message="Por favor selecciona una localidad">
-                                             <option value=""></option>
-                                             <option>Córdoba Centro</option>
-                                             <option>Córdoba Zona Norte</option>
-                                             <option>Córdoba Zona Sur</option>
-                                             <option>Freyre</option>
-                                          </select>
+                           <input name="location" type="text" class="form-control" placeholder="" id="location" required data-validation-required-message="Por favor ingresa tu localidad.">
+
                            <p class="help-block text-danger"></p>
                            </div>
                            <div class="col-lg-12 noPadding" id="divCortinas">
@@ -850,5 +845,11 @@
       </div>
       <!-- /#wrapper --> 
       <?php include 'php/scripts-footer.php'; ?>
+      <script>
+$(".carousel").carousel({
+  interval: 3000,
+  wrap: true
+});
+</script>
    </body>
 </html>
