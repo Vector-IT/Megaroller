@@ -963,10 +963,6 @@ h2 {
 	margin-bottom: 80px;
 }
 
-#empresa .carousel-inner {
-	height: 450px;
-}
-
 #empresa .carousel-inner>.item>a>img,
 #empresa .carousel-inner>.item>img {
 	width: 100% !important;

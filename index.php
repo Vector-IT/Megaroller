@@ -33,13 +33,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                            <div class="item active">
-                              <img src="./img/empresa/portada3.jpg" alt="">
+                              <img src="./img/home/slider-1.jpg" alt="">
                            </div>
                            <div class="item">
-                              <img src="./img/empresa/portada2.jpg" alt="">
+                           <a href="franquicias.php"><img src="./img/home/slider-2.jpg" alt=""></a>
                            </div>
                            <div class="item">
-                              <img src="./img/empresa/portada.jpg" alt="">
+                              <img src="./img/home/slider-3.jpg" alt="">
                            </div>
                         </div>
                      </div>

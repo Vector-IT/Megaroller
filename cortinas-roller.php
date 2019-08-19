@@ -1359,127 +1359,10 @@
                                        <div class="tabbable">
                                           <ul class="nav nav-tabs">
                                              <li class="active"><a data-toggle="tab" href="#roller-translucida-linea-patagonia">Línea Patagonia</a></li>
-                                             <li><a data-toggle="tab" href="#roller-translucida-nombre">Nombre?</a></li>
                                              <li><a data-toggle="tab" href="#roller-translucida-linea-devon">Línea Devon</a></li>
                                           </ul>
                                           <div class="tab-content noPadding">
-                                             <div id="roller-translucida-linea-patagonia" class="tab-pane active">
-                                                <div class="col-md-9">
-                                                   <div id="carousel-roller-translucida-1" class="carousel slide" data-ride="carousel">
-                                                      <!-- Indicators -->
-                                                      <ol class="carousel-indicators">
-                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="0" class="active"></li>
-                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="1"></li>
-                                                         <li data-target="#carousel-roller-translucida-1" data-slide-to="2"></li>
-                                                      </ol>
-                                                      <!-- Wrapper for slides -->
-                                                      <div class="carousel-inner">
-                                                         <div class="item active">
-                                                            <img src="./img/productos/translucida-1.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/translucida-2.jpg" alt="">
-                                                         </div>
-                                                         <div class="item">
-                                                            <img src="./img/productos/translucida-3.jpg" alt="">
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                <ul class="nav-color">
-                                                   <li>
-                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="0">
-                                                         <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
-                                                         <p class="codigo-color">Crudo</p>
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="1">
-                                                         <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
-                                                         <p class="codigo-color">Lino</p>
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="2">
-                                                         <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
-                                                         <p class="codigo-color">Beige</p>
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="3">
-                                                         <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
-                                                         <p class="codigo-color">Gris Claro</p>
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a href="#lightbox-patagonia" data-toggle="modal" data-slide-to="4">
-                                                         <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
-                                                         <p class="codigo-color">Gris Oscuro</p>
-                                                      </a>
-                                                   </li>
-                                                </ul>
-                                                   <!-- Patagonia -->
-                                                   <div class="modal fade and carousel slide" id="lightbox-patagonia">
-                                                      <div class="modal-dialog modal-lg">
-                                                         <!-- Modal content-->
-                                                         <div class="modal-content">
-                                                            <div class="modal-header">
-                                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                               <h4 class="modal-title">Roller Translucida - Patagonia</h4>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                               <div class="carousel slide article-slide carousel-fade" id="bandas-verticales-carousel-10" data-ride="carousel">
-                                                                  <!-- Wrapper for slides -->
-                                                                  <div class="carousel-inner cont-slider">
-                                                                     <div class="item active">
-                                                                        <img alt="" title="" src="./img/productos/patagonia/crudo.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/patagonia/lino.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/patagonia/beige.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/patagonia/gris-claro.jpg">
-                                                                     </div>
-                                                                     <div class="item">
-                                                                        <img alt="" title="" src="./img/productos/patagonia/gris-oscuro.jpg">
-                                                                     </div>
-                                                                  </div>
-                                                                  <!-- Indicators -->
-                                                                  <ol class="carousel-indicators col-3">
-                                                                     <li class="active" data-slide-to="0" data-target="#lightbox-patagonia">
-                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/crudo.jpg');"></div>
-                                                                        <p class="codigo-color">Crudo</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="1" data-target="#lightbox-patagonia">
-                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/lino.jpg');"></div>
-                                                                        <p class="codigo-color">Lino</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="2" data-target="#lightbox-patagonia">
-                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/beige.jpg');"></div>
-                                                                        <p class="codigo-color">Beige</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="3" data-target="#lightbox-patagonia">
-                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/gris-claro.jpg');"></div>
-                                                                        <p class="codigo-color">Gris Claro</p>
-                                                                     </li>
-                                                                     <li class="" data-slide-to="4" data-target="#lightbox-patagonia">
-                                                                        <div class="color" style="background-image: url('./img/productos/patagonia/gris-oscuro.jpg');"></div>
-                                                                        <p class="codigo-color">Gris Oscuro</p>
-                                                                     </li>
-                                                                  </ol>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <!-- Fin Modal content-->
-                                                </div>
-                                             </div>
-                                             <div id="roller-translucida-nombre" class="tab-pane fade">
+                                             <div id="roller-translucida-linea-patagonia" class="tab-pane fade active">
                                                 <div class="col-md-9">
                                                    <div id="carousel-roller-translucida-2" class="carousel slide" data-ride="carousel">
                                                       <!-- Indicators -->
@@ -1542,7 +1425,7 @@
                                                          <div class="modal-content">
                                                             <div class="modal-header">
                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                               <h4 class="modal-title">Roller Translucida</h4>
+                                                               <h4 class="modal-title">Roller Translucida Línea Patagonia</h4>
                                                             </div>
                                                             <div class="modal-body">
                                                                <div class="carousel slide article-slide carousel-fade" id="roller-translucida" data-ride="carousel">
