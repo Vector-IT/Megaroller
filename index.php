@@ -152,22 +152,22 @@
                                  <p class="vContacto"><span>FÁBRICA Y SHOWROOM</span><br/>
                                     Bedoya 178, Barrio Cofico, Córdoba - (0351) 471 51 55 / 157 319 051<br/>
                                     <a href="mailto:fabrica@megarollercortinas.com" target="_top">Email: fabrica@megarollercortinas.com</a>
-                                    Lunes a viernes de 9hs a 18 hs, sábados de 9hs a 13 hs<br/>
+                                    Lunes a viernes de 9:00 a 18:00 hs - Sábados de 9:00 a 13:00 hs<br/>
                                  </p>
                                  <p class="vContacto"><span>LOCAL ZONA NORTE</span><br/>
                                     Paseo Acaece, Valle Escondido Local 11 - (0351) 156 135 314<br/>
                                     <a href="mailto:info@megarollercortinas.com" target="_top">Email: info@megarollercortinas.com</a>
-                                    Lunes a sábados de 9 a 14hs y 17 a 22hs<br/>
+                                    Lunes a Viernes 9:00 a 14:00 hs y 16:00 a 21:00 hs - Sabados 9:00 a 14:00 hs<br/>
                                  </p>
                                  <p class="vContacto"><span>LOCAL ZONA SUR</span><br/>
                                     Av. Valparaiso 3790 (Frente Jockey Club) - (0351) 157 319 666<br/>
                                     <a href="mailto:valparaiso@megarollercortinas.com" target="_top">Email: valparaiso@megarollercortinas.com</a>
-                                    Lunes a viernes de 9 a 19hs - Sábados 9 a 13:30hs<br/>
+                                    Lunes a viernes de 9:00 a 13:00 hs 15:00 a 19:30 hs - Sábados 9:00 a 13:30 hs<br/>
                                  </p>
                                  <p class="vContacto"><span>FRANQUICIA</span><br/>
                                  Bv. 25 de Mayo 779, Freyre - (03564) 153 78 589<br>
                                  <a href="mailto:freyre@megarollercortinas.com" target="_top">freyre@megarollercortinas.com</a>
-                                 Lunes a viernes de 8 a 12hs y 16 a 20hs - Sábados 9 a 12hs<br>
+                                 Lunes a viernes de 8:00 a 12:00 hs y 16:00 a 20:00 hs - Sábados 9:00 a 12:00 hs<br>
                                  </p>
                         
                                  <div class="seguinos">

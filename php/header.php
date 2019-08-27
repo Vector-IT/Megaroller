@@ -73,7 +73,7 @@
                <a href="mobiliario.php">Mobiliario</a>
             </li>
             <li>
-               <a href="http://nouvehclients.com/megaroller/#contacto">Contacto</a>
+               <a href="index.php#contacto">Contacto</a>
             </li>
             <li>
                <a href="franquicias.php" style="background: #3d3d3d !important; color: #fff !important;">Franquicias</a>

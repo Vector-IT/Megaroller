@@ -1336,8 +1336,7 @@
                                                       <div class="row">
                                                          <div class="col-md-3"></div>
                                                          <div class="col-md-6">
-                                                            <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
-                                                            <img class="inline-block img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
+                                                            <img class="img-center img-responsive" src="./img/empresa/copaco.jpg" alt="" width="200" height="auto"  style="margin-top: 25px; margin-bottom: 25px;">
                                                          </div>
                                                          <div class="col-md-3"></div>
                                                       </div>
@@ -1362,7 +1361,7 @@
                                              <li><a data-toggle="tab" href="#roller-translucida-linea-devon">Línea Devon</a></li>
                                           </ul>
                                           <div class="tab-content noPadding">
-                                             <div id="roller-translucida-linea-patagonia" class="tab-pane fade active">
+                                             <div id="roller-translucida-linea-patagonia" class="tab-pane active">
                                                 <div class="col-md-9">
                                                    <div id="carousel-roller-translucida-2" class="carousel slide" data-ride="carousel">
                                                       <!-- Indicators -->
