@@ -829,8 +829,8 @@
                      </form>
                   </div>
                   <div class="col-sm-5 text-center" style="font-family: 'BentonSans-Medium'; font-size: 16px;">
-                     <img class="img-center" src="./img/home/_0003_icono2.png" width="135px" height="135px"/>
-                     <div style="margin: 15px;"><strong>¿CÓMO TOMAR MEDIDAS?</strong><br/> Lee <button type="button"  data-toggle="modal" data-target="#medidas">AQUI</button> el instructivo<br/> para tomar la medida correcta de tu cortina. </div>
+                     <img style="cursor: pointer;" data-toggle="modal" data-target="#medidas" class="img-center" src="./img/home/_0003_icono2.png" width="135px" height="135px"/>
+                     <div style="margin: 15px;"><strong>¿CÓMO TOMAR MEDIDAS?</strong><br/><button type="button"  data-toggle="modal" data-target="#medidas">Lee AQUI el instructivo<br/> para tomar la medida correcta de tu cortina.</button></div>
 
                      <img class="img-center top40" src="./img/home/_0004_icono1.png" width="135px" height="135px"/>
                      <div style="margin: 15px;"><strong>¿DUDAS?</strong><br/> ¡Comunicate con un asesor ahora! <br/>
