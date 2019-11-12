@@ -195,18 +195,17 @@ $(function() {
 				mensaje = '';
 
 				for (var i = 0; i < $formUsado.find("select[id^='TipoCortina']").length; i++) {
-					mensaje+= '\nTipo de cortina: ' + $($formUsado.find("select[id^='TipoCortina']")[i]).val();
-					mensaje+= '\nAncho: ' + $($formUsado.find("input[id^='ancho']")[i]).val();
-					mensaje+= '\nAlto: ' + $($formUsado.find("input[id^='alto']")[i]).val();
-					mensaje+= '\n------';
+					mensaje+= '<br>Tipo de cortina: ' + $($formUsado.find("select[id^='TipoCortina']")[i]).val();
+					mensaje+= '<br>Ancho: ' + $($formUsado.find("input[id^='ancho']")[i]).val();
+					mensaje+= '<br>Alto: ' + $($formUsado.find("input[id^='alto']")[i]).val();
+					mensaje+= '<br>------';
 				};
-
-				mensaje+= '\n' + $formUsado.find("textarea#message").val();
+				mensaje+= '<br>' + $formUsado.find("textarea#message").val();
 
 				$.post("./mail/contact_me.php", {
 						name: $formUsado.find("input#name").val(),
-						phone: $formUsado.find("input#phone").val(),
 						email: $formUsado.find("input#email").val(),
+						phone: $formUsado.find("input#phone").val(),
 						location: $formUsado.find("input#location").val(),
 						message: mensaje
 					},
