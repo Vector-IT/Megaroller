@@ -3,7 +3,7 @@
    $twit = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'TWITTER'");
    $inst = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'INSTAGRAM'");
    $goog = buscarDato("SELECT ValoConf FROM configuraciones WHERE NombConf = 'GOOGLE+'");
-   
+
    $numeUser = isset($_COOKIE["v-commerce_numeUser"])? $_COOKIE["v-commerce_numeUser"]: '';
    if ($numeUser != '') {
    	cargarUsuario($numeUser);
@@ -13,7 +13,7 @@
    		$_SESSION["NumeCarr"] = buscarDato("SELECT NumeCarr FROM carritos WHERE NumeEstaCarr = 1 AND NumeInvi = ". $_SESSION["NumeInvi"]);
    	}
    }
-   
+
    if (isset($_SESSION["NumeCarr"])) {
    	$cantCarrito = buscarDato("SELECT COUNT(*) FROM carritosdetalles WHERE NumeCarr = ". $_SESSION["NumeCarr"]);
    }
@@ -40,13 +40,13 @@
          <a href="javascript:void(0);" onclick="abrirCarrito();" class="mis-compras pull-right" style="margin-right: 20px;"><img class="img-center" src="./img/item-producto/mi-carrito.png"  alt="Mi Carrito" title="Mi Carrito" style="width: 25px;margin-top: 5px;"><span class="cantidad-productos cantProds"><?php echo $cantCarrito?></span></a>
          <div id="divLogin" class="logueo pull-right" <?php echo (isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>>
             <a href="#login-modal" data-toggle="modal" class="navbar-link" role="button">
-               <img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;" alt="Ingresar" title="Ingresar"> 
+               <img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;" alt="Ingresar" title="Ingresar">
                <div class="pull-right" style="margin: 8px 15px 0 0;">Ingresar</div>
             </a>
          </div>
          <div id="divLogout" class="logueo pull-right" <?php echo (!isset($_SESSION['NumeUser'])? 'style="display: none;"': '')?>>
             <a href="php/logout.php" class="navbar-link clickable" title="Cerrar sesión">
-               <img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;"> 
+               <img class="" src="./img/user.png" alt="" style="width: 20px;margin-top: 8px;margin-right: 5px;">
                <div class="pull-right" style="margin: 8px 15px 0 0;"><?php echo (isset($_SESSION['NumeUser'])? $_SESSION["NombPers"]: '')?></div>
             </a>
          </div>
@@ -286,9 +286,13 @@
                                  <div class="form-group col-md-4 floating-label-form-group controls">
                                     <label>Tipo de Cortina</label>
                                     <select class="form-control" id="TipoCortina">
-                                       <option>Blackout</option>
-                                       <option>Sunscreen</option>
-                                       <option>Roller Dual</option>
+										<option value=""></option>
+										<option>Bandas Verticales</option>
+										<option>Blackout</option>
+										<option>Sunscreen</option>
+										<option>Sistema Doble</option>
+										<option>Roller Dual</option>
+										<option>Roller Translúcida</option>
                                     </select>
                                  </div>
                                  <div class="form-group col-md-4 floating-label-form-group controls">

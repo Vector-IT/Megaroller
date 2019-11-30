@@ -26,12 +26,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$mail->isSMTP();
 	$mail->Host = 'mail.megarollercortinas.com';
 	$mail->SMTPAuth = true;
-    $mail->Username = 'web@megarollercortinas.com';
-    $mail->Password = 'VectorNouveh5';
-    //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;
+    $mail->Username = 'no-reply@megarollercortinas.com';
+    $mail->Password = 'dLYTaph6g7jc';
+    $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 465;
 
-	$mail->setFrom('web@megarollercortinas.com', 'Megaroller Cortinas');
+	$mail->setFrom('no-replyb@megarollercortinas.com', 'Megaroller Cortinas');
 	$mail->addAddress($para);
 	$mail->Subject = $titulo;
 	$mail->Body = $mensaje;

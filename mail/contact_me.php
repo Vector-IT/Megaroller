@@ -9,6 +9,8 @@ if(empty($_POST['name'])      ||
    echo 'error';
 }
 
+require_once 'enviarMail.php';
+
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
@@ -23,13 +25,25 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 $to = 'fabrica@megarollercortinas.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 
 $email_subject = "Consulta Web:  $name";
-$email_body = "Has recibido una nueva consulta desde el formulario de contacto.\n\n"."\n\nNombre: $name\n\nEmail: $email_address\n\nTeléfono: $phone\n\nLocalidad: $location\n\nConsulta:\n$message";
+$email_body = "Has recibido una nueva consulta desde el formulario de contacto.<br><br>"."<br><br>Nombre: $name<br><br>Email: $email_address<br><br>Teléfono: $phone<br><br>Localidad: $location<br><br>Consulta:<br>". $message;
+$email_body_alt = "Has recibido una nueva consulta desde el formulario de contacto.\n\n"."\n\nNombre: $name\n\nEmail: $email_address\n\nTeléfono: $phone\n\nLocalidad: $location\n\nConsulta:\n". str_ireplace('<br>', '\n', $message);
+
 $headers = "From: no-reply@megarollercortinas.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";
 
-if (mail($to,$email_subject,$email_body,$headers))
-    echo 'exito';
-else
-    echo 'error';
+// $result = mail($to,$email_subject,$email_body,$headers);
+// if ($result) {
+// 	echo 'exito';
+// }
+// else {
+// 	echo 'error';
+// }
 
+$resultado = enviarMail($to, $email_subject, $email_body, $email_body_alt);
+if ($resultado["estado"]) {
+	echo 'exito';
+}
+else {
+	echo 'error';
+}
 ?>
