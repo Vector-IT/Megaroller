@@ -22,8 +22,8 @@ function enviarMail($para, $titulo, $mensaje, $mensajeAlt, $adjunto = [], $reply
 	$mail->isSMTP();
 	$mail->Host = 'aj000619.ferozo.com';
 	$mail->SMTPAuth = true;
-    $mail->Username = 'no-reply@megarollercortinas.com';
-	$mail->Password = 'ex@fubiou0Vnvxp';
+    $mail->Username = 'web@megarollercortinas.com';
+	$mail->Password = 'vkeKuQ@1vC';
 
     $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 465;
@@ -32,7 +32,7 @@ function enviarMail($para, $titulo, $mensaje, $mensajeAlt, $adjunto = [], $reply
 		$mail->AddReplyTo($replyTo);
 	}
 
-	$mail->setFrom('no-reply@megarollercortinas.com', 'Megaroller Cortinas');
+	$mail->setFrom('web@megarollercortinas.com', 'Megaroller Cortinas');
 
 	$direcciones = explode(',', $para);
 	foreach ($direcciones as $dir) {
