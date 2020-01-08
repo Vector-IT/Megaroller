@@ -20,7 +20,7 @@
    else {
    	$cantCarrito = 0;
    }
-   ?>
+?>
 <!-- HEADER -->
 <nav>
    <!-- Links Header -->
@@ -368,3 +368,17 @@
       </div>
    </div>
 </div>
+
+<?php
+// grab recaptcha library
+require_once "mail/recaptchalib.php";
+
+// your secret key
+$secret = "6Ld7K04UAAAAAJ7bsP6D2LoKla_xmd1wKryamRF2";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
+?>

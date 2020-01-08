@@ -23,7 +23,7 @@ function enviarMail($para, $titulo, $mensaje, $mensajeAlt, $adjunto = [], $reply
 	$mail->Host = 'aj000619.ferozo.com';
 	$mail->SMTPAuth = true;
     $mail->Username = 'web@megarollercortinas.com';
-	$mail->Password = 'vkeKuQ@1vC';
+	$mail->Password = 'hM2I*@M9lC';
 
     $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 465;

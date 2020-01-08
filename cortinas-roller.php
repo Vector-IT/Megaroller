@@ -1662,6 +1662,9 @@
                               <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
                            </div>
                            <div class="form-group col-lg-12 floating-label-form-group controls text-right">
+
+                              <div class="g-recaptcha" data-sitekey="6Ld7K04UAAAAABJKWcHcz8N0df4IXTAVP1nMxTjn"></div>
+
                               <button type="submit" class="btn btn-enviar">Enviar</button>
                            </div>
                         </div>

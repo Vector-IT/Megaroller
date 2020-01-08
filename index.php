@@ -211,6 +211,9 @@
                                        <div class="form-group col-sm-12 floating-label-form-group controls">
                                           <textarea style="min-height: 250px;" name="message" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingresa tu consulta."></textarea>
                                           <p class="help-block text-danger"></p>
+
+                                          <div class="g-recaptcha" data-sitekey="6Ld7K04UAAAAABJKWcHcz8N0df4IXTAVP1nMxTjn"></div>
+
                                           <button type="submit" class="btn btn-enviar">Enviar</button>
                                        </div>
                                     </div>
